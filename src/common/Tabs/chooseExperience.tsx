@@ -12,9 +12,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   iframeURL,
   languageEng,
   languageFra,
-  setTourismUrl,
 }: selectExpModalProps) => {
-  console.log(localStorage.getItem("name"));
   return (
     <div className="tab-wrappper-content">
       <div>
