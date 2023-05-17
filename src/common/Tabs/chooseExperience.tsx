@@ -21,19 +21,23 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
         <img src={textURL} alt="header-content-text" />{" "}
         <div style={{ padding: "10px 0", fontSize: "16px" }}>
           <span
-            onClick={() =>
-              setTourismUrl!(
-                "https://tourism-app-staging-infra.becknprotocol.io"
-              )
-            }
-            style={{ paddingRight: "8px", cursor: "pointer" }}
+            style={{
+              paddingRight: "8px",
+              fontWeight: "300",
+              cursor: "pointer",
+            }}
           >
-            {languageEng}
+            <a
+              style={{ color: "#000" }}
+              href="https://experience-guide-staging.becknprotocol.io/cityOfLight"
+              target="_self"
+              rel="noreferrer"
+            >
+              {languageEng}
+            </a>
           </span>
           |
-          <span
-            style={{ paddingLeft: "8px", fontWeight: "300", cursor: "pointer" }}
-          >
+          <span style={{ paddingLeft: "8px", cursor: "pointer" }}>
             <a
               style={{ color: "#000" }}
               href="https://experience-guide-french-infra.becknprotocol.io/cityOfLight"
