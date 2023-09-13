@@ -2,6 +2,40 @@ import React, { useState } from "react";
 import ModalHTML from "../ModalHTML/modalHTML";
 import InstructionButton from "../instructionButton/InstructionButton";
 
+const instructionsData = [
+  {
+    step: "step 1",
+    img: "/assets/driver_step1_img.svg",
+    text: [
+      "Sign in as a ‘driver’ using the following information:",
+      "Phone number: 9493143166",
+      "4 digit OTP: 7891",
+    ],
+  },
+  {
+    step: "step 2",
+    img: "/assets/driver_step2_img.svg",
+    text: [
+      "Ride request needs to be triggered from Pass Culture app. The toggle must be 'ON' to receive new ride requests.",
+    ],
+  },
+  {
+    step: "step 3",
+    img: "/assets/driver_step3_img.svg",
+    text: ["Accept the ride!"],
+  },
+  {
+    step: "step 4",
+    img: "/assets/driver_step4_img.svg",
+    text: ["Enter the OTP received from the passenger and start the ride."],
+  },
+  {
+    step: "step 5",
+    img: "/assets/driver_step5_img.svg",
+    text: ["Payment will be completed by the customer after the ride."],
+  },
+];
+
 const PcmInstructionModalDriver = () => {
   const [isModalOpenDriver, setSsModalOpenDriver] = useState(false);
   const handleInstructionModalDriver = () => {
@@ -17,89 +51,24 @@ const PcmInstructionModalDriver = () => {
       <ModalHTML
         open={isModalOpenDriver}
         onCancel={handleCancelDriver}
-        modalHeading={
-          "follow these steps for the best possible experience as a driver!"
-        }
-        step1={"step 1"}
-        step1Img={"/assets/driver_step1_img.svg"}
-        step1Text={
-          <div className="text_wrapper_modal">
-            <p style={{ paddingBottom: "10px" }}>
-              sign in as a ‘driver’ using <br /> the following information:
-            </p>
-            <p style={{ paddingBottom: "10px" }}>
-              <p style={{ fontWeight: "bolder", color: "#000" }}>
-                phone number
-              </p>
-              <p> 9493143166</p>
-            </p>
-            <p style={{ paddingBottom: "10px" }}>
-              <p style={{ fontWeight: "bolder", color: "#000" }}>
-                4 digit <span style={{ textTransform: "uppercase" }}>OTP</span>
-              </p>
-              <p> 7891</p>
-            </p>
-          </div>
-        }
-        step2={"step 2"}
-        step2Img={"/assets/driver_step2_img.svg"}
-        step2Text={
-          <div className="text_wrapper_modal">
-            <p style={{ paddingBottom: "10px" }}>
-              ride request needs to be triggered from{" "}
-              <span style={{ fontWeight: "bolder" }}>
-                {" "}
-                pass{" "}
-                <span style={{ textTransform: "capitalize" }}>Culture</span>
-              </span>{" "}
-              app the toggle must be{" "}
-              <span
-                style={{
-                  fontWeight: "bolder",
-                  textTransform: "capitalize",
-                }}
-              >
-                “ON”{" "}
-              </span>
-              to receive new ride requests.
-            </p>
-          </div>
-        }
-        step3={"step 3"}
-        step3Img={"/assets/driver_step3_img.svg"}
-        step3Text={
-          <div className="text_wrapper_modal">
-            <p style={{ paddingBottom: "10px" }}>accept the ride!</p>
-          </div>
-        }
-        step4={"step 4"}
-        step4Img={"/assets/driver_step4_img.svg"}
-        step4Text={
-          <div className="text_wrapper_modal">
-            <p style={{ paddingBottom: "10px" }}>
-              enter the{" "}
-              <span
-                style={{
-                  fontWeight: "bolder",
-                  textTransform: "uppercase",
-                }}
-              >
-                OTP
-              </span>{" "}
-              received from the passenger and start the ride.
-            </p>
-          </div>
-        }
-        step5={"step 5"}
-        step5Img={"/assets/driver_step5_img.svg"}
-        step5Text={
-          <div className="text_wrapper_modal">
-            <p style={{ paddingBottom: "10px" }}>
-              payment will be completed by customer after the ride!
-            </p>
-          </div>
-        }
-      />
+        modalHeading="Follow these steps for the best possible experience as a customer!"
+      >
+        {instructionsData.map((instruction, index) => (
+          <>
+            <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+              {instruction.step}
+            </h3>
+            <img src={instruction.img} alt={`Step ${index + 1}`} />
+            <div key={index} className="text_wrapper_modal">
+              {instruction.text.map((item, i) => (
+                <p key={i} style={{ color: "#000" }}>
+                  {item}
+                </p>
+              ))}
+            </div>
+          </>
+        ))}
+      </ModalHTML>
     </div>
   );
 };
