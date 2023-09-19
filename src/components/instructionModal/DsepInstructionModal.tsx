@@ -2,112 +2,198 @@ import React, { useState } from "react";
 import InstructionButton from "../instructionButton/InstructionButton";
 import ModalHTML from "../ModalHTML/modalHTML";
 
-const instructionsData = [
-  {
-    step: "step 1",
-    img: "/assets/DSEP_step1.svg",
-    text: [
-      <p>Login to the Skill Seeker app using the provided:</p>,
-      <p>Phone number: </p>,
-      <p>6251423251 </p>,
-      <p>6 digit OTP: </p>,
-      <p>726345 </p>,
-    ],
-  },
-  {
-    step: "step 2",
-    img: "/assets/DSEP_step2.svg",
-    text: [<p>From the landing page, search for a course, e.g., Design. </p>],
-  },
-  {
-    step: "step 3",
-    img: "/assets/DSEP_step3.svg",
-    text: [
-      <p>
-        From your search list, select the course e.g., Design Thinking and
-        proceed with the checkout flow.{" "}
-      </p>,
-    ],
-  },
-  {
-    step: "step 4",
-    img: "/assets/DSEP_step4.svg",
-    text: [
-      <p>Billing details you may need to proceed: </p>,
-      <p>Name: Santosh Kumar </p>,
-      <p>Address: 151-E, Janpath Road, New Delhi </p>,
-      <p>Phone number: 6251423251 </p>,
-      <p>Email ID: santosh.k@gmail.com </p>,
-      <p>Payment Method: Free course </p>,
-    ],
-  },
-  {
-    step: "step 5",
-    img: "/assets/DSEP_step5.svg",
-    text: [
-      <p>
-        You can start learning by clicking 'Start Course', which will take you
-        to the course details page.{" "}
-      </p>,
-    ],
-  },
-  {
-    step: "step 6",
-    img: "/assets/DSEP_step5.svg",
-    text: [
-      <p>
-        You can start learning by clicking 'Start Course', which will take you
-        to the course details page.{" "}
-      </p>,
-    ],
-  },
-  {
-    step: "step 7",
-    img: "/assets/DSEP_step5.svg",
-    text: [
-      <p>
-        You can start learning by clicking 'Start Course', which will take you
-        to the course details page.{" "}
-      </p>,
-    ],
-  },
-];
-
 const DsepInstructionModal = () => {
   const [isModalOpenDSEP, setIsModalOpenDSEP] = useState(false);
-
   const handleInstructionModal = () => {
     setIsModalOpenDSEP(true);
   };
-
   const handleCancelDSEP = () => {
     setIsModalOpenDSEP(false);
   };
-
   return (
     <div style={{ marginTop: "-20px" }}>
       <InstructionButton handleInstructions={handleInstructionModal} />
+
       <ModalHTML
         open={isModalOpenDSEP}
         onCancel={handleCancelDSEP}
-        modalHeading="Follow these steps for the best possible experience as a customer!"
-      >
-        {instructionsData.map((instruction, index) => (
-          <>
-            <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-              {instruction.step}
-            </h3>
-            <img src={instruction.img} alt={`Step ${index + 1}`} />
-            <div key={index} className="text_wrapper_modal">
-              {instruction.text.map((item, i) => (
-                <p key={i} style={{ color: "#000" }}>
-                  {item}
-                </p>
-              ))}
-            </div>
-          </>
-        ))}
-      </ModalHTML>
+        modalHeading={
+          "follow these steps for the best possible experience as a customer!"
+        }
+        step1={"step 1"}
+        step1Img={"/assets/DSEP_step1.svg"}
+        step1Text={
+          <div className="text_wrapper_modal">
+            <p style={{ paddingBottom: "10px" }}>
+              login to the{" "}
+              <span
+                style={{
+                  fontWeight: "bolder",
+                  color: "#000",
+                  textTransform: "capitalize",
+                }}
+              >
+                Skill Seeker
+              </span>
+              <br /> app using the provided:
+              <p
+                style={{
+                  fontWeight: "bolder",
+                  color: "#000",
+                  marginTop: "10px",
+                }}
+              >
+                phone number:
+              </p>
+              <p>6251423251</p>
+            </p>
+            <p>
+              <p style={{ fontWeight: "bolder", color: "#000" }}>
+                6 digit{" "}
+                <span
+                  style={{
+                    fontWeight: "bolder",
+                    color: "#000",
+                    textTransform: "uppercase",
+                  }}
+                >
+                  OTP
+                </span>
+              </p>
+              <p>726345</p>
+            </p>
+          </div>
+        }
+        step2={"step 2"}
+        step2Img={"/assets/DSEP_step2.svg"}
+        step2Text={
+          <div className="text_wrapper_modal">
+            <p>
+              From landing page <br />
+              search for course,
+            </p>
+            <p>
+              e.g. :{""}{" "}
+              <span
+                style={{
+                  fontWeight: "bolder",
+                  color: "#000",
+                  textTransform: "capitalize",
+                }}
+              >
+                Design{" "}
+              </span>
+            </p>
+          </div>
+        }
+        step3={"step 3"}
+        step3Img={"/assets/DSEP_step3.svg"}
+        step3Text={
+          <div className="text_wrapper_modal">
+            <p>
+              from your search list select <br />
+              the course e.g. :
+            </p>
+            <p style={{ paddingBottom: "10px" }}>
+              <p>
+                <span
+                  style={{
+                    fontWeight: "bolder",
+                    color: "#000",
+                    textTransform: "capitalize",
+                  }}
+                >
+                  Design Thinking{" "}
+                </span>
+                and proceed with the checkout flow.
+              </p>
+            </p>
+          </div>
+        }
+        step4={"step 4"}
+        step4Img={"/assets/DSEP_step4.svg"}
+        step4Text={
+          <div className="text_wrapper_modal">
+            <p>
+              Billing details you may <br />
+              need to proceed:
+            </p>
+            <p
+              style={{
+                marginTop: "2px",
+                fontWeight: "bolder",
+                color: "#000",
+              }}
+            >
+              name:
+            </p>
+            <p>Santosh Kumar</p>
+            <p
+              style={{
+                fontWeight: "bolder",
+                color: "#000",
+              }}
+            >
+              address:
+            </p>
+            <p>151-E, Janpath Road, New Delhi</p>
+            <p
+              style={{
+                fontWeight: "bolder",
+                color: "#000",
+              }}
+            >
+              phone number:
+            </p>
+            <p>6251423251</p>
+            <p
+              style={{
+                fontWeight: "bolder",
+                color: "#000",
+              }}
+            >
+              email id:
+            </p>
+            <p>santosh.k@gmail.com</p>
+            <p
+              style={{
+                fontWeight: "bolder",
+                color: "#000",
+              }}
+            >
+              Payment Method:
+            </p>
+            <p>free course</p>
+          </div>
+        }
+        step5={"step 5"}
+        step5Img={"/assets/DSEP_step5.svg"}
+        step5Text={
+          <div className="text_wrapper_modal">
+            <p>
+              <span
+                style={{
+                  textTransform: "capitalize",
+                }}
+              >
+                You
+              </span>{" "}
+              can start learning by <br />
+              clicking {""}
+              <span
+                style={{
+                  fontWeight: "bolder",
+                  color: "#000",
+                  textTransform: "capitalize",
+                }}
+              >
+                "start course"
+              </span>{" "}
+            </p>
+            <p>which will take you to the course details page.</p>
+          </div>
+        }
+      />
     </div>
   );
 };
