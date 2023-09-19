@@ -2,6 +2,38 @@ import React, { useState } from "react";
 import InstructionButton from "../instructionButton/InstructionButton";
 import ModalHTML from "../ModalHTML/modalHTML";
 
+const instructionsData = [
+  {
+    step: "step 1",
+    img: "/assets/OSM_step1_img.svg",
+    text: [
+      "You are about to login as a ‘seller’ for ClicPaye. This application helps manage products and process orders on the",
+      "‘Open Street Commerce’",
+      "Login details:",
+      "Phone number: 9876522222",
+      "Password: root123",
+    ],
+  },
+  {
+    step: "step 2",
+    img: "/assets/BPP_step2_img.svg",
+    text: [
+      "Here are a few things you can do on ClicPaye:",
+      "- View/manage orders placed in your store",
+      "- View all products in your store",
+      "- Manage all products in your store",
+    ],
+  },
+  {
+    step: "step 3",
+    img: "/assets/BPP_step3_img.svg",
+    text: [
+      "The activities you perform on ClicPaye get reflected on the",
+      "‘Open Street Commerce’ app.",
+    ],
+  },
+];
+
 const OscRetailsInstructionModal = () => {
   const [isModalOpenOSCRetailer, setIsModalOpenOSCRetailer] = useState(false);
   const handleInstructions = () => {
@@ -14,74 +46,26 @@ const OscRetailsInstructionModal = () => {
     <div>
       <InstructionButton handleInstructions={handleInstructions} />
       <ModalHTML
-        className1="none"
-        classNameWidth={"modal_width"}
         open={isModalOpenOSCRetailer}
         onCancel={handleCancelRetailer}
-        modalHeading={
-          "follow these steps for the best possible experience as a seller!"
-        }
-        step1={"step 1"}
-        step1Img={"/assets/OSM_step1_img.svg"}
-        step1Text={
-          <div className="text_wrapper_modal">
-            <p style={{ paddingBottom: "10px" }}>
-              You are about to login as a ‘seller’ for{" "}
-              <span style={{ fontWeight: "bolder" }}>ClicPaye.</span> This
-              application helps manage products and process orders on the
-            </p>
-            <p style={{ paddingBottom: "10px" }}>
-              <p style={{ fontWeight: "bolder", color: "#000" }}>
-                ‘Open Street Commerce’
-              </p>
-            </p>
-            <p>
-              <p>Login details:</p>
-              <p style={{ fontWeight: "bolder", color: "#000" }}>
-                phone number:
-              </p>
-              <p> 9876522222</p>
-            </p>
-            <p>
-              <p style={{ fontWeight: "bolder", color: "#000" }}>Password:</p>
-              <p> root123</p>
-            </p>
-          </div>
-        }
-        step2={"step 2"}
-        step2Img={"/assets/BPP_step2_img.svg"}
-        step2Text={
-          <div className="text_wrapper_modal">
-            <p style={{ paddingBottom: "10px" }}>
-              Here are few things you can do on{""}{" "}
-              <span style={{ fontWeight: "bolder" }}>ClicPaye:</span>{" "}
-            </p>
-
-            <ul>
-              <li>View/manage orders placed in your store </li>
-              <li>View all products in your store</li>
-              <li>Manage all products in your store</li>
-            </ul>
-          </div>
-        }
-        step3={"step 3"}
-        step3Img={"/assets/BPP_step3_img.svg"}
-        step3Text={
-          <div className="text_wrapper_modal">
-            <p>
-              The activities you perform on{" "}
-              <span style={{ fontWeight: "bolder" }}>ClicPaye</span> gets
-              reflected on the
-            </p>
-            <p style={{ paddingBottom: "10px" }}>
-              <span style={{ fontWeight: "bolder" }}>
-                ‘Open Street Commerce’{" "}
-              </span>
-              app.
-            </p>
-          </div>
-        }
-      />
+        modalHeading="Follow these steps for the best possible experience as a customer!"
+      >
+        {instructionsData.map((instruction, index) => (
+          <>
+            <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+              {instruction.step}
+            </h3>
+            <img src={instruction.img} alt={`Step ${index + 1}`} />
+            <div key={index} className="text_wrapper_modal">
+              {instruction.text.map((item, i) => (
+                <p key={i} style={{ color: "#000" }}>
+                  {item}
+                </p>
+              ))}
+            </div>
+          </>
+        ))}
+      </ModalHTML>
     </div>
   );
 };
