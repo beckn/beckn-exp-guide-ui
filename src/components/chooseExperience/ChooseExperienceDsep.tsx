@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import HeaderTab from "../headerTab/HeaderTab";
 import Modal from "../../welcome-page/modal";
 import Dsep from "../product/Dsep";
+import { AppDataMocks } from "../../utility/appsDataMocks";
 
 const ChooseExperienceDsep = () => {
   const [flag, setFlag] = useState(true);
@@ -20,23 +21,28 @@ const ChooseExperienceDsep = () => {
         </div>
       ),
       content: "",
-      disabled: true,
+      disabled: true
     },
     {
       key: "forDSEP",
       label: (
         <div
           className="tablinks"
-          style={{ display: "flex", alignItems: "center" }}
-        >
+          style={{ display: "flex", alignItems: "center" }}>
           <img src="/assets/bulbIcon.svg" alt={"Icon"} width={"25%"} />
           <div style={{ paddingLeft: "14.4px" }}>
-            <span>experience a world with beckn</span>
+            <span>
+              {
+                AppDataMocks.find(
+                  (appData: any) => appData.appName === "DSEP"
+                )?.tabs.find((tab: any) => tab.key === "forDSEP")?.tabHeaderText
+              }
+            </span>
           </div>
         </div>
       ),
       content: <Dsep />,
-      disabled: false,
+      disabled: false
     },
     {
       key: "ForHomeIcon",
@@ -46,8 +52,8 @@ const ChooseExperienceDsep = () => {
         </div>
       ),
       content: <Modal flag={flag} pathName={"/select-experience"} />,
-      disabled: false,
-    },
+      disabled: false
+    }
   ];
 
   return (

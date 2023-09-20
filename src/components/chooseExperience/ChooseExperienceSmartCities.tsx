@@ -3,10 +3,11 @@ import VideoTemplate from "../videoTemplate/videoTemplate";
 import Modal from "../../welcome-page/modal";
 import HeaderTab from "../headerTab/HeaderTab";
 import SmartCities from "../product/SmartCities";
+import { AppDataMocks } from "../../utility/appsDataMocks";
 
 const ChooseExperienceSmartCities = () => {
   const [flag, setFlag] = useState(true);
-
+  const APP_NAME = "cities";
   const tabs = [
     {
       key: "logo",
@@ -21,77 +22,99 @@ const ChooseExperienceSmartCities = () => {
         </div>
       ),
       content: "",
-      disabled: true,
+      disabled: true
     },
     {
       key: "2",
       label: (
         <div
           className="tablinks"
-          style={{ display: "flex", alignItems: "center" }}
-        >
+          style={{ display: "flex", alignItems: "center" }}>
           <img src="/assets/bulbIcon.svg" alt={"Icon"} width={"25%"} />
           <div style={{ paddingLeft: "14.4px" }}>
-            <span>a world without beckn</span>
+            <span>
+              {
+                AppDataMocks.find(
+                  (appData: any) => appData.appName === APP_NAME
+                )?.tabs.find((tab: any) => tab.key === "2")?.tabHeaderText
+              }
+            </span>
           </div>
         </div>
       ),
       content: (
         <VideoTemplate mainIconUrl="https://player.vimeo.com/video/808588011?h=d81ed972e2&amp;badge=0&amp;player_id=0&amp;app_id=58479" />
       ),
-      disabled: false,
+      disabled: false
     },
     {
       key: "3",
       label: (
         <div
           className="tablinks"
-          style={{ display: "flex", alignItems: "center" }}
-        >
+          style={{ display: "flex", alignItems: "center" }}>
           <img src="/assets/bulbIcon.svg" alt={"Icon"} width={"25%"} />
           <div style={{ paddingLeft: "14.4px" }}>
-            <span>a world with beckn</span>
+            <span>
+              {
+                AppDataMocks.find(
+                  (appData: any) => appData.appName === APP_NAME
+                )?.tabs.find((tab: any) => tab.key === "3")?.tabHeaderText
+              }
+            </span>
           </div>
         </div>
       ),
       content: <SmartCities />,
-      disabled: false,
+      disabled: false
     },
     {
       key: "4",
       label: (
         <div
           className="tablinks"
-          style={{ display: "flex", alignItems: "center" }}
-        >
+          style={{ display: "flex", alignItems: "center" }}>
           <img src="/assets/bulbIcon.svg" alt={"Icon"} width={"25%"} />
           <div style={{ paddingLeft: "14.4px" }}>
-            <span>behind the scenes</span>
+            <span>
+              {" "}
+              {
+                AppDataMocks.find(
+                  (appData: any) => appData.appName === APP_NAME
+                )?.tabs.find((tab: any) => tab.key === "4")?.tabHeaderText
+              }
+            </span>
           </div>
         </div>
       ),
       content: (
         <VideoTemplate mainIconUrl="https://player.vimeo.com/video/809506238?h=8eb603c1ba&amp;badge=0&amp;player_id=0&amp;app_id=58479" />
       ),
-      disabled: false,
+      disabled: false
     },
     {
       key: "5",
       label: (
         <div
           className="tablinks"
-          style={{ display: "flex", alignItems: "center" }}
-        >
+          style={{ display: "flex", alignItems: "center" }}>
           <img src="/assets/bulbIcon.svg" alt={"Icon"} width={"25%"} />
           <div style={{ paddingLeft: "14.4px" }}>
-            <span>imagining the future</span>
+            <span>
+              {" "}
+              {
+                AppDataMocks.find(
+                  (appData: any) => appData.appName === APP_NAME
+                )?.tabs.find((tab: any) => tab.key === "5")?.tabHeaderText
+              }
+            </span>
           </div>
         </div>
       ),
       content: (
         <VideoTemplate mainIconUrl="https://player.vimeo.com/video/808588900?h=93081abfef&amp;badge=0&amp;player_id=0&amp;app_id=58479" />
       ),
-      disabled: false,
+      disabled: false
     },
 
     {
@@ -102,8 +125,8 @@ const ChooseExperienceSmartCities = () => {
         </div>
       ),
       content: <Modal flag={flag} pathName={"/select-experience"} />,
-      disabled: false,
-    },
+      disabled: false
+    }
   ];
 
   return (

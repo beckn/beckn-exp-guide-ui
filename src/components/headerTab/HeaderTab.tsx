@@ -19,8 +19,7 @@ const HeaderTab: React.FC<TabsComponentPropsModal> = (props) => {
     <>
       <Tabs
         className={props.tabClassName}
-        defaultActiveKey={props.defaultActiveKey}
-      >
+        defaultActiveKey={props.defaultActiveKey}>
         {props.tabs.map((tab) => (
           <Tabs.TabPane key={tab.key} tab={tab.label} disabled={tab.disabled}>
             {tab.content}

@@ -2,14 +2,19 @@ import React, { useState } from "react";
 import IframeComp from "../iframe/IframeComp";
 
 const CityOfLight = () => {
-  const cityOfLightUrl = process.env.REACT_APP_TOURISM_URL;
+  const [cityOfLightUrl, setCityOfLightUrl] = useState<string>(
+    process.env.REACT_APP_TOURISM_URL as string
+  );
+  // const cityOfLightUrl = process.env.REACT_APP_TOURISM_URL;
   const [language, setLanguage] = useState("english");
 
   const handleLanguageEn = () => {
     setLanguage("english");
+    setCityOfLightUrl(`${process.env.REACT_APP_TOURISM_URL}`);
   };
   const handleLanguageFa = () => {
     setLanguage("france");
+    setCityOfLightUrl(`${process.env.REACT_APP_TOURISM_URL}?lang=fa`);
   };
   return (
     <div>

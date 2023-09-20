@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React, { FC, useState } from "react";
 import Modal from "../../welcome-page/modal";
 import OscInstructionModal from "../instructionModal/OscInstructionModal";
@@ -27,22 +29,20 @@ const IframeEn: FC<IframeProps> = (props) => {
         <div className="text_wrapper">
           <div>
             <p className="heading1">{props.heading1}</p>
-            <img className="heading2" src={props.heading2} />
+            <img className="heading2" src={props.heading2} alt="heading2" />
             <p className="heading3">{props.heading3}</p>
             <p className="description_text">{props.description_text}</p>
           </div>
           <div className="languages_tab">
             <div
               className={`english ${props.activeEn}`}
-              onClick={props.handleLanguageEn}
-            >
+              onClick={props.handleLanguageEn}>
               {props.english}
             </div>
             {props.english ? <div>|</div> : ""}
             <div
               className={`france ${props.activeFa}`}
-              onClick={props.handleLanguageFa}
-            >
+              onClick={props.handleLanguageFa}>
               {props.france}
             </div>
           </div>

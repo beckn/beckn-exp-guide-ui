@@ -26,7 +26,7 @@ const AnimatedRoutes = () => {
         <Route path="/himalayas" element={<ChooseExperienceHimalyas />} />
         <Route path="/cities" element={<ChooseExperienceSmartCities />} />
         <Route path="/cityOfLight" element={<ChooseExperienceCityOfLight />} />
-        <Route path="/gambia" element={<ChooseExperienceGambia />} />
+        <Route path="/cityOfAfrica" element={<ChooseExperienceGambia />} />
         <Route path="/OSC" element={<ChooseExperienceOsc />} />
         <Route path="/DSEP" element={<ChooseExperienceDsep />} />
         <Route path="/PCM" element={<ChooseExperiencePCM />} />
@@ -40,10 +40,9 @@ const AnimatedRoutes = () => {
           element={
             <h1
               style={{
-                color: "#fff",
+                color: "#fff"
               }}
-              className="main-container"
-            >
+              className="main-container">
               Error 404 : Page Not Found
             </h1>
           }
