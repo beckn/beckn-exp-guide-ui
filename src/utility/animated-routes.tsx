@@ -1,12 +1,8 @@
 import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import SelectExperience from "../welcome-page/selectExperience";
-// import SelectAdmin from "../welcome-page/himalayas";
 import { AnimatePresence } from "framer-motion";
-import WelcomeScreen from "../welcome-page/WelcomeScreen";
 // import SelectApplication from "../welcome-page/cities";
 import TabsComponent from "../common/Tabs/tabs";
-import ProgressBar from "../welcome-page/progressBar";
 import ModalComponent from "../welcome-page/modal";
 import ThankYou from "../welcome-page/thankYou";
 import VideoTemplate from "../common/videoTemplate/videoTemplate";
@@ -27,13 +23,16 @@ import DsepUnified from "../welcome-page/DsepUnified/DsepUnified";
 import Dsnp from "../welcome-page/DSNP/Dsnp";
 import DHP from "../welcome-page/DHP/DHP";
 import IndustryComp from "../welcome-page/Industry4.0/IndustryComp";
+import LandingPage from "../components/LandingPage/LandingPage";
+import SelectExperience from "../pages/SelectExperience";
+import ProgressBar from "../components/ProgressBar/ProgressBar";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
   return (
     <AnimatePresence initial={false}>
       <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<WelcomeScreen />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/wallet" element={<Wallet />} />
         <Route path="/himalayas" element={<Himalayas />} />
         <Route path="/cities" element={<Cities />} />
