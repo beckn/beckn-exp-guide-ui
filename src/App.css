@@ -27,6 +27,10 @@
   font-weight: 275;
 }
 /* -----------------Card.tsx-------------------------------- */
+.select_experience_container {
+  height: 77vh;
+  overflow-y: scroll;
+}
 .image-url-containers img:nth-child(2) {
   display: none;
 }
@@ -233,4 +237,18 @@ iframe .header-container .location-btn {
 }
 .ant-tabs-nav-operations {
   display: none !important;
+}
+/* ////////////// refectoring ///////////// */
+.select_experience_container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.select_experience_container::-webkit-scrollbar-thumb {
+  background: url("/public/assets/scrollBar.svg");
+  border-radius: 10px;
+  background-size: 0 0;
+  background-repeat: no-repeat;
+}
+.select_experience_container:hover::-webkit-scrollbar-thumb {
+  background-size: 100% 88%;
 }
