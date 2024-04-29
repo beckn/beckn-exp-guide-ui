@@ -26,7 +26,7 @@ const SelectionPages = () => {
       </div>
       <div className="selectionPage_wrapper_innr">
         <a
-          href={`${retailAppUrl}/?lang=en&external_url=${orderObjectUrl}`}
+          href={`${retailAppUrl}/?external_url=${orderObjectUrl}`}
           target=""
           rel="noopener noreferrer"
         >
