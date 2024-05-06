@@ -157,18 +157,15 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
-                          numéro de téléphone:
+                        adresse email:
                         </p>
-                        <p> 5678990532</p>
+                        <p> lisa.k@gmail.com</p>
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
-                          <span style={{ textTransform: "uppercase" }}>
-                            OTP
-                          </span>{" "}
-                          à 6 chiffres
-                        </p>
-                        <p> 456012</p>
+                          mot de passe
+                                                  </p>
+                        <p style={{textTransform:"capitalize"}}> Test@12345</p>
                       </p>
                     </div>
                   }
@@ -191,8 +188,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                         style={{
                           paddingBottom: "10px",
                         }}
-                      >
-                        Ménilmontant - Pelleport, Paris, France
+                      > Paris, France
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
@@ -257,13 +253,19 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
                           Nom:
                         </p>
-                        <p>Antoine Dubois</p>
+                        <p>lisa</p>
                       </p>
                       <p>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
                           Adresse:
                         </p>
                         <p>15 Rue du Soleil, Paris, France</p>
+                      </p>
+                      <p>
+                        <p style={{ fontWeight: "bolder", color: "#000" }}>
+                          Code PIN:
+                        </p>
+                        <p>75001</p>
                       </p>
                       <p>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
@@ -275,7 +277,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
                           Adresse électronique:
                         </p>
-                        <p>antoine.dubois@gmail.com</p>
+                        <p>lisa.k@gmail.com</p>
                       </p>
                       <p>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
