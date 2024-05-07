@@ -3653,7 +3653,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “proceed to pay”{" "}
+                      “save traveller details”{" "}
                     </span>
                     to continue
                   </p>
