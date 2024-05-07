@@ -4501,7 +4501,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       email address:{" "}
                     </p>
-                    <p>santosh@gmail.com</p>
+                    <p>santosh.k@gmail.com</p>
                   </p>
                   <p
                     style={{
