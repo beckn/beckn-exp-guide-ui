@@ -1139,7 +1139,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                           color: "#000",
                         }}
                       >
-                        Louvre Museum Exhibition - EACH
+                        molière's the miser - theatrical - each
                       </span>
                     </p>
                     <p style={{ paddingBottom: "10px" }}>
@@ -3653,7 +3653,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “proceed to pay”{" "}
+                      “save traveller details”{" "}
                     </span>
                     to continue
                   </p>
@@ -3665,7 +3665,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 </h3>
                 <img src={"/assets/UEI_step1.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
-                  <p style={{ paddingBottom: "10px" }}>
+                  <p>
                     click on{" "}
                     <span
                       style={{
@@ -3673,11 +3673,38 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “view booking”
+                      “checkout”
                     </span>{" "}
-                    button to view booking details
+                    button select{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      “cash on arrival”
+                    </span>{" "}
+                    as your payment methodand click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      ”confirm booking”
+                    </span>{" "}
+                    to continueclick on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      “view details”
+                    </span>{" "}
+                    button to view booking details{" "}
                   </p>
-                  <p style={{ paddingBottom: "10px" }}>
+                  <p style={{ paddingTop: "10px" }}>
                     <span
                       style={{
                         fontWeight: "bolder",
@@ -3687,10 +3714,6 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       scan qr code
                     </span>{" "}
                     to import your order into retail application.
-                  </p>
-                  <p style={{ paddingBottom: "10px" }}>
-                    retail app will ask if you want travel-based shopping list.
-                    confirm this action.
                   </p>
                 </div>
               </>
@@ -3748,7 +3771,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <img src={"/assets/himalayas_step5.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
-                    enter shipping details:
+                    enter following as shipping details:
                   </p>
                   <p>
                     name:{" "}
@@ -3784,7 +3807,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     </span>
                   </p>
                   <p>
-                    zip code:{" "}
+                    pin code:{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
@@ -4159,14 +4182,14 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <img src={"/assets/industry_step2.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
-                    set your location to{" "}
+                    provide access to fetch you{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
                         color: "#000",
                       }}
                     >
-                      {"<location name>"}{" "}
+                      current location{" "}
                     </span>
                     and
                   </p>
