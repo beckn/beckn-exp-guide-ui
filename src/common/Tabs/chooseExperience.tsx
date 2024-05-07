@@ -4564,19 +4564,11 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <img src={"/assets/ODR_step3.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
-                    from the results select{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      ‘Mediation Service’{" "}
-                    </span>
-                    as your service provider.
+                    from the search results, select a law firm of your choice as
+                    your service provider.
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
-                    on the details screen click on{" "}
+                    on the provider details screen click on{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
