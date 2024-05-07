@@ -157,15 +157,18 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
-                        adresse email:
+                          adresse email:
                         </p>
                         <p> lisa.k@gmail.com</p>
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
                           mot de passe
-                                                  </p>
-                        <p style={{textTransform:"capitalize"}}> Test@12345</p>
+                        </p>
+                        <p style={{ textTransform: "capitalize" }}>
+                          {" "}
+                          Test@12345
+                        </p>
                       </p>
                     </div>
                   }
@@ -188,7 +191,9 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                         style={{
                           paddingBottom: "10px",
                         }}
-                      > Paris, France
+                      >
+                        {" "}
+                        Paris, France
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
@@ -404,7 +409,42 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
             >
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 1
+                  step 1
+                </h3>
+                <img src={"/assets/unified_dsep_step1.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    Connectez-vous à l'application city of lights à l'aide de
+                    l'identifiant fourni :
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    <p
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      adresse email:{" "}
+                    </p>
+                    <p>lisa.k@gmail.com</p>
+                  </p>
+                  <p
+                    style={{
+                      paddingBottom: "20px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    mot de passe:{" "}
+                    <span style={{ textTransform: "capitalize" }}>
+                      Test@12345
+                    </span>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  L'étape 2
                 </h3>
                 <img src={"/assets/himalayas_step1.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -448,7 +488,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 2
+                  L'étape 3
                 </h3>
                 <img
                   src={"/assets/cityOfLightstep2.svg"}
@@ -525,7 +565,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 3
+                  L'étape 4
                 </h3>
                 <img src={"/assets/cityOfLightstep3.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -587,7 +627,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 4
+                  L'étape 5
                 </h3>
                 <img src={"/assets/cityOfLightstep4.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -634,7 +674,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 5
+                  L'étape 6
                 </h3>
                 <img src={"/assets/cityOfLightstep5.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -666,7 +706,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 6
+                  L'étape 7
                 </h3>
                 <img
                   src={"/assets/cityOfLightstep6new.svg"}
@@ -750,7 +790,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 7
+                  L'étape 8
                 </h3>
                 <img src={"/assets/cityOfLightstep6.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -831,7 +871,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 8
+                  L'étape 9
                 </h3>
                 <img src={"/assets/cityOfLightstep10.svg"} alt={`StepImage`} />
 
@@ -875,7 +915,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 9
+                  L'étape 10
                 </h3>
                 <img src={"/assets/cityOfLightstep8.svg"} alt={`StepImage`} />
 
@@ -910,7 +950,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 10
+                  L'étape 11
                 </h3>
                 <img src={"/assets/cityOfLightstep9.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -963,7 +1003,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 11
+                  L'étape 12
                 </h3>
                 <img src={"/assets/cityOfLightstep11.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
