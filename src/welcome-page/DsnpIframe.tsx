@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import ChooseExperience from "../common/Tabs/chooseExperience";
 
 const DsnpIframe = () => {
-  const DsnpUrl = process.env.REACT_APP_DSNP_APP_URL_FEED;
+  const DsnpUrl = process.env.REACT_APP_DSNP_APP_URL;
   const retailStoreUrl = process.env.REACT_APP_RETAIL_APP_URL;
   const [dsnpUrl, setDsnpUrl] = useState(retailStoreUrl);
   const [activeButton, setActiveButton] = useState("for_tetail_store");
