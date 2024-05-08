@@ -540,18 +540,17 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
-                          phone number:
+                          email address:
                         </p>
-                        <p> 5678990532</p>
+                        <p>lisa.k@gmail.com</p>
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
-                          6 digit{" "}
-                          <span style={{ textTransform: "uppercase" }}>
-                            OTP
-                          </span>
+                          password:
                         </p>
-                        <p> 456012</p>
+                        <p style={{ textTransform: "capitalize" }}>
+                          Test@12345
+                        </p>
                       </p>
                     </div>
                   }
@@ -631,7 +630,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
                           Name:
                         </p>
-                        <p>Antoine Dubois</p>
+                        <p>lisa</p>
                       </p>
                       <p>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
@@ -649,7 +648,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
                           Email ID:
                         </p>
-                        <p>antoine.dubois@gmail.com</p>
+                        <p>lisa.k@gmail.com</p>
                       </p>
                       <p>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
@@ -1144,7 +1143,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                           color: "#000",
                         }}
                       >
-                        Louvre Museum Exhibition - EACH
+                        molière's the miser - theatrical - each
                       </span>
                     </p>
                     <p style={{ paddingBottom: "10px" }}>
@@ -1784,6 +1783,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                   </p>
                   <p
                     style={{
+                      paddingTop: "10px",
                       paddingBottom: "20px",
                       fontWeight: "bolder",
                       color: "#000",
@@ -1791,56 +1791,6 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                   >
                     password:{" "}
                     <span style={{ textTransform: "capitalize" }}>
-                      Test@12345
-                    </span>
-                  </p>
-                  <p
-                    style={{
-                      paddingBottom: "20px",
-                    }}
-                  >
-                    or
-                  </p>
-                  <p>sign up using below details:</p>
-                  <p
-                    style={{
-                      fontWeight: "bolder",
-                      color: "#000",
-                    }}
-                  >
-                    name:{" "}
-                    <span
-                      style={{
-                        fontWeight: "400",
-                        textTransform: "capitalize",
-                      }}
-                    >
-                      Suraj
-                    </span>
-                  </p>
-
-                  <p
-                    style={{
-                      fontWeight: "bolder",
-                      color: "#000",
-                    }}
-                  >
-                    email address:{" "}
-                  </p>
-                  <p>suraj@gmail.com</p>
-                  <p
-                    style={{
-                      fontWeight: "bolder",
-                      color: "#000",
-                    }}
-                  >
-                    password:{" "}
-                    <span
-                      style={{
-                        fontWeight: "400",
-                        textTransform: "capitalize",
-                      }}
-                    >
                       Test@12345
                     </span>
                   </p>
@@ -2045,7 +1995,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"<placeholder text>"}
+                      santosh kumar
                     </span>
                   </p>
                   <p>
@@ -2056,7 +2006,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"<placeholder text>"}
+                      santosh.k@gmail.com
                     </span>
                   </p>
                   <p>
@@ -2067,7 +2017,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"<placeholder text>"}
+                      6251423251
                     </span>
                   </p>
                   <p>
@@ -2078,7 +2028,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"<placeholder text>"}
+                      151-e, janpath road, new delhi
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>upload documents</p>
@@ -2234,7 +2184,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"<placeholder text>"}
+                      santosh kumar
                     </span>
                   </p>
                   <p>
@@ -2245,7 +2195,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"<placeholder text>"}
+                      santosh.k@gmail.com
                     </span>
                   </p>
                   <p>
@@ -2256,7 +2206,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"<placeholder text>"}
+                      6251423251
                     </span>
                   </p>
                   <p>
@@ -2267,7 +2217,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"<placeholder text>"}
+                      151-e, janpath road, new delhi
                     </span>
                   </p>
                   <p>
@@ -2278,7 +2228,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘pre populated document’
+                      santosh resume.pdf
                     </span>{" "}
                     and click on{" "}
                     <span
@@ -2385,17 +2335,46 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     tab on the landing page.
                   </p>
                   <p style={{ paddingBottom: "20px" }}>
+                    sign in to the{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
                         color: "#000",
                       }}
                     >
-                      ‘sign up and login’{" "}
+                      DSNP
                     </span>{" "}
-                    to ‘open common’ retail app.
+                    app using the provided:
                   </p>
-                  <p style={{ paddingBottom: "20px" }}>
+                  <p style={{ paddingBottom: "10px" }}>
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      email address:{" "}
+                    </span>
+                    santosh.k@gmail.com
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      password:{" "}
+                    </span>
+                    <span
+                      style={{
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      Test@12345
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
                     on the landing page,{" "}
                     <span
                       style={{
@@ -2406,8 +2385,16 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       search for ‘sunglasses’
                     </span>
                   </p>
-                  <p style={{ paddingBottom: "20px" }}>
-                    Select the product you wish to buy.
+                  <p style={{ paddingBottom: "10px" }}>
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      Select the product
+                    </span>{" "}
+                    you wish to buy.
                   </p>
                 </div>
               </>
@@ -2439,7 +2426,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                   >
                     Address:
                   </p>
-                  <p>15 Rue du Soleil, Paris, France</p>
+                  <p>151-e, janpath road, new delhi</p>
                   <p
                     style={{
                       fontWeight: "bolder",
@@ -2449,7 +2436,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                   >
                     Phone Number:
                   </p>
-                  <p>0612345678</p>
+                  <p>6251423251</p>
                   <p
                     style={{
                       fontWeight: "bolder",
@@ -3335,27 +3322,31 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ride now to
+                      ride now
                     </span>{" "}
-                    enter{" "}
+                    & enter the following details{" "}
+                  </p>
+                  <p>
+                    name:{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
                         color: "#000",
                       }}
                     >
-                      “your name”
-                    </span>{" "}
-                    &
+                      yara
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    mobile number:{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
                         color: "#000",
                       }}
                     >
-                      {" "}
-                      mobile number”
-                    </span>{" "}
+                      9811259151
+                    </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
                     then click on{" "}
@@ -3666,7 +3657,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “proceed to pay”{" "}
+                      “save traveller details”{" "}
                     </span>
                     to continue
                   </p>
@@ -3678,7 +3669,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 </h3>
                 <img src={"/assets/UEI_step1.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
-                  <p style={{ paddingBottom: "10px" }}>
+                  <p>
                     click on{" "}
                     <span
                       style={{
@@ -3686,11 +3677,38 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “view booking”
+                      “checkout”
                     </span>{" "}
-                    button to view booking details
+                    button select{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      “cash on arrival”
+                    </span>{" "}
+                    as your payment methodand click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      ”confirm booking”
+                    </span>{" "}
+                    to continueclick on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      “view details”
+                    </span>{" "}
+                    button to view booking details{" "}
                   </p>
-                  <p style={{ paddingBottom: "10px" }}>
+                  <p style={{ paddingTop: "10px" }}>
                     <span
                       style={{
                         fontWeight: "bolder",
@@ -3700,10 +3718,6 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       scan qr code
                     </span>{" "}
                     to import your order into retail application.
-                  </p>
-                  <p style={{ paddingBottom: "10px" }}>
-                    retail app will ask if you want travel-based shopping list.
-                    confirm this action.
                   </p>
                 </div>
               </>
@@ -3761,7 +3775,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <img src={"/assets/himalayas_step5.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
-                    enter shipping details:
+                    enter following as shipping details:
                   </p>
                   <p>
                     name:{" "}
@@ -3797,7 +3811,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     </span>
                   </p>
                   <p>
-                    zip code:{" "}
+                    pin code:{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
@@ -3978,9 +3992,11 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     </span>
                     and proceed,
                   </p>
-
                   <p style={{ paddingBottom: "10px" }}>
-                    enter
+                    enter the following details:
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    name:{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
@@ -3988,9 +4004,11 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      your name{" "}
+                      lisa{" "}
                     </span>
-                    &{" "}
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    mobile number:{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
@@ -3998,7 +4016,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      mobile number{" "}
+                      9811259151{" "}
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -4141,17 +4159,22 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       email address:{" "}
                     </p>
-                    <p>{"<enterthefuture01@gmail.com>"}</p>
+                    <p>santosh.k@gmail.com</p>
                   </p>
-                  <p style={{ paddingBottom: "10px" }}>
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
                     password:{" "}
                     <span
                       style={{
-                        fontWeight: "bolder",
-                        color: "#000",
+                        textTransform: "capitalize",
                       }}
                     >
-                      {"<Test@1234567>"}
+                      Test@12345
                     </span>
                   </p>
                 </div>
@@ -4163,14 +4186,14 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <img src={"/assets/industry_step2.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
-                    set your location to{" "}
+                    provide access to fetch you{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
                         color: "#000",
                       }}
                     >
-                      {"<location name>"}{" "}
+                      current location{" "}
                     </span>
                     and
                   </p>
@@ -4185,25 +4208,28 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       assembly{" "}
                     </span>
                   </p>
+                  <p style={{ paddingBottom: "10px" }}>and</p>
                   <p style={{ paddingBottom: "10px" }}>
-                    and select{" "}
+                    select{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
                         color: "#000",
                       }}
                     >
-                      {"<manufacturer name>"}{" "}
+                      Intermittent assembly type{" "}
                     </span>
+                    by{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      makerspace{" "}
+                    </span>
+                    provider
                   </p>
-                </div>
-              </>
-              <>
-                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  step 3
-                </h3>
-                <img src={"/assets/industry_step3.svg"} alt={`StepImage`} />
-                <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
                     click on{" "}
                     <span
@@ -4214,9 +4240,19 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       “book”{" "}
                     </span>
-                    button to add assembly details ,
+                    button to add assembly details
                   </p>
-                  <p>enter following details:</p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 3
+                </h3>
+                <img src={"/assets/industry_step3.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    enter following details:
+                  </p>
 
                   <p>
                     select type:
@@ -4227,7 +4263,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      {" < type >"}{" "}
+                      plastic box{" "}
                     </span>
                   </p>
                   <p>
@@ -4238,7 +4274,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"< colour >"}{" "}
+                      red{" "}
                     </span>
                   </p>
                   <p>
@@ -4249,7 +4285,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"< length >"}{" "}
+                      100mm{" "}
                     </span>
                   </p>
                   <p>
@@ -4260,20 +4296,10 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {" < width >"}{" "}
+                      100mm{" "}
                     </span>
                   </p>
-                  <p>
-                    enter colour:{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      {"< colour >"}{" "}
-                    </span>
-                  </p>
+
                   <p>
                     enter quantity:{" "}
                     <span
@@ -4282,7 +4308,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"< quantity >"}{" "}
+                      100{" "}
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -4293,7 +4319,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"< weight >"}{" "}
+                      50kgs{" "}
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -4327,7 +4353,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      {" < username >"}{" "}
+                      santosh kumar{" "}
                     </span>
                   </p>
                   <p>
@@ -4338,7 +4364,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"< 9191223433 >"}{" "}
+                      6251423251{" "}
                     </span>
                   </p>
                   <p>
@@ -4349,10 +4375,10 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {"< 560078 >"}{" "}
+                      560078{" "}
                     </span>
                   </p>
-                  <p>
+                  <p style={{ paddingBottom: "10px" }}>
                     address:{" "}
                     <span
                       style={{
@@ -4360,32 +4386,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      {
-                        " <Bengaluru, Bengaluru Urban, Bangalore Division, Karnataka>"
-                      }{" "}
-                    </span>
-                  </p>
-                  <p>
-                    building name & floor: <br />
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                        textTransform: "capitalize",
-                      }}
-                    >
-                      {" <B2 1202>"}{" "}
-                    </span>
-                  </p>
-                  <p style={{ paddingBottom: "10px" }}>
-                    landmark:{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      {" <xavier school>"}{" "}
+                      151-e, janpath road, new delhi{" "}
                     </span>
                   </p>
 
@@ -4527,10 +4528,11 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       email address:{" "}
                     </p>
-                    <p>santosh@gmail.com</p>
+                    <p>santosh.k@gmail.com</p>
                   </p>
                   <p
                     style={{
+                      paddingTop: "10px",
                       paddingBottom: "20px",
                       fontWeight: "bolder",
                       color: "#000",
@@ -4538,55 +4540,6 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                   >
                     password:{" "}
                     <span style={{ textTransform: "capitalize" }}>
-                      Test@12345
-                    </span>
-                  </p>
-                  <p
-                    style={{
-                      paddingBottom: "20px",
-                    }}
-                  >
-                    or
-                  </p>
-                  <p>sign up using below details:</p>
-                  <p
-                    style={{
-                      fontWeight: "bolder",
-                      color: "#000",
-                    }}
-                  >
-                    name:{" "}
-                    <span
-                      style={{
-                        fontWeight: "400",
-                      }}
-                    >
-                      Suraj
-                    </span>
-                  </p>
-
-                  <p
-                    style={{
-                      fontWeight: "bolder",
-                      color: "#000",
-                    }}
-                  >
-                    email address:{" "}
-                  </p>
-                  <p>suraj@gmail.com</p>
-                  <p
-                    style={{
-                      fontWeight: "bolder",
-                      color: "#000",
-                    }}
-                  >
-                    password:{" "}
-                    <span
-                      style={{
-                        fontWeight: "400",
-                        textTransform: "capitalize",
-                      }}
-                    >
                       Test@12345
                     </span>
                   </p>
@@ -4638,19 +4591,11 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <img src={"/assets/ODR_step3.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
-                    from the results select{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      ‘Mediation Service’{" "}
-                    </span>
-                    as your service provider.
+                    from the search results, select a law firm of your choice as
+                    your service provider.
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
-                    on the details screen click on{" "}
+                    on the provider details screen click on{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
@@ -4693,7 +4638,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         fontWeight: "400",
                       }}
                     >
-                      Marie Sampath
+                      Santosh kumar
                     </span>
                   </p>
                   <p
@@ -4708,7 +4653,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         fontWeight: "400",
                       }}
                     >
-                      9876543210
+                      6251423251
                     </span>
                   </p>
                   <p
@@ -4723,7 +4668,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         fontWeight: "400",
                       }}
                     >
-                      marie.sampath@gmail.com
+                      santosh.k@gmail.com
                     </span>
                   </p>
                   <p
@@ -4738,10 +4683,10 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         fontWeight: "400",
                       }}
                     >
-                      {"343, B Block, Sector 4, Rohini, Delhi "}
+                      151-e, janpath road, new delhi
                     </span>
                   </p>
-                  <p
+                  {/* <p
                     style={{
                       paddingBottom: "10px",
                       fontWeight: "bolder",
@@ -4756,8 +4701,8 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       {"110042"}
                     </span>
-                  </p>
-                  <p style={{ paddingBottom: "10px" }}>
+                  </p> */}
+                  <p style={{ paddingTop: "20px" }}>
                     and click on{" "}
                     <span
                       style={{
@@ -4849,7 +4794,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       {"23, East end , sector 10, Pritampura, Delhi"}
                     </span>
                   </p>
-                  <p
+                  {/* <p
                     style={{
                       paddingBottom: "10px",
                       fontWeight: "bolder",
@@ -4864,8 +4809,8 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       {"110034"}
                     </span>
-                  </p>
-                  <p style={{ paddingBottom: "10px" }}>
+                  </p> */}
+                  <p style={{ paddingTop: "20px" }}>
                     and click on{" "}
                     <span
                       style={{
@@ -4974,7 +4919,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                           fontWeight: "400",
                         }}
                       >
-                        Marie
+                        santosh kumar
                       </span>
                     </p>
                     <p
@@ -4989,7 +4934,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                           fontWeight: "400",
                         }}
                       >
-                        343, B Block, Sector 4, Rohini, Delhi - 110042
+                        151-e, janpath road, new delhi
                       </span>
                     </p>
                   </p>
@@ -5140,14 +5085,14 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                             <p style={{ fontWeight: "bolder", color: "#000" }}>
                               email address:
                             </p>
-                            <p>enterthefuture01@gmail.com</p>
+                            <p>sophie@gmail.com</p>
                           </p>
                           <p style={{ paddingBottom: "10px" }}>
                             <p style={{ fontWeight: "bolder", color: "#000" }}>
                               password:
                             </p>
                             <p style={{ textTransform: "capitalize" }}>
-                              Test@1234567
+                              sophie@1234567
                             </p>
                           </p>
                         </div>

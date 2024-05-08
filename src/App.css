@@ -363,3 +363,6 @@ iframe .header-container .location-btn {
   position: absolute;
   right: -60px;
 }
+.slick-slider {
+  user-select: unset !important;
+}
