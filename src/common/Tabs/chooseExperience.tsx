@@ -4279,7 +4279,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      50
+                      50kgs
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
