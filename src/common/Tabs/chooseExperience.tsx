@@ -544,7 +544,10 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
                           password
                         </p>
-                        <p style={{ textTransform: "capitalize" }}> Test@123</p>
+                        <p style={{ textTransform: "capitalize" }}>
+                          {" "}
+                          Test@12345
+                        </p>
                       </p>
                     </div>
                   }
@@ -2378,7 +2381,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                   >
                     Address:
                   </p>
-                  <p>15 Rue du Soleil, Paris, France</p>
+                  <p>151-e, janpath road, new delhi</p>
                   <p
                     style={{
                       fontWeight: "bolder",
@@ -2388,7 +2391,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                   >
                     Phone Number:
                   </p>
-                  <p>0612345678</p>
+                  <p>6251423251</p>
                   <p
                     style={{
                       fontWeight: "bolder",
@@ -4148,7 +4151,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       password
                     </span>
-                    <p style={{ textTransform: "capitalize" }}>Test@123</p>
+                    <p style={{ textTransform: "capitalize" }}>Test@12345</p>
                   </p>
                 </div>
               </>
@@ -4279,7 +4282,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      50
+                      50kgs
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
