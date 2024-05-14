@@ -40,7 +40,7 @@ const SelectExperience = () => {
         <div className="child-container">
           <div className="animates fadeIns fives home-card-container">
             <ul className="card-sub-containers">
-              {/* <li onClick={() => handleNevigate("ODR")}>
+              <li onClick={() => handleNevigate("ODR")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
@@ -54,7 +54,7 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              <li onClick={() => handleNevigate("UEI")}>
+              {/* <li onClick={() => handleNevigate("UEI")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
