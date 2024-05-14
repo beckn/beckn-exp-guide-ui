@@ -569,7 +569,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                           paddingBottom: "10px",
                         }}
                       >
-                        Paris, France
+                        Ménilmontant - Pelleport, Paris, France
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
