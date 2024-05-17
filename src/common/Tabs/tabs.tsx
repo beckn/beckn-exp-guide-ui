@@ -26,6 +26,7 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
   const DSEP = localStorage.getItem("name") === "DSEP";
   const UEI = localStorage.getItem("name") === "UEI";
   const isDsepUnified = localStorage.getItem("name") === "dsepUnified";
+  const isRetail = localStorage.getItem("name") === "retail";
   const DSNP = localStorage.getItem("name") === "DSNP";
   const DHP = localStorage.getItem("name") === "DHP";
   const isIndustry = localStorage.getItem("name") === "industry4.0";
@@ -47,7 +48,14 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
 
   return (
     <>
-      {DSEP || UEI || isDsepUnified || DSNP || DHP || isIndustry || ODR ? (
+      {DSEP ||
+      UEI ||
+      isDsepUnified ||
+      isRetail ||
+      DSNP ||
+      DHP ||
+      isIndustry ||
+      ODR ? (
         <Tabs
           className={"tabsConatiner cityOfAfrica DSEP_Wrapper"}
           defaultActiveKey="3"

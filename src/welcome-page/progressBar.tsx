@@ -53,6 +53,8 @@ const ProgressBar = () => {
         ? navigate("/regenerativeAgriculture")
         : localStorage.getItem("name") === "regenUEI"
         ? navigate("/regenUEI")
+        : localStorage.getItem("name") === "retail"
+        ? navigate("/retail")
         : navigate("/PCM");
     }
   });

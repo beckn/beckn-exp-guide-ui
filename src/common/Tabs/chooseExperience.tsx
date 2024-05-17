@@ -54,6 +54,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   const DSEP = localStorage.getItem("name") === "DSEP";
   const UEI = localStorage.getItem("name") === "UEI";
   const dsepUnified = localStorage.getItem("name") === "dsepUnified";
+  const retail = localStorage.getItem("name") === "retail";
   const DSNP = localStorage.getItem("name") === "DSNP";
   const isDsnpFeed = iframeURL === process.env.REACT_APP_DSNP_APP_URL_FEED;
   const ODR = localStorage.getItem("name") === "ODR";
@@ -76,6 +77,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   const [isModalOpencities, setIsModalOpencities] = useState(false);
   const [isModalOpenCityOfLight, setIsModalOpenCityOfLight] = useState(false);
   const [isModalOpenisIndustry, setIsModalOpenisIndustry] = useState(false);
+  const [isModalOpenRetail, setIsModalOpenRetail] = useState(false);
   const [isModalOpenisODR, setIsModalOpenisODR] = useState(false);
 
   // TODO Improve polka extension connect logic
@@ -173,6 +175,9 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   const showModalisIndustry = () => {
     setIsModalOpenisIndustry(true);
   };
+  const showModalRetail = () => {
+    setIsModalOpenRetail(true);
+  };
   const showModalisODR = () => {
     setIsModalOpenisODR(true);
   };
@@ -220,6 +225,9 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   const handleCancelisIndustry = () => {
     setIsModalOpenisIndustry(false);
   };
+  const handleCancelRetail = () => {
+    setIsModalOpenRetail(false);
+  };
   const handleCancelisODR = () => {
     setIsModalOpenisODR(false);
   };
@@ -261,6 +269,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
         !DSEP &&
         !UEI &&
         !dsepUnified &&
+        !retail &&
         !DSNP &&
         !DHP &&
         !isIndustry &&
@@ -5015,6 +5024,332 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       ‘Rate us’{" "}
                     </span>
                     to rate the experience
+                  </p>
+                </div>
+              </>
+            </ModalSlider>
+          </div>
+        ) : null}
+        {retail ? (
+          <div className="DSEP-intruction">
+            <Button
+              type="primary"
+              onClick={showModalRetail}
+              style={{ left: "unset", margin: "unset", marginTop: "30px" }}
+            >
+              instructions
+              <img
+                style={{ paddingLeft: "5px" }}
+                src="/assets/arrow_back.svg"
+              />
+            </Button>
+            <ModalSlider
+              open={isModalOpenRetail}
+              onCancel={handleCancelRetail}
+              modalHeading={
+                "follow these steps for the best possible experience as a customer!"
+              }
+            >
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 1
+                </h3>
+                <img src={"/assets/retail-step-1.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    Sign in to the Kuza One app using the provided:
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    <p
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      email address:{" "}
+                    </p>
+                    <p>lisa.k@gmail.com</p>
+                  </p>
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    password:{" "}
+                    <span
+                      style={{
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      Test@12345
+                    </span>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 2
+                </h3>
+                <img src={"/assets/retail-step-2.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    search for{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      coffee{" "}
+                    </span>
+                    and
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    select{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      expresso coffee{" "}
+                    </span>
+                    by{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      insta shop{" "}
+                    </span>
+                    provider
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      “add to cart”{" "}
+                    </span>
+                    button{" "}
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    and click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      order{" "}
+                    </span>
+                    to proceed
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 3
+                </h3>
+                <img src={"/assets/retail-step-3.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p>enter shipping details:</p>
+
+                  <p>
+                    name:
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      {" "}
+                      lisa{" "}
+                    </span>
+                  </p>
+                  <p>
+                    mobile:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      0612345678{" "}
+                    </span>
+                  </p>
+                  <p>
+                    email id:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      lisa.k@gmail.com{" "}
+                    </span>
+                  </p>
+                  <p>
+                    pin code:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      75001{" "}
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    address:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      15 rue du soleil, paris, france{" "}
+                    </span>
+                  </p>
+
+                  <p style={{ paddingBottom: "10px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      “save shipping details”{" "}
+                    </span>
+                    button.{" "}
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 4
+                </h3>
+                <img src={"/assets/retail-step-4.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p>enter Billing details:</p>
+
+                  <p>
+                    name:
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      {" "}
+                      lisa{" "}
+                    </span>
+                  </p>
+                  <p>
+                    mobile:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      0612345678{" "}
+                    </span>
+                  </p>
+                  <p>
+                    email id:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      lisa.k@gmail.com{" "}
+                    </span>
+                  </p>
+                  <p>
+                    pin code:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      75001{" "}
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    address:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      15 rue du soleil, paris, france{" "}
+                    </span>
+                  </p>
+
+                  <p style={{ paddingBottom: "10px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      “save billing details”{" "}
+                    </span>
+                    button.
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 5
+                </h3>
+                <img src={"/assets/retail-step-5.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      checkout{" "}
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    select payment mode as{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      “cash on delivery”{" "}
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      confirm order{" "}
+                    </span>
+                    to continue
                   </p>
                 </div>
               </>
