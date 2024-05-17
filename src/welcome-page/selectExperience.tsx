@@ -40,7 +40,21 @@ const SelectExperience = () => {
         <div className="child-container">
           <div className="animates fadeIns fives home-card-container">
             <ul className="card-sub-containers">
-{/*               <li onClick={() => handleNevigate("ODR")}>
+              <li onClick={() => handleNevigate("retail")}>
+                <div className="card-with-image">
+                  <img
+                    className="first-image-card"
+                    src="/assets/retail-card.svg"
+                    alt={"BecknLogoIcon"}
+                  />
+                  <p className="card-title-image">
+                    <span className="font-color">enhancing commerce</span>
+                    <br />
+                    <span className="font-color">with kuza one</span>
+                  </p>
+                </div>
+              </li>
+              <li onClick={() => handleNevigate("ODR")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
@@ -53,7 +67,7 @@ const SelectExperience = () => {
                     <span className="font-color">online with LegalEase</span>
                   </p>
                 </div>
-              </li> */}
+              </li>
               {/* <li onClick={() => handleNevigate("UEI")}>
                 <div className="card-with-image">
                   <img
