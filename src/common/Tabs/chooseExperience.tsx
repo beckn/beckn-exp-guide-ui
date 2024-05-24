@@ -1151,7 +1151,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       password:
                     </p>
-                    <p>Test@12345</p>
+                    <p style={{ textTransform: "capitalize" }}>Test@12345</p>
                   </p>
                 </div>
               </>
@@ -3584,7 +3584,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       password:
                     </p>
-                    <p>Test@12345</p>
+                    <p style={{ textTransform: "capitalize" }}>Test@12345</p>
                   </p>
                 </div>
               </>
