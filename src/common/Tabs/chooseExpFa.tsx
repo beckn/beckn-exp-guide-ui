@@ -409,39 +409,37 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
             >
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  step 1
+                  L'étape 1
                 </h3>
-                <img src={"/assets/unified_dsep_step1.svg"} alt={`StepImage`} />
+                <img src={"/assets/tourism-step-1.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
                     Connectez-vous à l'application city of lights à l'aide de
                     l'identifiant fourni :
-                  </p>
-                  <p style={{ paddingBottom: "10px" }}>
                     <p
                       style={{
+                        paddingTop: "10px",
                         fontWeight: "bolder",
                         color: "#000",
                       }}
                     >
-                      adresse email:{" "}
+                      adresse email:
                     </p>
                     <p>lisa.k@gmail.com</p>
-                  </p>
-                  <p
-                    style={{
-                      paddingBottom: "20px",
-                      fontWeight: "bolder",
-                      color: "#000",
-                    }}
-                  >
-                    mot de passe:{" "}
-                    <span style={{ textTransform: "capitalize" }}>
-                      Test@12345
-                    </span>
+                    <p
+                      style={{
+                        paddingTop: "10px",
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      mot de passe:
+                    </p>
+                    <p>Test@12345</p>
                   </p>
                 </div>
               </>
+
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
                   L'étape 2
