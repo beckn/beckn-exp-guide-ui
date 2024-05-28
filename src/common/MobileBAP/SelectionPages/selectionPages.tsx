@@ -16,6 +16,11 @@ const SelectionPages = () => {
   const retailAppUrl = process.env.REACT_APP_RETAIL_APP;
   const mobilityAppUrl = process.env.REACT_APP_MOBILITY_APP;
 
+  const handleMobilityLinkClick = (event: any) => {
+    event.preventDefault();
+    alert("This feature is under progress. Coming soon!");
+  };
+
   return (
     <div className="selectionPage_wrapper">
       <div className="beckn_logo">
@@ -42,6 +47,7 @@ const SelectionPages = () => {
           href={`${mobilityAppUrl}?external_url=${orderObjectUrl}`}
           target=""
           rel="noopener noreferrer"
+          onClick={handleMobilityLinkClick}
         >
           <div className="Link_wrapper">
             <div className="link_img">
