@@ -1179,7 +1179,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                           color: "#000",
                         }}
                       >
-                        molière's the miser - theatrical - each
+                        Louvre Museum Exhibition
                       </span>
                     </p>
                     <p style={{ paddingBottom: "10px" }}>

@@ -464,7 +464,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                           color: "#000",
                         }}
                       >
-                        Louvre Museum Exhibition - EACH
+                        Louvre Museum Exhibition
                       </span>
                     </p>
                     <p style={{ paddingBottom: "10px" }}>
