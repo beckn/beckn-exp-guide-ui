@@ -1940,7 +1940,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      'Agile'
+                      'Java'
                     </span>{" "}
                     for yourself :)
                   </p>
@@ -1960,7 +1960,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ' Agile Scrum Project Management - EACH'
+                      ' Java Springboot Book'
                     </span>{" "}
                     and click on{" "}
                     <span
@@ -2010,7 +2010,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ' Agile Excellence Scholarship'
+                      'MS Ramaiah Memorial Scholarship'
                     </span>{" "}
                     scholarship from the list and{" "}
                     <span
@@ -2173,7 +2173,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ’Agile Project Manager’
+                      ’FullStack Developer’
                     </span>{" "}
                     from{" "}
                     <span
