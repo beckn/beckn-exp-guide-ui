@@ -5233,7 +5233,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      0612345678{" "}
+                      9811259151{" "}
                     </span>
                   </p>
                   <p>
@@ -5255,7 +5255,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      75001{" "}
+                      560078{" "}
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -5266,7 +5266,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      15 rue du soleil, paris, france{" "}
+                      1202 b2, Bengaluru urban, Bengaluru, Karnataka{" "}
                     </span>
                   </p>
 
@@ -5312,7 +5312,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      0612345678{" "}
+                      9811259151{" "}
                     </span>
                   </p>
                   <p>
@@ -5334,7 +5334,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      75001{" "}
+                      560078{" "}
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -5345,7 +5345,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      15 rue du soleil, paris, france{" "}
+                      1202 b2, Bengaluru urban, Bengaluru, Karnataka{" "}
                     </span>
                   </p>
 
