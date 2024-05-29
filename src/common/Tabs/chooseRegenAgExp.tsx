@@ -39,7 +39,7 @@ const ChooseRegenAgExp: React.FC<selectExpModalProps> = ({
   useEffect(() => {
     async function handleMessage(event: MessageEvent) {
       if (
-        `${event.origin}/` !== process.env.REACT_APP_RETAIL_APP_DSNP_URL ||
+        (`${event.origin}/` !== process.env.REACT_APP_RETAIL_APP_DSNP_URL && `${event.origin}/` !== process.env.REACT_APP_DSNP_APP_URL  ) ||
         !event.data.type
       )
         return;
