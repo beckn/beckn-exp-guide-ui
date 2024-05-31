@@ -68,7 +68,7 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              {/* <li onClick={() => handleNevigate("UEI")}>
+              <li onClick={() => handleNevigate("UEI")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
@@ -81,7 +81,7 @@ const SelectExperience = () => {
                     <span className="font-color">Interface</span>
                   </p>
                 </div>
-              </li> */}
+              </li>
               <li onClick={() => handleNevigate("dsepUnified")}>
                 <div className="card-with-image">
                   <img
