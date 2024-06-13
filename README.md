@@ -4,9 +4,9 @@ This repository hosts the code for the Experience Center landing page. This incl
 
 ## Release Notes
 
-| Version | Release Date |
+| Name | Version |
 |---------|--------------|
-| 1.0     | 2024-02-02   |
+| Experience Center Container     | 2024-02-02   |
 
 
 ## Installation/Setup Guide 
