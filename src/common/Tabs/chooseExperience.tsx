@@ -1354,6 +1354,37 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
                   step 5
                 </h3>
+                <img src={"/assets/tourism-step-1.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    use the same credentials to login in retail application:
+                    <p
+                      style={{
+                        paddingTop: "10px",
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      email address:
+                    </p>
+                    <p>lisa.k@gmail.com</p>
+                    <p
+                      style={{
+                        paddingTop: "10px",
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      password:
+                    </p>
+                    <p style={{ textTransform: "capitalize" }}>Test@12345</p>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 6
+                </h3>
                 <img src={"/assets/cityOfLightstep4.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p>
@@ -1396,7 +1427,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  step 6
+                  step 7
                 </h3>
                 <img src={"/assets/cityOfLightstep5.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -1410,9 +1441,9 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       items{" "}
                     </span>
-                    to the cart from the list,
+                    to the cart from the list.
                   </p>
-                  <br />
+                  <p style={{ paddingBottom: "10px" }}>and</p>
                   <p>
                     click on{" "}
                     <span
@@ -1421,96 +1452,12 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      view & billing{" "}
+                      'order'{" "}
                     </span>
                   </p>
                 </div>
               </>
-              <>
-                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  step 7
-                </h3>
-                <img
-                  src={"/assets/cityOfLightstep6new.svg"}
-                  alt={`StepImage`}
-                />
-                <div className="text_wrapper_modal">
-                  <p style={{ paddingBottom: "10px" }}>
-                    enter billing details:
-                  </p>
-                  <p>
-                    <p>
-                      name:{" "}
-                      <span
-                        style={{
-                          fontWeight: "bolder",
-                          color: "#000",
-                        }}
-                      >
-                        Lisa
-                      </span>{" "}
-                    </p>
-                    <span>
-                      mobile:{" "}
-                      <span
-                        style={{
-                          fontWeight: "bolder",
-                          color: "#000",
-                        }}
-                      >
-                        0612345678
-                      </span>
-                    </span>
-                  </p>
-                  <p>
-                    email id:{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      lisa.k@gmail.com
-                    </span>
-                  </p>
-                  <p>
-                    pincode:{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      75001
-                    </span>
-                  </p>
-                  <p>
-                    address:
-                    <br />
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      15 Rue du Soleil, Paris, France
-                    </span>
-                  </p>
-                  <p style={{ marginTop: "15px" }}>
-                    click on{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      {" "}
-                      “save billing details”{" "}
-                    </span>
-                    button.
-                  </p>
-                </div>
-              </>
+
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
                   step 8
@@ -1518,7 +1465,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <img src={"/assets/cityOfLightstep6.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
-                    enter shipping details:
+                    enter following as shipping details:
                   </p>
                   <p>
                     <p>
@@ -1597,10 +1544,73 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
                   step 9
                 </h3>
-                <img src={"/assets/cityOfLightstep10.svg"} alt={`StepImage`} />
-
+                <img
+                  src={"/assets/cityOfLightstep6new.svg"}
+                  alt={`StepImage`}
+                />
                 <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    enter following as billing details:
+                  </p>
                   <p>
+                    <p>
+                      name:{" "}
+                      <span
+                        style={{
+                          fontWeight: "bolder",
+                          color: "#000",
+                        }}
+                      >
+                        Lisa
+                      </span>{" "}
+                    </p>
+                    <span>
+                      mobile:{" "}
+                      <span
+                        style={{
+                          fontWeight: "bolder",
+                          color: "#000",
+                        }}
+                      >
+                        0612345678
+                      </span>
+                    </span>
+                  </p>
+                  <p>
+                    email id:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      lisa.k@gmail.com
+                    </span>
+                  </p>
+                  <p>
+                    pincode:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      75001
+                    </span>
+                  </p>
+                  <p>
+                    address:
+                    <br />
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      15 Rue du Soleil, Paris, France
+                    </span>
+                  </p>
+                  <p style={{ marginTop: "15px" }}>
                     click on{" "}
                     <span
                       style={{
@@ -1609,9 +1619,33 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “confirm”{" "}
+                      “save billing details”{" "}
                     </span>
-                    <p style={{ marginTop: "10px", paddingBottom: "10px" }}>
+                    button.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      {" "}
+                      “proceed to checkout” .
+                    </span>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 10
+                </h3>
+                <img src={"/assets/cityOfLightstep10.svg"} alt={`StepImage`} />
+
+                <div className="text_wrapper_modal">
+                  <p>
+                    <p style={{ paddingBottom: "10px" }}>
                       select payment mode as{" "}
                       <span
                         style={{
@@ -1620,6 +1654,18 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         }}
                       >
                         “cash on delivery” .{" "}
+                      </span>
+                    </p>
+                    <p style={{ paddingBottom: "10px" }}>
+                      click on{" "}
+                      <span
+                        style={{
+                          fontWeight: "bolder",
+                          color: "#000",
+                        }}
+                      >
+                        {" "}
+                        “confirm”{" "}
                       </span>
                     </p>
                     click on view order to{" "}
@@ -1638,7 +1684,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  step 10
+                  step 11
                 </h3>
                 <img src={"/assets/cityOfLightstep8.svg"} alt={`StepImage`} />
 
@@ -1672,7 +1718,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  step 11
+                  step 12
                 </h3>
                 <img src={"/assets/cityOfLightstep9.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -1725,7 +1771,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  step 12
+                  step 13
                 </h3>
                 <img src={"/assets/cityOfLightstep11.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -3785,13 +3831,44 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       scan qr code
                     </span>{" "}
-                    to import your order into retail application.
+                    to import your order into retail app.
                   </p>
                 </div>
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
                   step 5
+                </h3>
+                <img src={"/assets/tourism-step-1.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    use the same credentials to login in retail application:
+                    <p
+                      style={{
+                        paddingTop: "10px",
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      email address:
+                    </p>
+                    <p>lisa.k@gmail.com</p>
+                    <p
+                      style={{
+                        paddingTop: "10px",
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      password:
+                    </p>
+                    <p style={{ textTransform: "capitalize" }}>Test@12345</p>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 6
                 </h3>
                 <img src={"/assets/himalayas_step4.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -3823,7 +3900,28 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     select a delivery location, based on which a catalog page
                     will be generated
                   </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 7
+                </h3>
+                <img src={"/assets/cityOfLightstep5.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
+                    add{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      items{" "}
+                    </span>
+                    to the cart from the list.
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>and</p>
+                  <p>
                     click on{" "}
                     <span
                       style={{
@@ -3831,15 +3929,15 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      view & billing
-                    </span>{" "}
-                    to continue
+                      'order'{" "}
+                    </span>
                   </p>
                 </div>
               </>
+
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  step 6
+                  step 8
                 </h3>
                 <img src={"/assets/himalayas_step5.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -3901,14 +3999,132 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       1202 B2, Bengaluru Urban, Bengaluru, Karnataka
                     </span>
                   </p>
+                  <p style={{ marginTop: "15px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      {" "}
+                      “save shipping details”{" "}
+                    </span>
+                    button.
+                  </p>
                 </div>
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  step 7
+                  step 9
+                </h3>
+                <img
+                  src={"/assets/cityOfLightstep6new.svg"}
+                  alt={`StepImage`}
+                />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    enter following as billing details:
+                  </p>
+                  <p>
+                    name:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      Lisa
+                    </span>
+                  </p>
+                  <p>
+                    mobile:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      9811259151
+                    </span>
+                  </p>
+                  <p>
+                    email id:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      lisa.k@gmail.com
+                    </span>
+                  </p>
+                  <p>
+                    pin code:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      560078
+                    </span>
+                  </p>
+                  <p>
+                    address:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      1202 B2, Bengaluru Urban, Bengaluru, Karnataka
+                    </span>
+                  </p>
+                  <p style={{ marginTop: "15px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      {" "}
+                      “save billing details”{" "}
+                    </span>
+                    button.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      {" "}
+                      “proceed to checkout” .
+                    </span>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 10
                 </h3>
                 <img src={"/assets/driver_step5_img.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    select payment mode as{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      “cash on delivery” .
+                    </span>
+                  </p>
                   <p style={{ paddingBottom: "10px" }}>
                     click on{" "}
                     <span
@@ -3919,15 +4135,6 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       “confirm”
                     </span>{" "}
-                    and select payment mode as{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      “cash on delivery” .
-                    </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
                     you can see your order details on click of{" "}

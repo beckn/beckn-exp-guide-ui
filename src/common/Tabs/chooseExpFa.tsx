@@ -627,6 +627,38 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
                   L'étape 5
                 </h3>
+                <img src={"/assets/tourism-step-1.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    Utilisez les mêmes identifiants pour vous connecter à
+                    l'application de vente au détail:
+                    <p
+                      style={{
+                        paddingTop: "10px",
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      adresse email:
+                    </p>
+                    <p>lisa.k@gmail.com</p>
+                    <p
+                      style={{
+                        paddingTop: "10px",
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      mot de passe:
+                    </p>
+                    <p>Test@12345</p>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  L'étape 6
+                </h3>
                 <img src={"/assets/cityOfLightstep4.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p>
@@ -672,7 +704,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 6
+                  L'étape 7
                 </h3>
                 <img src={"/assets/cityOfLightstep5.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -697,92 +729,8 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      sur voir et facturer
+                      Commander
                     </span>
-                  </p>
-                </div>
-              </>
-              <>
-                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 7
-                </h3>
-                <img
-                  src={"/assets/cityOfLightstep6new.svg"}
-                  alt={`StepImage`}
-                />
-                <div className="text_wrapper_modal">
-                  <p style={{ paddingBottom: "10px" }}>
-                    Entrez les détails de facturation
-                  </p>
-                  <p>
-                    <p>
-                      Prenom:{" "}
-                      <span
-                        style={{
-                          fontWeight: "bolder",
-                          color: "#000",
-                        }}
-                      >
-                        Lisa
-                      </span>{" "}
-                    </p>
-                    <span>
-                      Mobile:{" "}
-                      <span
-                        style={{
-                          fontWeight: "bolder",
-                          color: "#000",
-                        }}
-                      >
-                        0612345678
-                      </span>
-                    </span>
-                  </p>
-                  <p>
-                    adresse électronique::{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      lisa.k@gmail.com
-                    </span>
-                  </p>
-                  <p>
-                    Code PIN:{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      75001{" "}
-                    </span>
-                  </p>
-                  <p>
-                    Adresse: <br />
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      15 Rue du Soleil, Paris, France
-                    </span>
-                  </p>
-                  <p style={{ marginTop: "15px" }}>
-                    Cliquez sur le bouton{" "}
-                    <span
-                      style={{
-                        fontWeight: "bolder",
-                        color: "#000",
-                      }}
-                    >
-                      {" "}
-                      « enregistrer les détails de facturation »{" "}
-                    </span>
-                    .
                   </p>
                 </div>
               </>
@@ -871,10 +819,85 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
                   L'étape 9
                 </h3>
-                <img src={"/assets/cityOfLightstep10.svg"} alt={`StepImage`} />
-
+                <img
+                  src={"/assets/cityOfLightstep6new.svg"}
+                  alt={`StepImage`}
+                />
                 <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    Entrez les détails de facturation
+                  </p>
                   <p>
+                    <p>
+                      Prenom:{" "}
+                      <span
+                        style={{
+                          fontWeight: "bolder",
+                          color: "#000",
+                        }}
+                      >
+                        Lisa
+                      </span>{" "}
+                    </p>
+                    <span>
+                      Mobile:{" "}
+                      <span
+                        style={{
+                          fontWeight: "bolder",
+                          color: "#000",
+                        }}
+                      >
+                        0612345678
+                      </span>
+                    </span>
+                  </p>
+                  <p>
+                    adresse électronique::{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      lisa.k@gmail.com
+                    </span>
+                  </p>
+                  <p>
+                    Code PIN:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      75001{" "}
+                    </span>
+                  </p>
+                  <p>
+                    Adresse: <br />
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      15 Rue du Soleil, Paris, France
+                    </span>
+                  </p>
+                  <p style={{ marginTop: "15px" }}>
+                    Cliquez sur le bouton{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      {" "}
+                      « enregistrer les détails de facturation »{" "}
+                    </span>
+                    .
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
                     Cliquez sur{" "}
                     <span
                       style={{
@@ -883,9 +906,21 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      « confirmer »{" "}
+                      « Passer à la caisse »{" "}
                     </span>
-                    <p style={{ marginTop: "10px", paddingBottom: "10px" }}>
+                  </p>
+                </div>
+              </>
+
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  L'étape 10
+                </h3>
+                <img src={"/assets/cityOfLightstep10.svg"} alt={`StepImage`} />
+
+                <div className="text_wrapper_modal">
+                  <p>
+                    <p style={{ paddingBottom: "10px" }}>
                       Sélectionnez le mode de paiement{" "}
                       <span
                         style={{
@@ -896,6 +931,18 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                         « contre remboursement »{" "}
                       </span>
                       .
+                    </p>
+                    <p style={{ paddingBottom: "10px" }}>
+                      Cliquez sur{" "}
+                      <span
+                        style={{
+                          fontWeight: "bolder",
+                          color: "#000",
+                        }}
+                      >
+                        {" "}
+                        « confirmer »{" "}
+                      </span>
                     </p>
                     Cliquez sur{" "}
                     <span
@@ -913,7 +960,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 10
+                  L'étape 11
                 </h3>
                 <img src={"/assets/cityOfLightstep8.svg"} alt={`StepImage`} />
 
@@ -948,7 +995,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 11
+                  L'étape 12
                 </h3>
                 <img src={"/assets/cityOfLightstep9.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
@@ -1001,7 +1048,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
               </>
               <>
                 <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                  L'étape 12
+                  L'étape 13
                 </h3>
                 <img src={"/assets/cityOfLightstep11.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
