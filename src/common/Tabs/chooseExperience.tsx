@@ -5159,7 +5159,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <img src={"/assets/retail-step-2.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
-                    search for{" "}
+                    search for either{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
@@ -5167,6 +5167,15 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       ‘sunglasses’{" "}
+                    </span>
+                    or{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      ‘backpack’{" "}
                     </span>
                     and
                   </p>
