@@ -84,7 +84,8 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   React.useEffect(() => {
     async function handleMessage(event: MessageEvent) {
       if (
-        (`${event.origin}/` !== process.env.REACT_APP_RETAIL_APP_DSNP_URL && `${event.origin}/` !== process.env.REACT_APP_DSNP_APP_URL  ) ||
+        (`${event.origin}/` !== process.env.REACT_APP_RETAIL_APP_DSNP_URL &&
+          `${event.origin}/` !== process.env.REACT_APP_DSNP_APP_URL) ||
         !event.data.type
       )
         return;
@@ -3798,7 +3799,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     using generative AI app will create a shopping list for your
                     booked travel.
                   </p>
-                  <p>select :</p>
+                  <p>select either :</p>
                   <p
                     style={{
                       fontWeight: "bolder",
@@ -3807,6 +3808,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                   >
                     sunglasses,
                   </p>
+                  <p>or</p>
                   <p
                     style={{
                       fontWeight: "bolder",
