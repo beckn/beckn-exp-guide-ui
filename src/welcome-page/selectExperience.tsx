@@ -164,7 +164,7 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              {/* <li onClick={() => handleNevigate("cities")}>
+              <li onClick={() => handleNevigate("cities")}>
                 <div className="card-with-image">
                   <img
                     className="second-image-card"
@@ -177,7 +177,7 @@ const SelectExperience = () => {
                     <span className="font-color">smart cities</span>
                   </p>
                 </div>
-              </li> */}
+              </li>
               <li onClick={() => handleNevigate("OSC")}>
                 <div className="card-with-image">
                   <img
@@ -193,7 +193,7 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              {/* <li onClick={() => handleNevigate("PCM")}>
+              <li onClick={() => handleNevigate("PCM")}>
                 <div className="card-with-image">
                   <img
                     style={{ borderRadius: "35px" }}
@@ -207,8 +207,8 @@ const SelectExperience = () => {
                     <span className="font-color">with mobility</span>
                   </p>
                 </div>
-              </li> */}
-              {/* <li onClick={() => handleNevigate("cityOfAfrica")}>
+              </li>
+              <li onClick={() => handleNevigate("cityOfAfrica")}>
                 <div className="card-with-image">
                   <img
                     style={{ borderRadius: "35px" }}
@@ -222,7 +222,7 @@ const SelectExperience = () => {
                     <span className="font-color">gambia</span>
                   </p>
                 </div>
-              </li> */}
+              </li>
               <li onClick={() => handleNevigate("cityOfLight")}>
                 <div className="card-with-image">
                   <img
