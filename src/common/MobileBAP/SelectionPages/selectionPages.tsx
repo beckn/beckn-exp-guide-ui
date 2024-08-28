@@ -9,17 +9,18 @@ const SelectionPages = () => {
     if (URL.includes("?")) {
       let start = URL.indexOf("=") + 1;
       const orderObjectUrl = URL.substring(start);
+      console.log(orderObjectUrl);
       setOrderObjectUrl(orderObjectUrl);
     }
   }, []);
 
   const retailAppUrl = process.env.REACT_APP_RETAIL_APP;
-  const mobilityAppUrl = process.env.REACT_APP_MOBILITY_APP;
+  const mobilityAppUrl = process.env.REACT_APP_MOBILITY_CITY_OF_LIGHT_URL;
 
-  const handleMobilityLinkClick = (event: any) => {
-    event.preventDefault();
-    alert("This feature is under progress. Coming soon!");
-  };
+  // const handleMobilityLinkClick = (event: any) => {
+  //   event.preventDefault();
+  //   alert("This feature is under progress. Coming soon!");
+  // };
 
   return (
     <div className="selectionPage_wrapper">
@@ -47,7 +48,7 @@ const SelectionPages = () => {
           href={`${mobilityAppUrl}?external_url=${orderObjectUrl}`}
           target=""
           rel="noopener noreferrer"
-          onClick={handleMobilityLinkClick}
+          // onClick={handleMobilityLinkClick}
         >
           <div className="Link_wrapper">
             <div className="link_img">
