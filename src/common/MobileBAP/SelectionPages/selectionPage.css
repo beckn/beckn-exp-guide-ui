@@ -23,6 +23,7 @@
   background: #ffffff;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.03);
   padding-right: 15px;
+  cursor: pointer;
 }
 .link_img {
   height: 95px;
