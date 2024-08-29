@@ -44,20 +44,16 @@ const SelectionPages = () => {
             <img src="/assets/arrow_forword_ios_24pxnavArrow.png" alt="" />
           </div>
         </a>
-        <a
-          href={`${mobilityAppUrl}?external_url=${orderObjectUrl}`}
-          target=""
-          rel="noopener noreferrer"
-          // onClick={handleMobilityLinkClick}
-        >
-          <div className="Link_wrapper">
+          <div className="Link_wrapper" onClick={() => {
+          localStorage.setItem("mobility_external_url", JSON.stringify(orderObjectUrl))
+          window.dispatchEvent(new Event('storage'))
+        }}>
             <div className="link_img">
               <img src="/assets/bookRide.png" alt="" />
             </div>
             <div style={{ fontSize: "20px" }}>book a ride</div>
             <img src="/assets/arrow_forword_ios_24pxnavArrow.png" alt="" />
           </div>
-        </a>
       </div>
     </div>
   );
