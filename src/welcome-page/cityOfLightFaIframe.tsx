@@ -15,8 +15,9 @@ const CityOfLightFaIframe = () => {
       const orderObjectUrl = JSON.parse(
         localStorage.getItem("mobility_external_url")!
       );
-
-      setTourismUrlFa(`${mobilityAppUrl}?external_url=${orderObjectUrl}`);
+      if (orderObjectUrl) {
+        setTourismUrlFa(`${mobilityAppUrl}?external_url=${orderObjectUrl}`);
+      }
     };
 
     window.addEventListener("storage", handleStorageChange);
