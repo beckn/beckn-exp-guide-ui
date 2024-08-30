@@ -5932,7 +5932,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 //@ts-ignore
                 ref={iframeRef}
                 className="ChooseExpIframe"
-                allow="clipboard-read; clipboard-write; geolocation"
+                allow="clipboard-read; clipboard-write; geolocation *"
                 src={iframeURL}
                 frameBorder="0"
                 allowFullScreen
