@@ -38,6 +38,7 @@ const UEI = () => {
   const pulseEnergyWhatsappUrl =
     process.env.REACT_APP_PULSE_ENERGY_WHATSAPP_URL;
   const sheruAppUrl = process.env.REACT_APP_SHERU_APP_URL;
+  const kazamAppUrl = process.env.REACT_APP_KAZAM_APP_URL;
   const turnoAppUrl = process.env.REACT_APP_TURNO_APP_URL;
   const pulseEnergyVideoUrl = process.env.REACT_APP_PULSE_ENERGY_VIDEO_URL;
   const [pulseEnergy, setPulseEnergy] = useState("");
@@ -56,6 +57,11 @@ const UEI = () => {
   const handlePulseEnergy = (e: any) => {
     setActiveButton("Pulse energy");
     setPulseEnergy("Pulse energy");
+  };
+  const handleKazam = (e: any) => {
+    setActiveButton("Kazam");
+    setActiveUrl(kazamAppUrl);
+    setPulseEnergy("");
   };
   const handleTurnoApp = (e: any) => {
     setActiveButton("Turno app");
@@ -135,6 +141,19 @@ const UEI = () => {
                   Pulse Energy
                 </div>
                 <p>ev charging aggregator</p>
+              </div>
+              <div className="add_text_UEI_btn">
+                <div
+                  onClick={handleKazam}
+                  className={
+                    activeButton === "Kazam"
+                      ? "active UEI_new_btn"
+                      : "UEI_new_btn"
+                  }
+                >
+                  Kazam
+                </div>
+                <p>ev charging enabler</p>
               </div>
               <div className="add_text_UEI_btn">
                 <div
