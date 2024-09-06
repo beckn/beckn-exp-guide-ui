@@ -45,10 +45,12 @@ const SelectionPages = () => {
           </div>
         </a>
         <a
-          href={`${mobilityAppUrl}?external_url=${orderObjectUrl}`}
+          href={`${mobilityAppUrl}/?external_url=${orderObjectUrl}`}
           target=""
           rel="noopener noreferrer"
+
           onClick={handleMobilityLinkClick}
+
         >
           <div className="Link_wrapper">
             <div className="link_img">
