@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button, Modal } from "antd";
 import "./modal.css";
 import { useNavigate } from "react-router-dom";
+import Cookies from "js-cookie";
 interface propsModal {
   flag: boolean;
   pathName?: string;
@@ -20,6 +21,7 @@ const ModalComponent: React.FC<propsModal> = ({
   const handleOk = () => {
     setIsModalOpen(!flag);
     navigate(pathName);
+    Cookies.remove("tourismType");
   };
 
   const handleCancel = () => {
