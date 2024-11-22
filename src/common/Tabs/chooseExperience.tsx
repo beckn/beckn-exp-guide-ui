@@ -60,6 +60,13 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   const ODR = localStorage.getItem("name") === "ODR";
   const DHP = localStorage.getItem("name") === "DHP";
   const isIndustry = localStorage.getItem("name") === "industry4.0";
+  const isDragonFoods = localStorage.getItem("name") === "dragon-foods";
+  const isSkyAnalytics = localStorage.getItem("name") === "sky-analytics";
+  const isHarmoniaid = localStorage.getItem("name") === "harmoniaid";
+  const isStateForestDep = localStorage.getItem("name") === "state-forest-dep";
+  const isEarthSupport =
+    localStorage.getItem("name") === "earth-support-initiative";
+  const isEnvirogrowth = localStorage.getItem("name") === "envirogrowth";
   const navigate = useNavigate();
 
   const [lang, setLang] = useState("english");
@@ -274,6 +281,12 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
         !DSNP &&
         !DHP &&
         !isIndustry &&
+        !isDragonFoods &&
+        !isSkyAnalytics &&
+        !isHarmoniaid &&
+        !isStateForestDep &&
+        !isEarthSupport &&
+        !isEnvirogrowth &&
         !ODR ? (
           <div
             style={{
