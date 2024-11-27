@@ -28,7 +28,7 @@ const SelectForest = () => {
           </p>
         </div>
         <button
-          onClick={() => navigate("/")}
+          onClick={() => navigate("/select-experience")}
           style={{ width: "55px", marginTop: "-10px" }}
           className="home-buttom-nevigate"
         >
