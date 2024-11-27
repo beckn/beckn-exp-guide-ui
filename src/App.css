@@ -373,3 +373,43 @@ iframe .header-container .location-btn {
 .slick-slider {
   user-select: unset !important;
 }
+.climate-resilience-tabs-btn {
+  position: fixed;
+  bottom: 160px;
+  right: 46px;
+  flex-direction: column;
+  display: flex;
+  gap: 12px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50px;
+  transition: filter 0.3s ease;
+}
+.climate-resilience-tabs-btn img {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s, 0.3s;
+  filter: grayscale(100%);
+}
+.climate-resilience-tabs-btn img:hover {
+  transform: scale(1.1);
+}
+.hideCursor {
+  pointer-events: none;
+  filter: grayscale(0) !important;
+}
+@media screen and (min-width: 1025px) and (max-width: 1471px) {
+  .climate-resilience-tabs-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    border-radius: 50px;
+  }
+  .climate-resilience-tabs-btn img {
+    width: 40px;
+    height: 40px;
+  }
+}
