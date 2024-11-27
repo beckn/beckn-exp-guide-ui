@@ -34,6 +34,14 @@ import RegenUEI from "../welcome-page/RegenUEI/regenUEI";
 import RegenerativeAgriculture from "../welcome-page/RegenerativeAgriculture/regenerativeAgriculture";
 import RegenUEINewFlow from "../welcome-page/regenUEINewFlow";
 import Retail from "../welcome-page/Retail/Retail";
+import SelectClimate from "../common/ChooseExperienceApp/ChooseExpClimate/selectClimate";
+import DragonFoods from "../common/ChooseExperienceApp/ChooseExpClimate/DragonFoods/dragonFoods";
+import SkyAnalytics from "../common/ChooseExperienceApp/ChooseExpClimate/SkyAnalytics/skyAnalytics";
+import Harmoniaid from "../common/ChooseExperienceApp/ChooseExpClimate/Harmoniaid/harmoniaid";
+import SelectForest from "../common/ChooseExperienceApp/ChooseExpForest/selectForest";
+import StateForestDep from "../common/ChooseExperienceApp/ChooseExpForest/State-forest-dep/state-forest-dep";
+import EarthSupportInitiative from "../common/ChooseExperienceApp/ChooseExpForest/earth-support-initiative/earthSupportInitiative";
+import Envirogrowth from "../common/ChooseExperienceApp/ChooseExpForest/Envirogrowth/envirogrowth";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -69,6 +77,17 @@ const AnimatedRoutes = () => {
         <Route path="/regenUEI" element={<RegenUEI />} />
         <Route path="/retail" element={<Retail />} />
         <Route path="/UEI-new" element={<RegenUEINewFlow />} />
+        <Route path="/climate-resilience" element={<SelectClimate />} />
+        <Route path="/forest-conservation" element={<SelectForest />} />
+        <Route path="/dragon-foods" element={<DragonFoods />} />
+        <Route path="/sky-analytics" element={<SkyAnalytics />} />
+        <Route path="/harmoniaid" element={<Harmoniaid />} />
+        <Route path="/state-forest-dep" element={<StateForestDep />} />
+        <Route
+          path="/earth-support-initiative"
+          element={<EarthSupportInitiative />}
+        />
+        <Route path="/envirogrowth" element={<Envirogrowth />} />
         <Route
           path="/regenerativeAgriculture"
           element={<RegenerativeAgriculture />}

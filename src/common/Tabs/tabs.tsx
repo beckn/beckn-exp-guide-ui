@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Tabs } from "antd";
 import "./tabs.css";
 import Modal from "../../welcome-page/modal";
+import { useNavigate } from "react-router-dom";
 interface TabsComponentPropsModal {
   firstProps?: any;
   secondProps?: any;
@@ -18,7 +19,7 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
   FifthProps,
 }: TabsComponentPropsModal) => {
   const [flag, setFlag] = useState(true);
-
+  const navigate = useNavigate();
   const cityOfLight = localStorage.getItem("name") === "cityOfLight";
   const cityOfAfrica = localStorage.getItem("name") === "cityOfAfrica";
   const PCM = localStorage.getItem("name") === "PCM";
@@ -35,6 +36,15 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
   const isRegenerativeAgriculture =
     localStorage.getItem("name") === "regenerativeAgriculture";
   const isRegenUEI = localStorage.getItem("name") === "regenUEI";
+
+  // for right side climate btn
+  const isDragonFoods = localStorage.getItem("name") === "dragon-foods";
+  const isSkyAnalytics = localStorage.getItem("name") === "sky-analytics";
+  const isHarmoniaid = localStorage.getItem("name") === "harmoniaid";
+  const isStateForestDep = localStorage.getItem("name") === "state-forest-dep";
+  const isEarthSupport =
+    localStorage.getItem("name") === "earth-support-initiative";
+  const isEnvirogrowth = localStorage.getItem("name") === "envirogrowth";
 
   const openCity = (evt: any, cityName: string) => {
     let i: number;
@@ -434,6 +444,90 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
           ]}
         />
       )}
+      <>
+        {isStateForestDep || isEarthSupport || isEnvirogrowth ? (
+          <div className="climate-resilience-tabs-btn">
+            <img
+              onClick={() => {
+                localStorage.setItem("name", "state-forest-dep");
+                navigate("/progress");
+              }}
+              src="/assets/forest_health.svg"
+              alt="curvedArrow"
+              className={isStateForestDep ? "hideCursor" : ""}
+            />
+            <img
+              onClick={() => {
+                localStorage.setItem("name", "envirogrowth");
+                navigate("/progress");
+              }}
+              src="/assets/forestrestoration.svg"
+              alt="curvedArrow"
+              className={isEnvirogrowth ? "hideCursor" : ""}
+            />
+            <img
+              onClick={() => {
+                localStorage.setItem("name", "earth-support-initiative");
+                navigate("/progress");
+              }}
+              src="/assets/leadingfoodandbeveragecompany.svg"
+              alt="curvedArrow"
+              className={isEarthSupport ? "hideCursor" : ""}
+            />
+            <img
+              onClick={() => {
+                localStorage.setItem("name", "forest-conservation");
+                navigate("/progress");
+              }}
+              src="/assets/backarrow.svg"
+              alt="img-icon"
+            />
+          </div>
+        ) : (
+          ""
+        )}
+        {isDragonFoods || isSkyAnalytics || isHarmoniaid ? (
+          <div className="climate-resilience-tabs-btn">
+            <img
+              onClick={() => {
+                localStorage.setItem("name", "dragon-foods");
+                navigate("/progress");
+              }}
+              src="/assets/FMCG.svg"
+              alt="img-icon"
+              className={isDragonFoods ? "hideCursor" : ""}
+            />
+            <img
+              onClick={() => {
+                localStorage.setItem("name", "sky-analytics");
+                navigate("/progress");
+              }}
+              src="/assets/Climate_Resilience-sb.svg"
+              alt="img-icon"
+              className={isSkyAnalytics ? "hideCursor" : ""}
+            />
+            <img
+              onClick={() => {
+                localStorage.setItem("name", "harmoniaid");
+                navigate("/progress");
+              }}
+              src="/assets/humanitarian_aid.svg"
+              alt="img-icon"
+              className={isHarmoniaid ? "hideCursor" : ""}
+            />
+            <img
+              onClick={() => {
+                localStorage.setItem("name", "climate-resilience");
+                navigate("/progress");
+              }}
+              src="/assets/backarrow.svg"
+              alt="img-icon"
+            />
+          </div>
+        ) : (
+          ""
+        )}
+      </>
     </>
   );
 };
