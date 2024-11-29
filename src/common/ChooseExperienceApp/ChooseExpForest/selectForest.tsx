@@ -20,9 +20,11 @@ const SelectForest = () => {
         <img className="Beckn-image" src="/assets/beckn_lg.svg" alt={"Logo"} />
         <div>
           <p className="climate-gesilience-header-text">
-            Climate Resilience Data Highways for Disaster Resilience
+            Climate Resilience Data Highways
           </p>
-          <p className="climate-gesilience-header-text">Disaster Resilience</p>
+          <p className="climate-gesilience-header-text">
+            for Forest Conservation
+          </p>
           <p className="climate-gesilience-sub-text">
             A decentralized network for secure access to reliable data
           </p>
