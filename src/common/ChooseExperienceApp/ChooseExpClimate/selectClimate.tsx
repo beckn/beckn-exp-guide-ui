@@ -1,19 +1,51 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../../welcome-page/selectExperience.css";
 import VideoTemplate from "../../videoTemplate/videoTemplate";
 
 const SelectClimate = () => {
   const navigate = useNavigate();
+  const videoSectionRef = useRef<HTMLDivElement | null>(null);
 
-  const handleNevigate = (id: any) => {
+  const handleNavigate = (id: string) => {
     localStorage.setItem("name", id);
     navigate("/progress");
   };
 
+  // Scroll to the video section after exiting full-screen
+  const handleFullscreenChange = () => {
+    if (!document.fullscreenElement && videoSectionRef.current) {
+      videoSectionRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
     localStorage.clear();
+
+    // Attach full-screen event listeners
+    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    document.addEventListener("webkitfullscreenchange", handleFullscreenChange);
+    document.addEventListener("mozfullscreenchange", handleFullscreenChange);
+    document.addEventListener("msfullscreenchange", handleFullscreenChange);
+
+    return () => {
+      // Clean up event listeners
+      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+      document.removeEventListener(
+        "webkitfullscreenchange",
+        handleFullscreenChange
+      );
+      document.removeEventListener(
+        "mozfullscreenchange",
+        handleFullscreenChange
+      );
+      document.removeEventListener(
+        "msfullscreenchange",
+        handleFullscreenChange
+      );
+    };
   }, []);
+
   return (
     <div style={{ overflow: "hidden" }}>
       <div className="headLogo-image">
@@ -45,7 +77,7 @@ const SelectClimate = () => {
         <div className="child-container">
           <div className="animates fadeIns fives home-card-container cliement-resilience">
             <ul className="card-sub-containers">
-              <li onClick={() => handleNevigate("dragon-foods")}>
+              <li onClick={() => handleNavigate("dragon-foods")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
@@ -63,7 +95,7 @@ const SelectClimate = () => {
                   </p>
                 </div>
               </li>
-              <li onClick={() => handleNevigate("sky-analytics")}>
+              <li onClick={() => handleNavigate("sky-analytics")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
@@ -81,7 +113,7 @@ const SelectClimate = () => {
                   </p>
                 </div>
               </li>
-              <li onClick={() => handleNevigate("harmoniaid")}>
+              <li onClick={() => handleNavigate("harmoniaid")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
@@ -100,7 +132,10 @@ const SelectClimate = () => {
                 </div>
               </li>
             </ul>
-            <div className="cliement-resilience-video-section-header">
+            <div
+              ref={videoSectionRef}
+              className="cliement-resilience-video-section-header"
+            >
               <img
                 className=""
                 src="/assets/imaginefuture.svg"
