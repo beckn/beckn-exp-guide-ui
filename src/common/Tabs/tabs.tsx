@@ -325,6 +325,106 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
             },
           ]}
         />
+      ) : isStateForestDep ||
+        isEarthSupport ||
+        isEnvirogrowth ||
+        isDragonFoods ||
+        isSkyAnalytics ||
+        isHarmoniaid ? (
+        <Tabs
+          className="tabsConatiner climate"
+          defaultActiveKey="2"
+          items={[
+            {
+              label: (
+                <div>
+                  <img
+                    style={
+                      cityOfLight
+                        ? { height: "unset", width: "unset" }
+                        : { height: "35px", width: "135px" }
+                    }
+                    // src="/assets/logo2.png"
+
+                    src={
+                      cityOfLight ? "/assets/logo2.png" : "/assets/beckn_lg.svg"
+                    }
+                    alt={"Icon"}
+                    width={"98%"}
+                  />
+                </div>
+              ),
+              key: "1",
+              className: "tabs-style",
+              disabled: true,
+            },
+
+            {
+              label: (
+                <div
+                  className="tablinks"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <img src="/assets/bulbIcon.svg" alt={"Icon"} width={"25%"} />
+                  <div style={{ paddingLeft: "14.4px" }}>
+                    <span>a world with {cityOfLight ? "ROCC" : "beckn"}</span>
+                  </div>
+                </div>
+              ),
+              key: "2",
+              className: "tabs-style",
+              children: secondProps,
+            },
+            {
+              label: (
+                <div
+                  className="tablinks"
+                  style={{ display: "flex", alignItems: "center" }}
+                  onClick={(event) => openCity(event, "behiendTheScenes")}
+                >
+                  <img src="/assets/videoIcon.svg" alt={"Icon"} width={"25%"} />
+                  <div style={{ paddingLeft: "14.4px" }}>
+                    <span>behind the scenes</span>
+                  </div>
+                </div>
+              ),
+              key: "3",
+              className: "tabs-style",
+              children: thirdProps,
+            },
+            {
+              label: (
+                <div
+                  className="tablinks"
+                  style={{ display: "flex", alignItems: "center" }}
+                  onClick={(event) => openCity(event, "imaginingTheFuture")}
+                >
+                  <img
+                    src="/assets/rocketIcon.svg"
+                    alt={"Icon"}
+                    width={"25%"}
+                  />
+                  <div style={{ paddingLeft: "14.4px" }}>
+                    <span>imagining the future</span>
+                  </div>
+                </div>
+              ),
+              key: "4",
+              className: "tabs-style",
+              children: fourthProps,
+            },
+            {
+              label: (
+                <div>
+                  <img src="/assets/home.svg" alt={"Icon"} width={"98%"} />
+                </div>
+              ),
+              key: "6",
+              className: "home-tabs-style",
+              children: <Modal flag={flag} pathName={"/select-experience"} />,
+            },
+          ]}
+        />
       ) : (
         <Tabs
           className="tabsConatiner"
