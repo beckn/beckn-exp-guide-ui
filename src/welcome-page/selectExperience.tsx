@@ -40,6 +40,34 @@ const SelectExperience = () => {
         <div className="child-container">
           <div className="animates fadeIns fives home-card-container">
             <ul className="card-sub-containers">
+              <li onClick={() => handleNevigate("climate-resilience")}>
+                <div className="card-with-image">
+                  <img
+                    className="first-image-card"
+                    src="/assets/climate_resilience.svg"
+                    alt={"climate_resilience"}
+                  />
+                  <p className="card-title-image">
+                    <span className="font-color">Resilience against </span>
+                    <br />
+                    <span className="font-color">climate threats</span>
+                  </p>
+                </div>
+              </li>
+              <li onClick={() => handleNevigate("forest-conservation")}>
+                <div className="card-with-image">
+                  <img
+                    className="first-image-card"
+                    src="/assets/forest_conservation.svg"
+                    alt={"forest_conservation"}
+                  />
+                  <p className="card-title-image">
+                    <span className="font-color">Conserve forests,</span>
+                    <br />
+                    <span className="font-color">combat climate</span>
+                  </p>
+                </div>
+              </li>
               <li onClick={() => handleNevigate("retail")}>
                 <div className="card-with-image">
                   <img

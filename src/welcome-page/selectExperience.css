@@ -147,6 +147,40 @@
 .home-card-container:hover::-webkit-scrollbar-thumb {
   background-size: 100% 88%;
 }
+.climate-gesilience-header-text {
+  font-size: 32px;
+  font-weight: 600;
+  color: #4e7796;
+}
+.climate-gesilience-sub-text {
+  color: #7b7b7b;
+  padding-top: 10px;
+}
+.cliement-resilience.home-card-container {
+  overflow: hidden;
+  height: unset;
+}
+.cliement-resilience.home-card-container iframe {
+  width: 100%;
+  border: 1px solid rgb(138, 194, 235);
+  border-radius: 5px;
+  height: 554px;
+}
+.cliement-resilience.home-card-container .video-container {
+  padding: 0rem 0rem 1rem 0;
+}
+.cliement-resilience-video-section-header {
+  display: flex;
+  margin: 1rem 1rem 1rem 0;
+}
+.cliement-resilience-video-section-header p {
+  color: #4e7796;
+  font-size: 24px;
+  padding-left: 10px;
+}
+.cliement-resilience.home-card-container .card-with-image {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
 @keyframes main-container {
   100% {
     opacity: 0;

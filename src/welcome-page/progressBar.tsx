@@ -55,6 +55,22 @@ const ProgressBar = () => {
         ? navigate("/regenUEI")
         : localStorage.getItem("name") === "retail"
         ? navigate("/retail")
+        : localStorage.getItem("name") === "climate-resilience"
+        ? navigate("/climate-resilience")
+        : localStorage.getItem("name") === "forest-conservation"
+        ? navigate("/forest-conservation")
+        : localStorage.getItem("name") === "dragon-foods"
+        ? navigate("/dragon-foods")
+        : localStorage.getItem("name") === "sky-analytics"
+        ? navigate("/sky-analytics")
+        : localStorage.getItem("name") === "harmoniaid"
+        ? navigate("/harmoniaid")
+        : localStorage.getItem("name") === "state-forest-dep"
+        ? navigate("/state-forest-dep")
+        : localStorage.getItem("name") === "earth-support-initiative"
+        ? navigate("/earth-support-initiative")
+        : localStorage.getItem("name") === "envirogrowth"
+        ? navigate("/envirogrowth")
         : navigate("/PCM");
     }
   });

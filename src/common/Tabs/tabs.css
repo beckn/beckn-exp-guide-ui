@@ -645,6 +645,19 @@ p.ondc_Qr_text {
 .tabsConatiner .ant-tabs-top > .ant-tabs-nav::before {
   border-bottom: unset !important;
 }
+
+.tabsConatiner.climate .ant-tabs-nav-list {
+  width: 100%;
+}
+.tabsConatiner.climate .ant-tabs-tab[data-node-key="2"] {
+  width: 25%;
+}
+.tabsConatiner.climate .ant-tabs-tab[data-node-key="3"] {
+  width: 25%;
+}
+.tabsConatiner.climate .ant-tabs-tab[data-node-key="4"] {
+  width: 25%;
+}
 @media screen and (min-width: 768px) and (max-width: 1085px) {
   .tabsConatiner {
     width: 96%;
