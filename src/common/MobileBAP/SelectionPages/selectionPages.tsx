@@ -17,10 +17,12 @@ const SelectionPages = () => {
   const retailAppUrl = process.env.REACT_APP_RETAIL_APP;
   const mobilityAppUrl = process.env.REACT_APP_MOBILITY_CITY_OF_LIGHT_URL;
 
+
   //   const handleMobilityLinkClick = (event: any) => {
   //     event.preventDefault();
   //     alert("This feature is under progress. Coming soon!");
   //   };
+
 
   return (
     <div className="selectionPage_wrapper">
