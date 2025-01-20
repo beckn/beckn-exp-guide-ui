@@ -30,7 +30,7 @@ const OscIframe = () => {
         languageFra={"français"}
         retailsModal={retailsModal}
       />
-      <div className="osc_tab_change osc_tab_changeFa">
+      {/* <div className="osc_tab_change osc_tab_changeFa">
         <div
           className={`for_cutm_name ${
             activeButton === "for_cutm_name" ? "active" : ""
@@ -57,7 +57,7 @@ const OscIframe = () => {
           )}
           pour les détaillants store
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
