@@ -47,13 +47,15 @@ const TabsFa: React.FC<TabsFaPropsModal> = ({
                   <img
                     style={
                       cityOfLight
-                        ? { height: "unset", width: "unset" }
+                        ? { height: "35px", width: "135px" }
                         : { height: "35px", width: "135px" }
                     }
                     // src="/assets/logo2.png"
 
                     src={
-                      cityOfLight ? "/assets/logo2.png" : "/assets/beckn_lg.svg"
+                      cityOfLight
+                        ? "/assets/beckn_lg.svg"
+                        : "/assets/beckn_lg.svg"
                     }
                     alt={"Icon"}
                     width={"98%"}
@@ -76,7 +78,7 @@ const TabsFa: React.FC<TabsFaPropsModal> = ({
                     <span style={{ width: "60% !important" }}>un monde</span>
                     <br />
                     <span style={{ width: "60% !important" }}>
-                      sans {cityOfLight ? "ROCC" : "beckn"}
+                      sans {cityOfLight ? "beckn" : "beckn"}
                     </span>
                   </div>
                 </div>
@@ -92,7 +94,7 @@ const TabsFa: React.FC<TabsFaPropsModal> = ({
                   <div style={{ paddingLeft: "14.4px" }}>
                     <span>un monde</span>
                     <br />
-                    <span>avec {cityOfLight ? "ROCC" : "beckn"}</span>
+                    <span>avec {cityOfLight ? "beckn" : "beckn"}</span>
                   </div>
                 </div>
               ),
