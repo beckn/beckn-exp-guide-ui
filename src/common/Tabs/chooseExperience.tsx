@@ -5389,7 +5389,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                 <img src={"/assets/retail-step-1.svg"} alt={`StepImage`} />
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
-                    Sign in to the Kuza One app using the provided:
+                    Sign in to the Open Commerce app using the provided:
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
                     <p
