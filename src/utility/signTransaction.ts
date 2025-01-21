@@ -1,13 +1,7 @@
-import {
-  isFunction,
-  u8aWrapBytes,
-  u8aToHex,
-} from "@polkadot/util";
+import { isFunction, u8aWrapBytes, u8aToHex } from "@polkadot/util";
 import { web3FromAddress } from "@polkadot/extension-dapp";
 import { U8aLike } from "@polkadot/util/types";
-import {TypeRegistry} from '@polkadot/types'
-
-
+import { TypeRegistry } from "@polkadot/types";
 
 const Registry = new TypeRegistry();
 Registry.register({
@@ -18,10 +12,9 @@ Registry.register({
   },
 });
 
-
 export async function signPayloadWithExtension(
   address: string,
-  payload: U8aLike,
+  payload: U8aLike
 ) {
   const walletAccount = await web3FromAddress(address);
   const signRaw = walletAccount.signer?.signRaw;
@@ -46,7 +39,7 @@ export async function signPayloadWithExtension(
 export const payloadAddProvider = (
   expiration: number,
   providerId: string,
-  schemaIds: number[],
+  schemaIds: number[]
 ) => {
   schemaIds.sort();
   const claimHandlePayload = Registry.createType("AddProvider", {
@@ -59,23 +52,26 @@ export const payloadAddProvider = (
 };
 
 type signCiTransactionTypes = {
-  accountAddress:string,
-  expiration:number,
-  handlePayload:U8aLike,
-  providerId:string,
-  providerSchemas:number[]
-}
+  accountAddress: string;
+  expiration: number;
+  handlePayload: U8aLike;
+  providerId: string;
+  providerSchemas: number[];
+};
 
 export const signCiTransaction = async ({
-  accountAddress,handlePayload,expiration,providerId,providerSchemas
-
-}:signCiTransactionTypes):Promise<{handleSignature:string,addProviderSignature:string}>=>{
-
-
-
+  accountAddress,
+  handlePayload,
+  expiration,
+  providerId,
+  providerSchemas,
+}: signCiTransactionTypes): Promise<{
+  handleSignature: string;
+  addProviderSignature: string;
+}> => {
   const handleSignature = await signPayloadWithExtension(
-   accountAddress,
-    handlePayload,
+    accountAddress,
+    handlePayload
   );
 
   if (!handleSignature.startsWith("0x"))
@@ -85,15 +81,16 @@ export const signCiTransaction = async ({
   const addProviderPayload = payloadAddProvider(
     expiration,
     providerId,
-    providerSchemas,
+    providerSchemas
   );
 
   const addProviderSignature = await signPayloadWithExtension(
     accountAddress,
-    addProviderPayload.toU8a(),
+    addProviderPayload.toU8a()
   );
 
   return {
-    handleSignature,addProviderSignature
-  }
-}
+    handleSignature,
+    addProviderSignature,
+  };
+};
