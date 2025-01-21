@@ -76,9 +76,9 @@ const SelectExperience = () => {
                     alt={"BecknLogoIcon"}
                   />
                   <p className="card-title-image">
-                    <span className="font-color">enhancing commerce</span>
+                    <span className="font-color">transforming trade </span>
                     <br />
-                    <span className="font-color">with kuza one</span>
+                    <span className="font-color">with open commerce</span>
                   </p>
                 </div>
               </li>

@@ -7,8 +7,8 @@ const RetailIframe = () => {
   return (
     <div style={{ position: "relative" }}>
       <ChooseExperience
-        headingText="enhancing commerce with"
-        textURL={"/assets/retail-text.svg"}
+        headingText="transforming trade with"
+        textURL={"/assets/kuza-one-1.svg"}
         descriptionText="Streamlining retail experiences with a user-friendly app, which simplifies the process of purchasing seamlessly."
         iframeURL={retail}
       />
