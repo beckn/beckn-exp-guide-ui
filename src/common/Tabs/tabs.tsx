@@ -341,13 +341,15 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
                   <img
                     style={
                       cityOfLight
-                        ? { height: "unset", width: "unset" }
+                        ? { height: "35px", width: "135px" }
                         : { height: "35px", width: "135px" }
                     }
                     // src="/assets/logo2.png"
 
                     src={
-                      cityOfLight ? "/assets/logo2.png" : "/assets/beckn_lg.svg"
+                      cityOfLight
+                        ? "/assets/beckn_lg.svg"
+                        : "/assets/beckn_lg.svg"
                     }
                     alt={"Icon"}
                     width={"98%"}
@@ -367,7 +369,7 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
                 >
                   <img src="/assets/bulbIcon.svg" alt={"Icon"} width={"25%"} />
                   <div style={{ paddingLeft: "14.4px" }}>
-                    <span>a world with {cityOfLight ? "ROCC" : "beckn"}</span>
+                    <span>a world with {cityOfLight ? "beckn" : "beckn"}</span>
                   </div>
                 </div>
               ),
@@ -436,13 +438,15 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
                   <img
                     style={
                       cityOfLight
-                        ? { height: "unset", width: "unset" }
+                        ? { height: "35px", width: "135px" }
                         : { height: "35px", width: "135px" }
                     }
                     // src="/assets/logo2.png"
 
                     src={
-                      cityOfLight ? "/assets/logo2.png" : "/assets/beckn_lg.svg"
+                      cityOfLight
+                        ? "/assets/beckn_lg.svg"
+                        : "/assets/beckn_lg.svg"
                     }
                     alt={"Icon"}
                     width={"98%"}
@@ -465,7 +469,7 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
                     <span style={{ width: "60% !important" }}>a world</span>
                     <br />
                     <span style={{ width: "60% !important" }}>
-                      without {cityOfLight ? "ROCC" : "beckn"}
+                      without {cityOfLight ? "beckn" : "beckn"}
                     </span>
                   </div>
                 </div>
@@ -481,7 +485,7 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
                   <div style={{ paddingLeft: "14.4px" }}>
                     <span>a world</span>
                     <br />
-                    <span>with {cityOfLight ? "ROCC" : "beckn"}</span>
+                    <span>with {cityOfLight ? "beckn" : "beckn"}</span>
                   </div>
                 </div>
               ),
