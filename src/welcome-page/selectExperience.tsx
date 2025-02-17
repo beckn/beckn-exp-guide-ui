@@ -40,6 +40,20 @@ const SelectExperience = () => {
         <div className="child-container">
           <div className="animates fadeIns fives home-card-container">
             <ul className="card-sub-containers">
+              <li onClick={() => handleNevigate("open-spark")}>
+                <div className="card-with-image">
+                  <img
+                    className="first-image-card  "
+                    src="/assets/open-spark.svg"
+                    alt={"open-spark"}
+                  />
+                  <p className="card-title-image">
+                    <span className="font-color">Spark (D.E.G.)</span>
+                    {/* <br /> */}
+                    {/* <span className="font-color">climate threats</span> */}
+                  </p>
+                </div>
+              </li>
               <li onClick={() => handleNevigate("climate-resilience")}>
                 <div className="card-with-image">
                   <img

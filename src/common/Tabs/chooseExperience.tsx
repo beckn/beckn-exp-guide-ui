@@ -64,6 +64,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   const isSkyAnalytics = localStorage.getItem("name") === "sky-analytics";
   const isHarmoniaid = localStorage.getItem("name") === "harmoniaid";
   const isStateForestDep = localStorage.getItem("name") === "state-forest-dep";
+  const isOpenSpark = localStorage.getItem("name") === "open-spark";
   const isEarthSupport =
     localStorage.getItem("name") === "earth-support-initiative";
   const isEnvirogrowth = localStorage.getItem("name") === "envirogrowth";
@@ -86,6 +87,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   const [isModalOpenisIndustry, setIsModalOpenisIndustry] = useState(false);
   const [isModalOpenRetail, setIsModalOpenRetail] = useState(false);
   const [isModalOpenisODR, setIsModalOpenisODR] = useState(false);
+  const [isModalOpenisOpenSpark, setIsModalOpenisOpenSpark] = useState(false);
   const [isModalOpenisDragonFoods, setIsModalOpenisDragonFoods] =
     useState(false);
   const [isModalOpenisSkyAnalytics, setIsModalOpenisSkyAnalytics] =
@@ -161,6 +163,9 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   const showModalPC = () => {
     setIsModalOpenPC(true);
   };
+  const showModalisOpenSpark = () => {
+    setIsModalOpenisOpenSpark(true);
+  };
   const showModalDriver = () => {
     setSsModalOpenDriver(true);
   };
@@ -229,6 +234,9 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
 
   const handleCancelPC = () => {
     setIsModalOpenPC(false);
+  };
+  const handleCancelisOpenSpark = () => {
+    setIsModalOpenisOpenSpark(false);
   };
   const handleCancelDriver = () => {
     setSsModalOpenDriver(false);
@@ -335,6 +343,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
         !isStateForestDep &&
         !isEarthSupport &&
         !isEnvirogrowth &&
+        !isOpenSpark &&
         !ODR ? (
           <div
             style={{
@@ -7433,6 +7442,330 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
             </ModalSlider>
           </div>
         ) : null}
+        {/* {isOpenSpark ? (
+          <div className="DSEP-intruction">
+            <Button
+              type="primary"
+              onClick={showModalisOpenSpark}
+              style={{ left: "unset", margin: "unset", marginTop: "30px" }}
+            >
+              instructions
+              <img
+                style={{ paddingLeft: "5px" }}
+                src="/assets/arrow_back.svg"
+              />
+            </Button>
+            <ModalSlider
+              open={isModalOpenisOpenSpark}
+              onCancel={handleCancelisOpenSpark}
+              modalHeading={
+                "Follow these steps for the best possible experience as an energy Prosumer!"
+              }
+            >
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 1
+                </h3>
+                <img src={"/assets/op-1.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    select{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      ‘retail store’
+                    </span>{" "}
+                    tab on the landing page.
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    sign in to the
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      DSNP
+                    </span>{" "}
+                    app using the provided:
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    <p
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      email address:{" "}
+                    </p>
+                    <p>santosh.k@gmail.com</p>
+                  </p>
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    password:{" "}
+                    <span
+                      style={{
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      Test@12345
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    on the landing page{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      ‘retail store’
+                    </span>{" "}
+                    tab on the landing page.
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 2
+                </h3>
+                <img src={"/assets/SA-step-2.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    search for{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      forest field data{" "}
+                    </span>
+                    and
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    select{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      data model{" "}
+                    </span>
+                    by{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      orest snap{" "}
+                    </span>
+                    provider
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 3
+                </h3>
+                <img src={"/assets/SA-step-3.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    select the{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      datapoints{" "}
+                    </span>
+                    as per requirements
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    then accept{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      terms and conditions{" "}
+                    </span>
+                    provider
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      proceed{" "}
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    on request overview screen click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      proceed{" "}
+                    </span>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 4
+                </h3>
+                <img src={"/assets/SA-step-4.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      add billing details{" "}
+                    </span>
+                  </p>
+                  <p>enter Billing details:</p>
+
+                  <p>
+                    name:
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      {" "}
+                      lisa{" "}
+                    </span>
+                  </p>
+                  <p>
+                    mobile:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      9811259151{" "}
+                    </span>
+                  </p>
+                  <p>
+                    email id:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      lisa.k@gmail.com{" "}
+                    </span>
+                  </p>
+                  <p>
+                    pin code:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      560078{" "}
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    address:{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      1202 b2, Bengaluru urban, Bengaluru, Karnataka{" "}
+                    </span>
+                  </p>
+
+                  <p style={{ paddingBottom: "10px" }}>
+                    then click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      “add billing details”{" "}
+                    </span>
+                    button.
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  step 5
+                </h3>
+                <img src={"/assets/SA-step-5.svg"} alt={`StepImage`} />
+                <div className="text_wrapper_modal">
+                  <p style={{ paddingBottom: "10px" }}>
+                    click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      proceed{" "}
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    select payment method as{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      wallet{" "}
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    then click on{" "}
+                    <span
+                      style={{
+                        fontWeight: "bolder",
+                        color: "#000",
+                      }}
+                    >
+                      confirm order{" "}
+                    </span>
+                    to continue
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    your request is now confirmed
+                  </p>
+                </div>
+              </>
+            </ModalSlider>
+          </div>
+        ) : null} */}
       </div>
 
       {PCM ? (
