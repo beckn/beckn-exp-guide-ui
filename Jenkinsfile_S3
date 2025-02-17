@@ -8,6 +8,7 @@ pipeline {
       steps {
         sh ''' 
         rm package-lock.json
+        npm install react-icons
         npm install -f
         CI=false npm run-script build 
         '''          
