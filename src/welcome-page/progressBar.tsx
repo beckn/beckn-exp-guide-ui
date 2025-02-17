@@ -71,6 +71,8 @@ const ProgressBar = () => {
         ? navigate("/earth-support-initiative")
         : localStorage.getItem("name") === "envirogrowth"
         ? navigate("/envirogrowth")
+        : localStorage.getItem("name") === "open-spark"
+        ? navigate("/open-spark")
         : navigate("/PCM");
     }
   });

@@ -42,6 +42,7 @@ import SelectForest from "../common/ChooseExperienceApp/ChooseExpForest/selectFo
 import StateForestDep from "../common/ChooseExperienceApp/ChooseExpForest/State-forest-dep/state-forest-dep";
 import EarthSupportInitiative from "../common/ChooseExperienceApp/ChooseExpForest/earth-support-initiative/earthSupportInitiative";
 import Envirogrowth from "../common/ChooseExperienceApp/ChooseExpForest/Envirogrowth/envirogrowth";
+import OpenSpark from "../welcome-page/openSpark/openSpark";
 
 const AnimatedRoutes = () => {
   const location = useLocation();
@@ -83,6 +84,7 @@ const AnimatedRoutes = () => {
         <Route path="/sky-analytics" element={<SkyAnalytics />} />
         <Route path="/harmoniaid" element={<Harmoniaid />} />
         <Route path="/state-forest-dep" element={<StateForestDep />} />
+        <Route path="/open-spark" element={<OpenSpark />} />
         <Route
           path="/earth-support-initiative"
           element={<EarthSupportInitiative />}
