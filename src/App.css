@@ -448,5 +448,11 @@ iframe .header-container .location-btn {
 }
 .open-spark-footer-logo {
   position: absolute;
-  bottom: 2%;
+  bottom: 0;
+}
+.open-spark-btn {
+  margin: 10px 20px !important;
+  margin-left: 0 !important;
+  padding: 10px !important;
+  width: 140px !important;
 }

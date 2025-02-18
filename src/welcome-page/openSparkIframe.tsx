@@ -4,27 +4,49 @@ import { IoWalletOutline } from "react-icons/io5";
 import { SlEnergy } from "react-icons/sl";
 
 const OpenSparkIframe = () => {
-  const openSparkUrl = process.env.REACT_APP_OPEN_SPARK_WALLET_URL;
+  const openSparkVaultUrl = process.env.REACT_APP_OPEN_SPARK_WALLET_URL;
   const openSparkRetailStoreUrl = process.env.REACT_APP_OPEN_SPARK_RETAIL_URL;
+  const openSparkLendUrl = process.env.REACT_APP_OPEN_SPARK_LEND_URL;
+  const openSparkSolaris = process.env.REACT_APP_OPEN_SPARK_Solaris_URL;
   const [openSpark, setopenSpark] = useState(openSparkRetailStoreUrl);
   const [activeButton, setActiveButton] = useState("for_tetail_store");
   const [retailsModal, setRetailsModal] = useState(false);
+  const [lendModal, setLendModal] = useState(false);
+  const [vaultModal, setVaultModal] = useState(false);
 
   const handleOsmLink = (e: any) => {
-    setopenSpark(openSparkUrl);
+    setopenSpark(openSparkSolaris);
     setActiveButton("for_cutm_name");
     setRetailsModal(false);
+    setLendModal(false);
+    setVaultModal(false);
   };
   const handleRetailStore = (e: any) => {
     setopenSpark(openSparkRetailStoreUrl);
     setActiveButton("for_tetail_store");
     setRetailsModal(true);
+    setLendModal(false);
+    setVaultModal(false);
+  };
+  const handleLendApp = (e: any) => {
+    setopenSpark(openSparkLendUrl);
+    setActiveButton("for_lend_name");
+    setRetailsModal(false);
+    setLendModal(true);
+    setVaultModal(false);
+  };
+  const handVaultApp = (e: any) => {
+    setopenSpark(openSparkVaultUrl);
+    setActiveButton("for_Vault");
+    setRetailsModal(false);
+    setLendModal(false);
+    setVaultModal(true);
   };
   return (
     <div style={{ position: "relative" }}>
       <ChooseExperience
         // headingText="enabling commerce on  "
-        textURL={"/assets/open-spark-text.svg"}
+        textURL={"/assets/spark-text.svg"}
         descriptionText={
           <>
             Powered by the Unified Energy Interface, <b>Spark</b> turns energy
@@ -43,39 +65,56 @@ const OpenSparkIframe = () => {
 
       <div className="osc_tab_change open-spark-tab-change">
         <div
-          className={`for_tetail_store ${
+          className={`for_tetail_store open-spark-btn ${
             activeButton === "for_tetail_store" ? "active" : ""
           }`}
           onClick={handleRetailStore}
         >
           {activeButton === "for_tetail_store" ? (
-            <div className="white-icon">
-              <SlEnergy />
-            </div>
+            <img src="/assets/Kuza_Logo_White_Trans.svg" />
           ) : (
-            <div className="black-icon">
-              {" "}
-              <SlEnergy />{" "}
-            </div>
+            <img src="/assets/Kuza_Logo_White_Trans-1.svg" />
           )}
-          Spark App
+          Spark
         </div>
         <div
-          className={`for_cutm_name ${
+          className={`for_cutm_name open-spark-btn ${
             activeButton === "for_cutm_name" ? "active" : ""
           }`}
           onClick={handleOsmLink}
         >
           {activeButton === "for_cutm_name" ? (
-            <div className="white-icon">
-              <IoWalletOutline />
-            </div>
+            <img src="/assets/battery-1.svg" />
           ) : (
-            <div className="black-icon">
-              <IoWalletOutline />
-            </div>
+            <img src="/assets/battery.svg" />
           )}
-          Vault App
+          Solaris
+        </div>
+        <div
+          className={`for_cutm_name open-spark-btn ${
+            activeButton === "for_lend_name" ? "active" : ""
+          }`}
+          onClick={handleLendApp}
+        >
+          {activeButton === "for_lend_name" ? (
+            <img src="/assets/money_white.svg" />
+          ) : (
+            <img src="/assets/money_bag.svg" />
+          )}
+          Lend Ease
+        </div>
+        <div
+          className={`for_cutm_name open-spark-btn ${
+            activeButton === "for_Vault" ? "active" : ""
+          }`}
+          onClick={handVaultApp}
+        >
+          {activeButton === "for_Vault" ? (
+            <img src="/assets/vault-active.svg" />
+          ) : (
+            <img src="/assets/vault.svg" />
+          )}
+          Vault
         </div>
       </div>
       <img

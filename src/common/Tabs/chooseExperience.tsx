@@ -44,7 +44,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
     process.env.REACT_APP_TOURISM_APP_STAGING_INFRA_URL;
   const pulseEnergyWhatsappUrl =
     process.env.REACT_APP_PULSE_ENERGY_WHATSAPP_URL;
-
+  const [isLoading, setIsLoading] = useState(true);
   const cityOfAfrica = localStorage.getItem("name") === "cityOfAfrica";
   const cityOfLight = localStorage.getItem("name") === "cityOfLight";
   const OSC = localStorage.getItem("name") === "OSC";
@@ -8068,21 +8068,29 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
         <div className="smartphone-wrapper">
           <div className="smartphone">
             <div className="content">
-              <iframe
-                //@ts-ignore
-                ref={iframeRef}
-                className="ChooseExpIframe"
-                allow="clipboard-read; clipboard-write; geolocation *"
-                src={iframeURL}
-                frameBorder="0"
-                allowFullScreen
-                scrolling={
-                  DSNP && isDsnpFeed ? "yes" : !OSC && !DSEP ? "no" : "yes"
-                }
-                width={"100%"}
-                height={"100%"}
-                style={{ borderRadius: "36px" }}
-              />
+              {iframeURL ? (
+                <>
+                  {isLoading && <p></p>}
+                  <iframe
+                    //@ts-ignore
+                    ref={iframeRef}
+                    className="ChooseExpIframe"
+                    allow="clipboard-read; clipboard-write; geolocation *"
+                    src={iframeURL}
+                    frameBorder="0"
+                    allowFullScreen
+                    scrolling={
+                      DSNP && isDsnpFeed ? "yes" : !OSC && !DSEP ? "no" : "yes"
+                    }
+                    width={"100%"}
+                    height={"100%"}
+                    style={{ borderRadius: "36px" }}
+                    onLoad={() => setIsLoading(false)}
+                  />
+                </>
+              ) : (
+                ""
+              )}
             </div>
           </div>
         </div>
