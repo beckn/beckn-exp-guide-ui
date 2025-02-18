@@ -6,8 +6,8 @@ import { SlEnergy } from "react-icons/sl";
 const OpenSparkIframe = () => {
   const openSparkUrl = process.env.REACT_APP_OPEN_SPARK_WALLET_URL;
   const openSparkRetailStoreUrl = process.env.REACT_APP_OPEN_SPARK_RETAIL_URL;
-  const [openSpark, setopenSpark] = useState(openSparkUrl);
-  const [activeButton, setActiveButton] = useState("for_cutm_name");
+  const [openSpark, setopenSpark] = useState(openSparkRetailStoreUrl);
+  const [activeButton, setActiveButton] = useState("for_tetail_store");
   const [retailsModal, setRetailsModal] = useState(false);
 
   const handleOsmLink = (e: any) => {
@@ -34,12 +34,12 @@ const OpenSparkIframe = () => {
       />
       <div className="osc_tab_change open-spark-tab-change">
         <div
-          className={`for_cutm_name ${
-            activeButton === "for_cutm_name" ? "active" : ""
+          className={`for_tetail_store ${
+            activeButton === "for_tetail_store" ? "active" : ""
           }`}
-          onClick={handleOsmLink}
+          onClick={handleRetailStore}
         >
-          {activeButton === "for_cutm_name" ? (
+          {activeButton === "for_tetail_store" ? (
             <div className="white-icon">
               <SlEnergy />
             </div>
@@ -52,12 +52,12 @@ const OpenSparkIframe = () => {
           Super
         </div>
         <div
-          className={`for_tetail_store ${
-            activeButton === "for_tetail_store" ? "active" : ""
+          className={`for_cutm_name ${
+            activeButton === "for_cutm_name" ? "active" : ""
           }`}
-          onClick={handleRetailStore}
+          onClick={handleOsmLink}
         >
-          {activeButton === "for_tetail_store" ? (
+          {activeButton === "for_cutm_name" ? (
             <div className="white-icon">
               <IoWalletOutline />
             </div>
