@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, JSX } from "react";
 import { QRCode, Button, Modal, Tabs } from "antd";
 import { useNavigate } from "react-router-dom";
 import ModalHTML from "../ModalHTML/modalHTML";
@@ -14,7 +14,7 @@ export interface selectExpModalProps {
   headingText?: string;
   btmHeading?: string;
   textURL: string;
-  descriptionText?: string;
+  descriptionText?: string | JSX.Element;
   iframeURL?: string | undefined;
   languageEng?: string;
   languageFra?: string;

@@ -25,13 +25,22 @@ const OpenSparkIframe = () => {
       <ChooseExperience
         // headingText="enabling commerce on  "
         textURL={"/assets/open-spark-text.svg"}
-        descriptionText="building a decentralized social networking protocol for the buyer's who can purchase trusted products based on social proof"
+        descriptionText={
+          <>
+            Powered by the Unified Energy Interface, <b>Spark</b> turns energy
+            into a tradeable asset. From EV charging, energy trading, and
+            battery capacity rentals; to purchasing solar panels, and even
+            availing energy financing, <b>Spark</b> gives you total control over
+            the energy you own and the energy you need.
+          </>
+        }
         setTourismUrl={setopenSpark}
         iframeURL={openSpark}
         languageEng={"english"}
         languageFra={"français"}
         retailsModal={retailsModal}
       />
+
       <div className="osc_tab_change open-spark-tab-change">
         <div
           className={`for_tetail_store ${
@@ -49,7 +58,7 @@ const OpenSparkIframe = () => {
               <SlEnergy />{" "}
             </div>
           )}
-          Super
+          Spark App
         </div>
         <div
           className={`for_cutm_name ${
@@ -66,9 +75,13 @@ const OpenSparkIframe = () => {
               <IoWalletOutline />
             </div>
           )}
-          Wallet App
+          Vault App
         </div>
       </div>
+      <img
+        src="/assets/open-spark-footer.svg"
+        className="open-spark-footer-logo"
+      />
     </div>
   );
 };

@@ -443,6 +443,10 @@ iframe .header-container .location-btn {
   position: absolute;
   /* bottom: 25%;
   left: 19%; */
-  bottom: 20%;
-  left: -2%;
+  bottom: 9%;
+  left: 0;
+}
+.open-spark-footer-logo {
+  position: absolute;
+  bottom: 2%;
 }
