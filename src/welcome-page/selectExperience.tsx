@@ -48,7 +48,7 @@ const SelectExperience = () => {
                     alt={"open-spark"}
                   />
                   <p className="card-title-image">
-                    <span className="font-color">Spark - UEI</span>
+                    <span className="font-color">Watt Next?!</span>
                     {/* <br /> */}
                     {/* <span className="font-color">climate threats</span> */}
                   </p>

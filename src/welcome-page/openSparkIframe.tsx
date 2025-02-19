@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ChooseExperience from "../common/Tabs/chooseExperience";
-import { IoWalletOutline } from "react-icons/io5";
-import { SlEnergy } from "react-icons/sl";
+// import { IoWalletOutline } from "react-icons/io5";
+// import { SlEnergy } from "react-icons/sl";
 
 const OpenSparkIframe = () => {
   const openSparkVaultUrl = process.env.REACT_APP_OPEN_SPARK_WALLET_URL;
@@ -46,14 +46,10 @@ const OpenSparkIframe = () => {
     <div style={{ position: "relative" }}>
       <ChooseExperience
         // headingText="enabling commerce on  "
-        textURL={"/assets/spark-text.svg"}
+        textURL={"/assets/spark-text1.svg"}
         descriptionText={
           <>
-            Powered by the Unified Energy Interface, <b>Spark</b> turns energy
-            into a tradeable asset. From EV charging, energy trading, and
-            battery capacity rentals; to purchasing solar panels, and even
-            availing energy financing, <b>Spark</b> gives you total control over
-            the energy you own and the energy you need.
+           Turn your battery into a money-maker! Rent, trade, and finance energy effortlessly with UEI-powered apps. Link your wallet, unlock better deals, and watch your energy assets work for you. The future of smart energy is here—power up and profit!
           </>
         }
         setTourismUrl={setopenSpark}
@@ -118,7 +114,7 @@ const OpenSparkIframe = () => {
         </div>
       </div>
       <img
-        src="/assets/open-spark-footer.svg"
+        src="/assets/open-spark-footer3.svg"
         className="open-spark-footer-logo"
       />
     </div>
