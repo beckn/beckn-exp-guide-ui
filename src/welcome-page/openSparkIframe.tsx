@@ -48,9 +48,9 @@ const OpenSparkIframe = () => {
         // headingText="enabling commerce on  "
         textURL={"/assets/spark-text1.svg"}
         descriptionText={
-          <>
+          <div style={{fontWeight:400}}>
            Turn your battery into a money-maker! Rent, trade, and finance energy effortlessly with UEI-powered apps. Link your wallet, unlock better deals, and watch your energy assets work for you. The future of smart energy is here—power up and profit!
-          </>
+          </div>
         }
         setTourismUrl={setopenSpark}
         iframeURL={openSpark}
