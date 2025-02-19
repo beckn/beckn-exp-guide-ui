@@ -45,6 +45,7 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
   const isEarthSupport =
     localStorage.getItem("name") === "earth-support-initiative";
   const isEnvirogrowth = localStorage.getItem("name") === "envirogrowth";
+  const isOpenSpark = localStorage.getItem("name") === "open-spark";
 
   const openCity = (evt: any, cityName: string) => {
     let i: number;
@@ -62,6 +63,7 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
       UEI ||
       isDsepUnified ||
       isRetail ||
+      isOpenSpark ||
       DSNP ||
       DHP ||
       isIndustry ||

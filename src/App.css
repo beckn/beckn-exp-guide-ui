@@ -97,7 +97,7 @@ iframe .header-container .location-btn {
   margin: 0px 10px 0px 0px;
 }
 .osc_tab_change .active {
-  background-color: #992a4a;
+  background-color: #4398e8;
   color: #fff;
 }
 .UEI_tab_change {
@@ -425,4 +425,34 @@ iframe .header-container .location-btn {
     width: 40px;
     height: 40px;
   }
+}
+.white-icon svg {
+  stroke: #fff;
+  font-size: 26px;
+  margin-right: 10px;
+}
+.black-icon svg {
+  font-size: 26px;
+  margin-right: 10px;
+}
+.white-icon svg path {
+  fill: #fff;
+}
+.open-spark-tab-change {
+  display: flex;
+  position: absolute;
+  /* bottom: 25%;
+  left: 19%; */
+  bottom: 13%;
+  left: 0;
+}
+.open-spark-footer-logo {
+  position: absolute;
+  bottom: 0;
+}
+.open-spark-btn {
+  margin: 10px 20px !important;
+  margin-left: 0 !important;
+  padding: 10px !important;
+  width: 140px !important;
 }
