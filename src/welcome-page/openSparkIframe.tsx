@@ -8,8 +8,8 @@ const OpenSparkIframe = () => {
   const openSparkRetailStoreUrl = process.env.REACT_APP_OPEN_SPARK_RETAIL_URL;
   const openSparkLendUrl = process.env.REACT_APP_OPEN_SPARK_LEND_URL;
   const openSparkSolaris = process.env.REACT_APP_OPEN_SPARK_Solaris_URL;
-  const [openSpark, setopenSpark] = useState(openSparkRetailStoreUrl);
-  const [activeButton, setActiveButton] = useState("for_tetail_store");
+  const [openSpark, setopenSpark] = useState(openSparkVaultUrl);
+  const [activeButton, setActiveButton] = useState("for_Vault");
   const [retailsModal, setRetailsModal] = useState(false);
   const [lendModal, setLendModal] = useState(false);
   const [vaultModal, setVaultModal] = useState(false);
@@ -48,8 +48,11 @@ const OpenSparkIframe = () => {
         // headingText="enabling commerce on  "
         textURL={"/assets/spark-text1.svg"}
         descriptionText={
-          <div style={{fontWeight:400}}>
-           Turn your battery into a money-maker! Rent, trade, and finance energy effortlessly with UEI-powered apps. Link your wallet, unlock better deals, and watch your energy assets work for you. The future of smart energy is here—power up and profit!
+          <div style={{ fontWeight: 400 }}>
+            Turn your battery into a money-maker! Rent, trade, and finance
+            energy effortlessly with UEI-powered apps. Link your wallet, unlock
+            better deals, and watch your energy assets work for you. The future
+            of smart energy is here—power up and profit!
           </div>
         }
         setTourismUrl={setopenSpark}
@@ -60,6 +63,19 @@ const OpenSparkIframe = () => {
       />
 
       <div className="osc_tab_change open-spark-tab-change">
+        <div
+          className={`for_cutm_name open-spark-btn ${
+            activeButton === "for_Vault" ? "active" : ""
+          }`}
+          onClick={handVaultApp}
+        >
+          {activeButton === "for_Vault" ? (
+            <img src="/assets/vault-active.svg" />
+          ) : (
+            <img src="/assets/vault.svg" />
+          )}
+          Vault
+        </div>
         <div
           className={`for_tetail_store open-spark-btn ${
             activeButton === "for_tetail_store" ? "active" : ""
@@ -98,19 +114,6 @@ const OpenSparkIframe = () => {
             <img src="/assets/money_bag.svg" />
           )}
           Lend Ease
-        </div>
-        <div
-          className={`for_cutm_name open-spark-btn ${
-            activeButton === "for_Vault" ? "active" : ""
-          }`}
-          onClick={handVaultApp}
-        >
-          {activeButton === "for_Vault" ? (
-            <img src="/assets/vault-active.svg" />
-          ) : (
-            <img src="/assets/vault.svg" />
-          )}
-          Vault
         </div>
       </div>
       <img
