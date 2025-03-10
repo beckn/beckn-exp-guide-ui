@@ -240,26 +240,26 @@ const OpenSparkIframe = () => {
                   On the add new connections form, add the following details:
                 </p>
                 <p style={{ paddingBottom: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    Connection Number:{" "}
-                  </span>{" "}
-                  5487774000{" "}
+                  <span style={{ fontWeight: "bold", color: "#000",textTransform:'capitalize'}}>
+                    Connection Number:
+                  </span>
+                 <p style={{textTransform:'capitalize'}}> 5487774000</p>
                 </p>
                 <p style={{ paddingBottom: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    Utility Company:{" "}
-                  </span>{" "}
-                  Bangalore Electricity Supply Ltd
+                  <span style={{ fontWeight: "bold", color: "#000", textTransform:'capitalize' }}>
+                    Utility Company:
+                  </span>
+                 <p style={{textTransform:'capitalize'}}> Bangalore Electricity Supply Ltd</p>
                 </p>
                 <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  <span style={{ fontWeight: "bold", color: "#000", textTransform:'capitalize' }}>
                     Verification Method:{" "}
                   </span>{" "}
                   Registered Mobile Number
                 </p>
                 <p style={{ paddingTop: "10px" }}>
-                  Then click on add, enter the 6 digit random OTP to add the
-                  connection to your wallet. Once added click on back button on
+                  Then <span style={{ fontWeight: "bold", color: "#000" }}>click on </span> add, enter the 6 digit random OTP to add the
+                  connection to your wallet. Once added <span style={{ fontWeight: "bold", color: "#000" }}>click on </span> back button on
                   list screen to return to home screen.
                 </p>
               </div>
@@ -279,14 +279,8 @@ const OpenSparkIframe = () => {
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
                   </span>{" "}
-                  energy assets, then
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  my credentials, then
-                </p>
+                  energy assets, then <span style={{ fontWeight: "bold", color: "#000" }}> click on </span> my credentials, then
+                </p>            
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
@@ -297,22 +291,22 @@ const OpenSparkIframe = () => {
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     credential type:
-                  </span>{" "}
-                  document
+                  </span>
+                 <p> document</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     document name:
                   </span>{" "}
-                  solar panel ownership certificate
+                  <p>solar panel ownership certificate</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     upload file:
-                  </span>{" "}
-                  upload a file which is less than 1 mb.
+                  </span>
+                 <p> upload a file which is less than 1 mb.</p>
                 </p>
-                <p style={{ paddingTop: "20px" }}>
+                <p style={{ paddingTop: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
                   </span>{" "}
@@ -348,14 +342,14 @@ const OpenSparkIframe = () => {
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     type:
-                  </span>{" "}
-                  battery
+                  </span>
+                 <p> battery</p>
                 </p>
                 <p style={{ paddingBottom: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     upload file:
-                  </span>{" "}
-                  upload a file which is less than 2 mb.
+                  </span>
+                 <p> upload a file which is less than 1 mb.</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
@@ -367,7 +361,7 @@ const OpenSparkIframe = () => {
                   </span>{" "}
                   back button on list screen to return to energy assets screen
                 </p>
-                <p>
+                <p style={{paddingTop:'10px'}}>
                   Again{" "}
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
@@ -386,51 +380,44 @@ const OpenSparkIframe = () => {
                 style={imageStyle}
               />
               <div className="text_wrapper_modal">
-                <p style={{ paddingBottom: "20px" }}>
-                  Now
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  profile icon and then logout from vault application
-                </p>
                 <p>
-                  and
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                Now   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  spark application from the landing screen and sign up for the
-                  application using following credentials:
-                </p>
+                  </span>  profile icon and then logout from vault application </p>
+                <p>
+                 
+                and <span style={{ fontWeight: "bold", color: "#000" }}>
+                    click on
+                  </span>  spark application from the landing screen and sign up for the
+                  application using following credentials: </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     name:
                   </span>
-                  ravi prakash
+                 <p> ravi prakash</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     email id:
                   </span>
-                  ravi.prakash@gmail.com
+                 <p> ravi.prakash@gmail.com</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     address:
                   </span>
-                  1202 b2, bengaluru urban, bengaluru, karnataka
+                 <p> 1202 b2, bengaluru urban, bengaluru, karnataka</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     mobile number:
                   </span>
-                  9999988888
+                 <p> 9999988888</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  sign up to continue
-                </p>
+                  </span>  sign up to continue </p>
               </div>
             </>
             <>
@@ -448,37 +435,29 @@ const OpenSparkIframe = () => {
                 <p style={{ paddingTop: "10px" }}>
                   On the landing page,
                   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  'connect my wallet' on top navigation and
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>
+                    click on 
+                  </span> 'connect my wallet' on top navigation and
+                  <span style={{ fontWeight: "bold", color: "#000" }}>  select   </span>
                   vault app.
                 </p>
-                <p style={{ paddingTop: "10px" }}>
-                  Now sign in to wallet using your
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                <p style={{ paddingTop: "10px" }}>  
+                Now sign in to wallet using your  <span style={{ fontWeight: "bold", color: "#000" }}>
                     vault id:
-                  </span>
-                  /subj****8888
-                </p>
+                  </span> /subj****8888  </p>
+                  
+               
                 <p style={{ paddingTop: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  link to proceed and then
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    enter 6 digit otp:
-                  </span>
-                  123456 to verify your login.
+                  </span> link to proceed and then   <span style={{ fontWeight: "bold", color: "#000" }}>
+                    enter 6 digit otp: 
+                  </span> 123456 to verify your login.  
                 </p>
                 <p style={{ paddingTop: "10px" }}>
                   On the alert pop-up select all the options and{" "}
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  confirm
+                  </span> confirm 
                 </p>
               </div>
             </>
@@ -496,40 +475,35 @@ const OpenSparkIframe = () => {
                   Now on the landing screen{" "}
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     select
-                  </span>
-                  marketplace
+                  </span> marketplace
+              
                 </p>
                 <p style={{ paddingTop: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     search
-                  </span>
-                  for battery and from the results screen{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>
-                  the luminous optimus 4500 4 kva battery from luminous
+                  </span> for battery and from the results screen <span style={{ fontWeight: "bold", color: "#000" }}> 
+                     select
+                  </span> the luminous optimus 4500 4 kva battery from luminous               
+                
                 </p>
                 <p style={{ paddingTop: "20px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     select
-                  </span>
-                  quantity as 1 and then
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  </span>  quantity as 1 and then <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  add to cart, then go to cart by clicking on cart icon from top
-                  right corner of the application, inside cart click on{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  </span> add to cart, then go to cart by clicking on cart icon from top
+                  right corner of the application, inside cart click on  <span style={{ fontWeight: "bold", color: "#000" }}>
                     proceed
                   </span>
+                 
                 </p>
                 <p style={{ paddingTop: "20px" }}>
-                  Now
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  
+                Now <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  add shipping details.
-                </p>
+                  </span>  add shipping details.
+                  </p>
+                 
               </div>
             </>
             <>
@@ -547,47 +521,44 @@ const OpenSparkIframe = () => {
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     name:
                   </span>
-                  ravi prakash
+                 <p> ravi prakash</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     mobile number:
                   </span>
-                  9999988888
+                 <p> 9999988888</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     email id:
                   </span>
-                  ravi.prakash@gmail.com
+                 <p> ravi.prakash@gmail.com</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     address:
                   </span>
-                  1202 b2, bengaluru urban, bengaluru, karnataka
+                 <p> 1202 b2, bengaluru urban, bengaluru, karnataka</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     zip code:
                   </span>
-                  560078
+                <p> 560078</p>
                 </p>
-                <p style={{ paddingTop: "10px" }}>
-                  Then
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                <p>
+                Then <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  save shipping details, then
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  </span>  save shipping details, then  <span style={{ fontWeight: "bold", color: "#000" }}>
                     check
-                  </span>
-                  the box to save billing details same as shipping details, then{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  proceed
-                </p>
+                  </span>  the box to save billing details same as shipping details, then
+                 
+                 
+                 
+                  <span style={{ fontWeight: "bold", color: "#000" }}> click on
+                   </span> proceed
+                  </p>          
               </div>
             </>
             <>
@@ -601,44 +572,30 @@ const OpenSparkIframe = () => {
               />
               <div className="text_wrapper_modal">
                 <p>
-                  Now on the checkout screen opt in the emi section
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    open dropdown
-                  </span>
-                  from bajaj finserv and
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  Now on the checkout screen opt in the emi section  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  open dropdown  </span> 
+                  from bajaj finserv and   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  sync now to get better interest rates
-                </p>
+                  </span>    sync now to get better interest rates
+                  </p>
                 <p style={{ paddingTop: "10px" }}>
-                  After syncing
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  After syncing  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  select  </span>    bajaj finserv and   <span style={{ fontWeight: "bold", color: "#000" }}>
+                 click on
+               </span>  proceed
+               </p>
+                <p style={{ paddingTop: "10px" }}>
+                  On the emi application form  <span style={{ fontWeight: "bold", color: "#000" }}>
+                    click on
+                  </span> sync wallet to fill the form
+                  </p>
+                  
+                <p style={{ paddingTop: "10px" }}>
+                  
+                Then <span style={{ fontWeight: "bold", color: "#000" }}>
                     select
-                  </span>
-                  bajaj finserv and
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  proceed
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  On the emi application form
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  sync wallet to fill the form
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  Then
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>
-                  the loan tenure as 12 months and
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  submit
+                  </span>  the loan tenure as 12 months and   <span style={{ fontWeight: "bold", color: "#000" }}>
+                  click on </span>submit 
                 </p>
               </div>
             </>
@@ -656,42 +613,35 @@ const OpenSparkIframe = () => {
                   Once verified and approved, on the new checkout screen,{" "}
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  proceed to payment.
-                </p>
+                  </span>  proceed to payment.
+                  </p> 
                 <p style={{ paddingTop: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     select
-                  </span>
-                  phone pe option from upi and
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  </span>  phone pe option from upi and <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  proceed
-                </p>
+                  </span> proceed
+                  </p>        
                 <p style={{ paddingTop: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     enter 4 digit upi pin as:
                   </span>
-                  1234
+                 <p> 1234</p>
                 </p>
                 <p style={{ paddingTop: "10px" }}>
-                  and
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                and <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  submit
-                </p>
+                  </span>  submit
+                  </p>
                 <p style={{ paddingTop: "5px" }}>
                   Your order will be placed and you will receive a confirmation
                 </p>
                 <p style={{ paddingTop: "5px" }}>
-                  Now
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  
+                Now <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  view order details on order confirmation screen
-                </p>
+                  </span> view order details on order confirmation screen
+                  </p>
               </div>
             </>
             <>
@@ -708,13 +658,10 @@ const OpenSparkIframe = () => {
                   In the order history screen{" "}
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  the order and in the order details screen
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  </span> the order and in the order details screen <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  add to wallet
-                </p>
+                  </span>  add to wallet
+                  </p>   
                 <p style={{ paddingTop: "10px" }}>
                   To check the loan related details you can login to lend ease
                   application as a agent using following details:
@@ -723,22 +670,19 @@ const OpenSparkIframe = () => {
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     mobile number:
                   </span>
-                  7674956426
+                 <p> 7674955426</p>
                 </p>
                 <p>
                   Now you can check the loan application status for the
                   purchased battery
                 </p>
-                <p style={{ paddingTop: "10px" }}>
+                <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
+               
+                  click on </span>  profile icon and then <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  profile icon and then
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  logout
-                </p>
+                  </span> logout
+                  </p>
               </div>
             </>
             <>
@@ -751,26 +695,25 @@ const OpenSparkIframe = () => {
                 style={imageStyle}
               />
               <div className="text_wrapper_modal">
-                <p style={{ paddingBottom: "20px" }}>
+                <p>
                   Now go to solaris application and sign in using the following
                   details:
                 </p>
-                <p style={{ paddingBottom: "20px" }}>
+                <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     mobile number:
                   </span>
-                  9999988888
+                 <p> 9999988888</p>
                 </p>
-                <p style={{ paddingBottom: "20px" }}>
+                <p style={{ paddingBottom: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     otp:
                   </span>
-                  123456
+                 <p> 123456</p>
                 </p>
-                <p style={{ paddingTop: "20px" }}>
+                <p style={{ paddingTop: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
+                    click on   </span>
                   sign in to continue
                 </p>
               </div>
@@ -786,17 +729,12 @@ const OpenSparkIframe = () => {
               />
               <div className="text_wrapper_modal">
                 <p style={{ paddingBottom: "10px" }}>
-                  On the landing screen
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  provide rental services
-                </p>
+                  On the landing screen   <span style={{ fontWeight: "bold", color: "#000" }}>
+                    click on   </span>  provide rental services
+                    </p>
                 <p style={{ paddingTop: "10px" }}>
-                  Then on the pop-up
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
+                  Then on the pop-up  <span style={{ fontWeight: "bold", color: "#000" }}>
+                    click on   </span>
                   add from wallet
                 </p>
                 <p style={{ paddingTop: "10px" }}>
@@ -805,30 +743,30 @@ const OpenSparkIframe = () => {
                   </span>{" "}
                   the battery with source as spark and then click on next
                 </p>
-                <p style={{ paddingBottom: "10px" }}>
+                <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     date:
                   </span>
-                  select desired date
+                 <p> select desired date</p>
                 </p>
-                <p style={{ paddingBottom: "10px" }}>
+                <p >
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     time:
                   </span>
-                  7:00 pm - 10:00 pm
+                 <p> 7:00 pm - 10:00 pm</p>
                 </p>
-                <p style={{ paddingBottom: "10px" }}>
+                <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     price:
                   </span>
-                  100 rs. per hour
+                 <p> 100 rs. per hour</p>
                 </p>
                 <p style={{ paddingTop: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
+                    click on </span>
                   submit and publish
                 </p>
+
               </div>
             </>
             <>
@@ -849,15 +787,15 @@ const OpenSparkIframe = () => {
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     mobile number:
                   </span>
-                  9999977777
+                 <p> 9999977777</p>
                 </p>
-                <p style={{ paddingBottom: "20px" }}>
+                <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     otp:
                   </span>
-                  123456
+                 <p> 123456</p>
                 </p>
-                <p style={{ paddingTop: "20px" }}>
+                <p style={{ paddingTop: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
                   </span>{" "}
@@ -875,41 +813,28 @@ const OpenSparkIframe = () => {
                 style={imageStyle}
               />
               <div className="text_wrapper_modal">
-                <p>Enter random 6 digit number as otp: 123456</p>
-                <p>to verify your mobile number</p>
+                <p style={{ paddingBottom: "10px" }}>Enter random 6 digit number as otp: 123456  to verify your mobile number</p>
+              
                 <p>
-                  On the landing page,
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  On the landing page, <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  connect my wallet' on top navigation and
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>
-                  vault app.
+                  </span> connect my wallet' on top navigation and  <span style={{ fontWeight: "bold", color: "#000" }}>
+                    select </span> vault app.
                 </p>
                 <p style={{ paddingTop: "10px" }}>
-                  Now sign in to wallet using your
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    vault id:
-                  </span>
-                  /subj****7777
-                </p>
+                  Now sign in to wallet using your  <span style={{ fontWeight: "bold", color: "#000" }}>
+                    vault id: </span>  /subj****7777
+                    </p>
                 <p style={{ paddingTop: "10px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  link to proceed and then
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    enter 6 digit otp:
-                  </span>
+                    click on   </span>  link to proceed and then <span style={{ fontWeight: "bold", color: "#000" }}>
+                    enter 6 digit otp:  </span>
                   123456 to verify your login.
                 </p>
                 <p style={{ paddingTop: "10px" }}>
                   On the alert pop-up select all the options and{" "}
                   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
+                    click on   </span>
                   confirm
                 </p>
               </div>
@@ -924,52 +849,42 @@ const OpenSparkIframe = () => {
                 style={imageStyle}
               />
               <div className="text_wrapper_modal">
-                <p>
-                  On the landing screen
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>
+                <p style={{ paddingBottom: "8px" }}>
+                  On the landing screen  <span style={{ fontWeight: "bold", color: "#000" }}>
+                    select </span>
                   battery rental
                 </p>
-                <p style={{ paddingTop: "20px" }}>
+
+                <p style={{ paddingBottom: "8px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    search
-                  </span>
-                  for battery rental
-                </p>
+                    search  </span> for battery rental
+                 </p>
                 <p>
-                  From search results
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>
+                  From search results <span style={{ fontWeight: "bold", color: "#000" }}>
+                    select </span>
                   ravi prakash's flour mill
                 </p>
-                <p style={{ paddingTop: "20px" }}>
-                  On the product details screen
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  proceed
-                </p>
-                <p style={{ paddingBottom: "20px" }}>select the following:</p>
-                <p style={{ paddingBottom: "20px" }}>
+
+                <p style={{ paddingTop: "10px" }}>
+                  On the product details screen <span style={{ fontWeight: "bold", color: "#000" }}>
+                    click on </span>proceed
+                </p>               
+               <p style={{ paddingBottom: "10px" }}>select the following:</p>
+                <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     date:
                   </span>
-                  select the date used in step 13
+                  <p> select the date used in step 13</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     time:
                   </span>
-                  8:00 pm - 9:00 pm
+                 <p> 8:00 pm - 9:00 pm</p>
                 </p>
                 <p>
-                  then
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  confirm & proceed
+                  then <span style={{ fontWeight: "bold", color: "#000" }}>
+                    click on </span>  confirm & proceed
                 </p>
               </div>
             </>
@@ -988,42 +903,36 @@ const OpenSparkIframe = () => {
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     name:
                   </span>
-                  faiz
+                 <p> faiz</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     mobile number:
                   </span>
-                  9999977777
+                 <p>9999977777</p>
                 </p>
-                <p style={{ paddingBottom: "20px" }}>
+                <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     email id:
                   </span>
-                  faiz@gmail.com
+                 <p> faiz@gmail.com</p>
                 </p>
-                <p style={{ paddingBottom: "20px" }}>
+                <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     address:
                   </span>
-                  1202 b2, bengaluru urban, bengaluru, karnataka
+                 <p> 1202 b2, bengaluru urban, bengaluru, karnataka</p>
                 </p>
                 <p>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     zip code:
                   </span>
-                  560078
+                 <p> 560078</p>
                 </p>
                 <p>
-                  then
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  save billing details, then
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  proceed
+                then <span style={{ fontWeight: "bold", color: "#000" }}>
+                    click on  </span>  save billing details, then <span style={{ fontWeight: "bold", color: "#000" }}>
+                    click on  </span>  proceed
                 </p>
               </div>
             </>
@@ -1037,45 +946,36 @@ const OpenSparkIframe = () => {
                 style={imageStyle}
               />
               <div className="text_wrapper_modal">
-                <p>
-                  On the checkout screen,
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  proceed to payment.
+                <p style={{ paddingBottom: "8px" }}>
+                  On the checkout screen,  <span style={{ fontWeight: "bold", color: "#000" }}>
+                  click on </span> proceed to payment.
                 </p>
-                <p>
+                 
+                <p style={{ paddingBottom: "8px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>
-                  phone pe option from upi and{" "}
+                    select </span> phone pe option from upi and{" "}
                   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  proceed
+                    click on </span>  proceed
                 </p>
-                <p style={{ paddingTop: "20px" }}>
+                
+                <p style={{ paddingBottom: "8px" }}>
                   <span style={{ fontWeight: "bold", color: "#000" }}>
                     enter 4 digit upi pin as:
                   </span>
-                  1234
+                 <p> 1234</p>
                 </p>
-                <p style={{ paddingTop: "20px" }}>
-                  and
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>
-                  submit
+                <p style={{ paddingBottom: "8px" }}>
+                  and <span style={{ fontWeight: "bold", color: "#000" }}>
+                    click on </span>    submit
                 </p>
-                <p>
+                
+                <p style={{ paddingBottom: "8px" }}>
                   Your order will be placed and you will receive a confirmation
                 </p>
-                <p style={{ paddingTop: "20px" }}>
-                  Now
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
+                <p>
+                  Now   <span style={{ fontWeight: "bold", color: "#000" }}>
                     click on
-                  </span>
-                  view my rentals on order confirmation screen
+                  </span> view my rentals on order confirmation screen
                 </p>
               </div>
             </>
