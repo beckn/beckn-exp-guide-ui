@@ -448,11 +448,27 @@ iframe .header-container .location-btn {
 }
 .open-spark-footer-logo {
   position: absolute;
-  bottom: 0;
+  bottom: -35px;
 }
 .open-spark-btn {
   margin: 10px 20px !important;
   margin-left: 0 !important;
   padding: 10px !important;
   width: 140px !important;
+}
+.DSEP-intruction.spark-instruction {
+  position: relative;
+  width: 100%;
+}
+
+.DSEP-intruction.spark-instruction .ant-btn-primary {
+  background: #FFFFFF;
+  color: #000000;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.DSEP-intruction.spark-instruction .ant-btn-primary:hover {
+  background: #4498E8;
+  color: #FFFFFF;
 }

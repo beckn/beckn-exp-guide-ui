@@ -22,6 +22,7 @@ export interface selectExpModalProps {
   retailsModal?: boolean;
   pulseEnergy?: string;
   iframeRef?: any;
+  onIframeLoad?: () => void;
 }
 const ChooseExperience: React.FC<selectExpModalProps> = ({
   headingText,
@@ -35,6 +36,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   retailsModal,
   pulseEnergy,
   iframeRef,
+  onIframeLoad
 }: selectExpModalProps) => {
   const osmEngUrl = process.env.REACT_APP_OSM_ENG_URL;
   const pcmDriverUrl = process.env.REACT_APP_PCM_DRIVER_URL;
@@ -677,7 +679,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                               textTransform: "capitalize",
                             }}
                           >
-                            ‘Shop’{" "}
+                            ‘Shop'{" "}
                           </span>
                         </p>
                       </p>
@@ -771,14 +773,14 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                   step1Text={
                     <div className="text_wrapper_modal">
                       <p style={{ paddingBottom: "10px" }}>
-                        You are about to login as a ‘seller’ for{" "}
+                        You are about to login as a 'seller' for{" "}
                         <span style={{ fontWeight: "bolder" }}>ClicPaye.</span>{" "}
                         This application helps manage products and process
                         orders on the
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
-                          ‘Open Street Commerce’
+                          'Open Street Commerce'
                         </p>
                       </p>
                       <p>
@@ -823,7 +825,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       </p>
                       <p style={{ paddingBottom: "10px" }}>
                         <span style={{ fontWeight: "bolder" }}>
-                          ‘Open Street Commerce’{" "}
+                          'Open Street Commerce'{" "}
                         </span>
                         app.
                       </p>
@@ -923,7 +925,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       select
                     </span>{" "}
-                    "Pulse Energy HQ”
+                    "Pulse Energy HQ"
                   </p>
                 </div>
               </>
@@ -1001,7 +1003,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       Click on{" "}
                     </span>{" "}
-                    ‘sheru app’ for next step
+                    'sheru app' for next step
                   </p>
                 </div>
               </>
@@ -1025,7 +1027,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     <span style={{ fontWeight: "bolder", color: "#000" }}>
                       select{" "}
                     </span>
-                    ‘Check Demands’
+                    'Check Demands'
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
                     A list of available demand notes will be displayed. select
@@ -1033,7 +1035,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     <span style={{ fontWeight: "bolder", color: "#000" }}>
                       click{" "}
                     </span>{" "}
-                    ‘Buy’
+                    'Buy'
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
                     success message will be displayed;
@@ -1051,7 +1053,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     <span style={{ fontWeight: "bolder", color: "#000" }}>
                       click
                     </span>{" "}
-                    ‘Check Suppliers’.
+                    'Check Suppliers'.
                   </p>
 
                   <p
@@ -1082,7 +1084,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     <span style={{ fontWeight: "bolder", color: "#000" }}>
                       select
                     </span>{" "}
-                    ‘view order summary
+                    'view order summary
                   </p>
                 </div>
               </>
@@ -1120,10 +1122,10 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       Click
                     </span>{" "}
-                    ‘push to grid’
+                    'push to grid'
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
-                    ‘Push to Grid’ is Sheru's readiness to feed green energy
+                    'Push to Grid' is Sheru's readiness to feed green energy
                     from Turno into the grid.
                   </p>
                 </div>
@@ -1136,7 +1138,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
 
                 <div className="text_wrapper_modal">
                   <p style={{ paddingBottom: "10px" }}>
-                    access your ‘order history’ page in the Sheru app from the
+                    access your 'order history' page in the Sheru app from the
                     3-dot menu on the Home Page.
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -1152,7 +1154,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     >
                       Click on
                     </span>{" "}
-                    ‘turno app’ for next steps
+                    'turno app' for next steps
                   </p>
                 </div>
               </>
@@ -1258,7 +1260,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       <span style={{ fontWeight: "bolder", color: "#000" }}>
                         book now
                       </span>{" "}
-                      & set number of traveler’s to{" "}
+                      & set number of traveler's to{" "}
                       <span style={{ fontWeight: "bolder", color: "#000" }}>
                         02
                       </span>
@@ -1353,7 +1355,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “save traveler details”
+                      "save traveler details"
                     </span>
                     button.
                   </p>
@@ -1373,7 +1375,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “proceed to pay”{" "}
+                      "proceed to pay"{" "}
                     </span>
                     button .
                     <br />
@@ -1384,7 +1386,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “pay on arrival”{" "}
+                      "pay on arrival"{" "}
                     </span>
                     as your payment methodand click on{" "}
                     <span
@@ -1393,7 +1395,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ”confirm”{" "}
+                      "confirm"{" "}
                     </span>
                     to continue <br />
                     click on
@@ -1404,7 +1406,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “view booking”{" "}
+                      "view booking"{" "}
                     </span>
                     button to view booking details
                     <br />
@@ -1466,7 +1468,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                           color: "#000",
                         }}
                       >
-                        “yes! show me the list”{" "}
+                        "yes! show me the list"{" "}
                       </span>{" "}
                       button to get the AI generated list of items that you
                       might require for your travel.select :{" "}
@@ -1604,7 +1606,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “save shipping details”{" "}
+                      "save shipping details"{" "}
                     </span>
                     button.
                   </p>
@@ -1689,7 +1691,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “save billing details”{" "}
+                      "save billing details"{" "}
                     </span>
                     button.
                   </p>
@@ -1702,7 +1704,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “proceed to checkout” .
+                      "proceed to checkout" .
                     </span>
                   </p>
                 </div>
@@ -1723,7 +1725,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                           color: "#000",
                         }}
                       >
-                        “cash on delivery” .{" "}
+                        "cash on delivery" .{" "}
                       </span>
                     </p>
                     <p style={{ paddingBottom: "10px" }}>
@@ -1735,7 +1737,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         }}
                       >
                         {" "}
-                        “confirm”{" "}
+                        "confirm"{" "}
                       </span>
                     </p>
                     click on view order to{" "}
@@ -1780,7 +1782,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “yes! let’s go”{" "}
+                      "yes! let's go"{" "}
                     </span>
                     button to see best travel options to reach your location
                   </p>
@@ -1822,7 +1824,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         }}
                       >
                         {" "}
-                        “search rides”
+                        "search rides"
                       </span>
                     </p>
                     select rides offered by
@@ -1854,7 +1856,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “cash”{" "}
+                      "cash"{" "}
                     </span>
                     and click on{" "}
                     <span
@@ -1864,7 +1866,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “book now”{" "}
+                      "book now"{" "}
                     </span>
                     <p style={{ margin: "10px 0px" }}>
                       as soon as driver accepts the ride request your ride will
@@ -2020,7 +2022,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘create profile’
+                      'create profile'
                     </span>
                   </p>
                 </div>
@@ -2039,7 +2041,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘courses’
+                      'courses'
                     </span>{" "}
                     or{" "}
                     <span
@@ -2048,7 +2050,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘search for courses’
+                      'search for courses'
                     </span>{" "}
                     with{" "}
                     <span
@@ -2086,7 +2088,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘add to cart’
+                      'add to cart'
                     </span>
                   </p>
 
@@ -2118,7 +2120,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘search more scholarships’
+                      'search more scholarships'
                     </span>
                     , select{" "}
                     <span
@@ -2136,7 +2138,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘apply’
+                      'apply'
                     </span>{" "}
                     with the given details
                   </p>
@@ -2193,7 +2195,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘submit’
+                      'submit'
                     </span>{" "}
                   </p>
                 </div>
@@ -2212,7 +2214,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘complete your course payment’
+                      'complete your course payment'
                     </span>{" "}
                     with{" "}
                     <span
@@ -2221,7 +2223,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘approved scholarship’
+                      'approved scholarship'
                     </span>{" "}
                     from scholarship list
                   </p>
@@ -2241,7 +2243,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘my learnings’.{" "}
+                      'my learnings'.{" "}
                     </span>
                   </p>
 
@@ -2269,7 +2271,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘jobs’
+                      'jobs'
                     </span>{" "}
                     from the landing page.
                   </p>
@@ -2290,7 +2292,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ’FullStack Developer’
+                      'FullStack Developer'
                     </span>{" "}
                     from{" "}
                     <span
@@ -2299,7 +2301,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘jobs’
+                      'jobs'
                     </span>{" "}
                     list.
                   </p>
@@ -2311,7 +2313,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘apply now’
+                      'apply now'
                     </span>
                   </p>
                 </div>
@@ -2390,7 +2392,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ’submit application’
+                      'submit application'
                     </span>
                   </p>
                 </div>
@@ -2462,7 +2464,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         }}
                       >
                         Please keep note of your generated username, password,
-                        and secret key for ‘Polkadot JS’ account recovery
+                        and secret key for 'Polkadot JS' account recovery
                       </p>
                     </div>
                   </div>
@@ -2483,7 +2485,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘retail store’
+                      'retail store'
                     </span>{" "}
                     tab on the landing page.
                   </p>
@@ -2535,7 +2537,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      search for ‘sunglasses’
+                      search for 'sunglasses'
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -2627,7 +2629,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘submit review’
+                      'submit review'
                     </span>{" "}
                     button.
                   </p>
@@ -2640,7 +2642,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘OK’
+                      'OK'
                     </span>
                     , user then select{" "}
                     <span
@@ -2649,7 +2651,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘check review’
+                      'check review'
                     </span>{" "}
                     to see the review posted on social feed.
                   </p>
@@ -2661,7 +2663,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘dsnp app’
+                      'dsnp app'
                     </span>
                     .{" "}
                   </p>
@@ -2694,7 +2696,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       color: "#000",
                     }}
                   >
-                    Don't have a DSNP ID?
+                    Don't have a DSNP ID?
                   </p>
                   <ul>
                     <li>create new Handle.</li>
@@ -2728,7 +2730,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘verified purchase’
+                      'verified purchase'
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -2739,7 +2741,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘username’
+                      'username'
                     </span>{" "}
                     & select{" "}
                     <span
@@ -2748,7 +2750,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘sign out’
+                      'sign out'
                     </span>
                   </p>
                 </div>
@@ -2949,7 +2951,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘save billing details’
+                      'save billing details'
                     </span>
                   </p>
                   <p>and click on </p>
@@ -2977,7 +2979,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘cash on arrival’
+                      'cash on arrival'
                     </span>{" "}
                     and click on{" "}
                     <span
@@ -2986,7 +2988,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘continue’
+                      'continue'
                     </span>
                   </p>
                 </div>
@@ -3009,7 +3011,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘My Appointments’
+                      'My Appointments'
                     </span>{" "}
                     and then click on{" "}
                     <span
@@ -3018,7 +3020,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘view prescriptions’
+                      'view prescriptions'
                     </span>
                   </p>
                 </div>
@@ -3200,7 +3202,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘My Appointments’
+                      'My Appointments'
                     </span>{" "}
                     and then click on{" "}
                     <span
@@ -3218,7 +3220,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘search for labs’
+                      'search for labs'
                     </span>
                   </p>
                 </div>
@@ -3463,7 +3465,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “best taxi”
+                      "best taxi"
                     </span>{" "}
                     and proceed,
                   </p>
@@ -3509,7 +3511,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “confirm & proceed”
+                      "confirm & proceed"
                     </span>{" "}
                     to confirm your order.
                   </p>
@@ -3529,7 +3531,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “cash”
+                      "cash"
                     </span>{" "}
                     and click on book now
                   </p>
@@ -3719,7 +3721,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘manali’.
+                      'manali'.
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -3741,11 +3743,11 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘book now’
+                      'book now'
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
-                    set no. of traveler’s to{" "}
+                    set no. of traveler's to{" "}
                     <span
                       style={{
                         fontWeight: "bolder",
@@ -3841,7 +3843,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “save traveller details”{" "}
+                      "save traveller details"{" "}
                     </span>
                     to continue
                   </p>
@@ -3861,7 +3863,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “checkout”
+                      "checkout"
                     </span>{" "}
                     button select{" "}
                     <span
@@ -3870,7 +3872,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “cash on arrival”
+                      "cash on arrival"
                     </span>{" "}
                     as your payment methodand click on{" "}
                     <span
@@ -3879,7 +3881,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ”confirm booking”
+                      "confirm booking"
                     </span>{" "}
                     to continueclick on{" "}
                     <span
@@ -3888,7 +3890,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “view details”
+                      "view details"
                     </span>{" "}
                     button to view booking details{" "}
                   </p>
@@ -4078,7 +4080,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “save shipping details”{" "}
+                      "save shipping details"{" "}
                     </span>
                     button.
                   </p>
@@ -4160,7 +4162,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “save billing details”{" "}
+                      "save billing details"{" "}
                     </span>
                     button.
                   </p>
@@ -4173,7 +4175,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “proceed to checkout” .
+                      "proceed to checkout" .
                     </span>
                   </p>
                 </div>
@@ -4192,7 +4194,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “cash on delivery” .
+                      "cash on delivery" .
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -4203,7 +4205,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “confirm”
+                      "confirm"
                     </span>{" "}
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -4303,7 +4305,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “ok, i understand”{" "}
+                      "ok, i understand"{" "}
                     </span>
                     to continue.
                   </p>
@@ -4334,7 +4336,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “best taxi”{" "}
+                      "best taxi"{" "}
                     </span>
                     and proceed,
                   </p>
@@ -4374,7 +4376,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       }}
                     >
                       {" "}
-                      “confirm & proceed”{" "}
+                      "confirm & proceed"{" "}
                     </span>
                   </p>
                 </div>
@@ -4584,7 +4586,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “book”{" "}
+                      "book"{" "}
                     </span>
                     button to add assembly details
                   </p>
@@ -4676,7 +4678,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “add shipping details”{" "}
+                      "add shipping details"{" "}
                     </span>
                     to continue
                   </p>
@@ -4744,7 +4746,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “proceed”{" "}
+                      "proceed"{" "}
                     </span>
                     and select payment mode as{" "}
                     <span
@@ -4753,7 +4755,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “cash on delivery” .{" "}
+                      "cash on delivery" .{" "}
                     </span>
                   </p>
                 </div>
@@ -4818,7 +4820,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “help and support”{" "}
+                      "help and support"{" "}
                     </span>
                     option to get the support related to your order via chatbot.
                   </p>
@@ -4905,7 +4907,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘Family Disputes{" "}
+                      'Family Disputes{" "}
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -4916,7 +4918,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘Mediation’{" "}
+                      'Mediation'{" "}
                     </span>
                     in search box and click on{" "}
                     <span
@@ -4925,7 +4927,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘Search’{" "}
+                      'Search'{" "}
                     </span>
                   </p>
                 </div>
@@ -4948,7 +4950,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘Proceed’{" "}
+                      'Proceed'{" "}
                     </span>
                     button to add details related to your dispute.
                   </p>
@@ -4968,7 +4970,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘Add Complainant Details’{" "}
+                      'Add Complainant Details'{" "}
                     </span>
                     to add complainant and billing details:
                   </p>
@@ -5076,7 +5078,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘Add Respondent Details’{" "}
+                      'Add Respondent Details'{" "}
                     </span>
                     to add respondent details:
                   </p>
@@ -5184,7 +5186,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘Add Dispute Details’{" "}
+                      'Add Dispute Details'{" "}
                     </span>
                     to add dispute related details and documents:
                   </p>
@@ -5247,7 +5249,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘Fill Consent Form’{" "}
+                      'Fill Consent Form'{" "}
                     </span>
                     to agree to the terms and conditions from service provider
                   </p>
@@ -5339,7 +5341,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘View Case Details’{" "}
+                      'View Case Details'{" "}
                     </span>
                   </p>
                 </div>
@@ -5362,7 +5364,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘Rate us’{" "}
+                      'Rate us'{" "}
                     </span>
                     to rate the experience
                   </p>
@@ -5443,7 +5445,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘sunglasses’{" "}
+                      'sunglasses'{" "}
                     </span>
                     or{" "}
                     <span
@@ -5452,7 +5454,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘backpack’{" "}
+                      'backpack'{" "}
                     </span>
                     and
                   </p>
@@ -5475,7 +5477,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “add to cart”{" "}
+                      "add to cart"{" "}
                     </span>
                     button{" "}
                   </p>
@@ -5566,7 +5568,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “save shipping details”{" "}
+                      "save shipping details"{" "}
                     </span>
                     button.{" "}
                   </p>
@@ -5645,7 +5647,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “save billing details”{" "}
+                      "save billing details"{" "}
                     </span>
                     button.
                   </p>
@@ -5676,7 +5678,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “cash on delivery”{" "}
+                      "cash on delivery"{" "}
                     </span>
                   </p>
                   <p style={{ paddingBottom: "10px" }}>
@@ -5933,7 +5935,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “add billing details”{" "}
+                      "add billing details"{" "}
                     </span>
                     button.
                   </p>
@@ -6224,7 +6226,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “add billing details”{" "}
+                      "add billing details"{" "}
                     </span>
                     button.
                   </p>
@@ -6515,7 +6517,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “add billing details”{" "}
+                      "add billing details"{" "}
                     </span>
                     button.
                   </p>
@@ -6806,7 +6808,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “add billing details”{" "}
+                      "add billing details"{" "}
                     </span>
                     button.
                   </p>
@@ -7097,7 +7099,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “add billing details”{" "}
+                      "add billing details"{" "}
                     </span>
                     button.
                   </p>
@@ -7388,7 +7390,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “add billing details”{" "}
+                      "add billing details"{" "}
                     </span>
                     button.
                   </p>
@@ -7476,7 +7478,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘retail store’
+                      'retail store'
                     </span>{" "}
                     tab on the landing page.
                   </p>
@@ -7527,7 +7529,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      ‘retail store’
+                      'retail store'
                     </span>{" "}
                     tab on the landing page.
                   </p>
@@ -7712,7 +7714,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                         color: "#000",
                       }}
                     >
-                      “add billing details”{" "}
+                      "add billing details"{" "}
                     </span>
                     button.
                   </p>
@@ -7863,11 +7865,11 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                             from the reservation confirmation page select <br />{" "}
                             the third option: <br />{" "}
                             <span style={{ fontWeight: "700", color: "#000" }}>
-                              {""}‘
+                              {""} '
                               <span style={{ textTransform: "capitalize" }}>
                                 Show
                               </span>{" "}
-                              travel options’
+                              travel options'
                               <br />{" "}
                             </span>
                             and select
@@ -7957,7 +7959,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                       step1Text={
                         <div className="text_wrapper_modal">
                           <p style={{ paddingBottom: "10px" }}>
-                            sign in as a ‘driver’ using <br /> the following
+                            sign in as a 'driver' using <br /> the following
                             information:
                           </p>
                           <p style={{ paddingBottom: "10px" }}>
@@ -7997,7 +7999,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                                 textTransform: "capitalize",
                               }}
                             >
-                              “ON”{" "}
+                              "ON"{" "}
                             </span>
                             to receive new ride requests.
                           </p>
@@ -8085,7 +8087,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     width={"100%"}
                     height={"100%"}
                     style={{ borderRadius: "36px" }}
-                    onLoad={() => setIsLoading(false)}
+                    onLoad={onIframeLoad}
                   />
                 </>
               ) : (
