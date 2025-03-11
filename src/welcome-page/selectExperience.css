@@ -48,6 +48,7 @@
   line-height: 30px;
   margin-top: 12px;
   color: #4e4646;
+  text-transform: lowercase;
 }
 .font-color {
   color: #4e4646;
