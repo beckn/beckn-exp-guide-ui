@@ -36,7 +36,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   retailsModal,
   pulseEnergy,
   iframeRef,
-  onIframeLoad
+  onIframeLoad,
 }: selectExpModalProps) => {
   const osmEngUrl = process.env.REACT_APP_OSM_ENG_URL;
   const pcmDriverUrl = process.env.REACT_APP_PCM_DRIVER_URL;
@@ -317,7 +317,11 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
           : "tab-wrappper-content"
       }
     >
-      <div className="text_wrapper">
+      <div
+        className={
+          isOpenSpark ? "text_wrapper text_wrapper_open_spark" : "text_wrapper"
+        }
+      >
         <div className="heading-text">{headingText}</div>
         <img
           src={textURL}

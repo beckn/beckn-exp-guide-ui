@@ -5,7 +5,7 @@ import { Button } from "antd";
 
 const imageStyle = {
   borderRadius: "50%",
-  width: "200px", 
+  width: "200px",
   height: "200px",
   objectFit: "cover",
   margin: "0 auto",
@@ -155,7 +155,7 @@ const OpenSparkIframe = () => {
             onClick={showModalhimalayas}
             style={{
               position: "absolute",
-              bottom: "40px",
+              bottom: "80px",
               left: "0",
               margin: "unset",
               display: "flex",
@@ -174,812 +174,1185 @@ const OpenSparkIframe = () => {
               alt="Arrow"
             />
           </Button>
-          <ModalSlider
-            open={isModalOpenhimalayas}
-            onCancel={handleCancelhimalayas}
-            modalHeading={
-              "Follow these steps for the best possible experience as an energy Prosumer!"
-            }
-          >
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 1
-              </h3>
-              <img
-                src="/assets/step1.svg"
-                alt="Step 1"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p style={{ paddingBottom: "20px" }}>
-                  Select{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    'Vault'
-                  </span>{" "}
-                  app on the landing page.
-                </p>
-                <p>
-                  Sign in to the{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    vault
-                  </span>{" "}
-                  app using your mobile number: 9999988888
-                </p>
-                <p style={{ paddingTop: "20px" }}>
-                  Enter random 6 digit number as OTP: 123456 to verify your
-                  mobile number
-                </p>
-                <p style={{ paddingTop: "20px" }}>
-                  On the landing page,
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    {" "}
-                    click on{" "}
-                  </span>
-                  'connections'
-                </p>
-                <p style={{ paddingTop: "20px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    {" "}
-                    Click on{" "}
-                  </span>
-                  Add new button.
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 2
-              </h3>
-              <img
-                src="/assets/step2.svg"
-                alt="Step 2"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p style={{ paddingBottom: "10px" }}>
-                  On the add new connections form, add the following details:
-                </p>
-                <p style={{ paddingBottom: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000",textTransform:'capitalize'}}>
-                    Connection Number:
-                  </span>
-                 <p style={{textTransform:'capitalize'}}> 5487774000</p>
-                </p>
-                <p style={{ paddingBottom: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000", textTransform:'capitalize' }}>
-                    Utility Company:
-                  </span>
-                 <p style={{textTransform:'capitalize'}}> Bangalore Electricity Supply Ltd</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000", textTransform:'capitalize' }}>
-                    Verification Method:{" "}
-                  </span>{" "}
-                  Registered Mobile Number
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  Then <span style={{ fontWeight: "bold", color: "#000" }}>click on </span> add, enter the 6 digit random OTP to add the
-                  connection to your wallet. Once added <span style={{ fontWeight: "bold", color: "#000" }}>click on </span> back button on
-                  list screen to return to home screen.
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 3
-              </h3>
-              <img
-                src="/assets/step3.svg"
-                alt="Step 3"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>
-                  Now{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  energy assets, then <span style={{ fontWeight: "bold", color: "#000" }}> click on </span> my credentials, then
-                </p>            
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  add new. on the add new credential form, add the following
-                  details:
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    credential type:
-                  </span>
-                 <p> document</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    document name:
-                  </span>{" "}
-                  <p>solar panel ownership certificate</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    upload file:
-                  </span>
-                 <p> upload a file which is less than 1 mb.</p>
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  add, once added{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  back button on list screen to return to energy assets screen.
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 4
-              </h3>
-              <img
-                src="/assets/step4.svg"
-                alt="Step 4"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>
-                  Now{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  physical assets, then{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  add new. on the add new asset form, add the following details:
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    type:
-                  </span>
-                 <p> battery</p>
-                </p>
-                <p style={{ paddingBottom: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    upload file:
-                  </span>
-                 <p> upload a file which is less than 1 mb.</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  add, once added{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  back button on list screen to return to energy assets screen
-                </p>
-                <p style={{paddingTop:'10px'}}>
-                  Again{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  back to return to home screen.
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 5
-              </h3>
-              <img
-                src="/assets/step5.svg"
-                alt="Step 5"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>
-                Now   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>  profile icon and then logout from vault application </p>
-                <p>
-                 
-                and <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>  spark application from the landing screen and sign up for the
-                  application using following credentials: </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    name:
-                  </span>
-                 <p> ravi prakash</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    email id:
-                  </span>
-                 <p> ravi.prakash@gmail.com</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    address:
-                  </span>
-                 <p> 1202 b2, bengaluru urban, bengaluru, karnataka</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    mobile number:
-                  </span>
-                 <p> 9999988888</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>  sign up to continue </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 6
-              </h3>
-              <img
-                src="/assets/step6.svg"
-                alt="Step 6"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>Enter random 6 digit number as otp: 123456</p>
-                <p>to verify your mobile number</p>
-                <p style={{ paddingTop: "10px" }}>
-                  On the landing page,
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on 
-                  </span> 'connect my wallet' on top navigation and
-                  <span style={{ fontWeight: "bold", color: "#000" }}>  select   </span>
-                  vault app.
-                </p>
-                <p style={{ paddingTop: "10px" }}>  
-                Now sign in to wallet using your  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    vault id:
-                  </span> /subj****8888  </p>
-                  
-               
-                <p style={{ paddingTop: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span> link to proceed and then   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    enter 6 digit otp: 
-                  </span> 123456 to verify your login.  
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  On the alert pop-up select all the options and{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span> confirm 
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 7
-              </h3>
-              <img
-                src="/assets/step7.svg"
-                alt="Step 7"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>
-                  Now on the landing screen{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span> marketplace
-              
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    search
-                  </span> for battery and from the results screen <span style={{ fontWeight: "bold", color: "#000" }}> 
-                     select
-                  </span> the luminous optimus 4500 4 kva battery from luminous               
-                
-                </p>
-                <p style={{ paddingTop: "20px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>  quantity as 1 and then <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span> add to cart, then go to cart by clicking on cart icon from top
-                  right corner of the application, inside cart click on  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    proceed
-                  </span>
-                 
-                </p>
-                <p style={{ paddingTop: "20px" }}>
-                  
-                Now <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>  add shipping details.
+          {activeButton === "for_Vault" && (
+            <ModalSlider
+              open={isModalOpenhimalayas}
+              onCancel={handleCancelhimalayas}
+              modalHeading={
+                "Follow these steps for the best possible experience as an energy Prosumer!"
+              }
+            >
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 1
+                </h3>
+                <img src="/assets/step1.svg" alt="Step 1" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Sign In to the Vault App
                   </p>
-                 
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 8
-              </h3>
-              <img
-                src="/assets/step8.svg"
-                alt="Step 8"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>Add following on shipping details form:</p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    name:
-                  </span>
-                 <p> ravi prakash</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    mobile number:
-                  </span>
-                 <p> 9999988888</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    email id:
-                  </span>
-                 <p> ravi.prakash@gmail.com</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    address:
-                  </span>
-                 <p> 1202 b2, bengaluru urban, bengaluru, karnataka</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    zip code:
-                  </span>
-                <p> 560078</p>
-                </p>
-                <p>
-                Then <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>  save shipping details, then  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    check
-                  </span>  the box to save billing details same as shipping details, then
-                 
-                 
-                 
-                  <span style={{ fontWeight: "bold", color: "#000" }}> click on
-                   </span> proceed
-                  </p>          
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 9
-              </h3>
-              <img
-                src="/assets/step9.svg"
-                alt="Step 9"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>
-                  Now on the checkout screen opt in the emi section  <span style={{ fontWeight: "bold", color: "#000" }}>
-                  open dropdown  </span> 
-                  from bajaj finserv and   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>    sync now to get better interest rates
+                  <p style={{ paddingBottom: "20px" }}>
+                    Open the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Vault'
+                    </span>{" "}
+                    app from the landing page.
                   </p>
-                <p style={{ paddingTop: "10px" }}>
-                  After syncing  <span style={{ fontWeight: "bold", color: "#000" }}>
-                  select  </span>    bajaj finserv and   <span style={{ fontWeight: "bold", color: "#000" }}>
-                 click on
-               </span>  proceed
-               </p>
-                <p style={{ paddingTop: "10px" }}>
-                  On the emi application form  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span> sync wallet to fill the form
+                  <p>
+                    Sign in using your mobile number :{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      {" "}
+                      9999988888
+                    </span>
                   </p>
-                  
-                <p style={{ paddingTop: "10px" }}>
-                  
-                Then <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>  the loan tenure as 12 months and   <span style={{ fontWeight: "bold", color: "#000" }}>
-                  click on </span>submit 
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 10
-              </h3>
-              <img
-                src="/assets/step10.svg"
-                alt="Step 10"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>
-                  Once verified and approved, on the new checkout screen,{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>  proceed to payment.
-                  </p> 
-                <p style={{ paddingTop: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>  phone pe option from upi and <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span> proceed
-                  </p>        
-                <p style={{ paddingTop: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    enter 4 digit upi pin as:
-                  </span>
-                 <p> 1234</p>
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                and <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>  submit
+                  <p style={{ paddingTop: "20px" }}>
+                    Enter the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      6-digit OTP : 123456
+                    </span>{" "}
+                    to verify your mobile number
                   </p>
-                <p style={{ paddingTop: "5px" }}>
-                  Your order will be placed and you will receive a confirmation
-                </p>
-                <p style={{ paddingTop: "5px" }}>
-                  
-                Now <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span> view order details on order confirmation screen
+                  <p style={{ paddingTop: "20px" }}>
+                    If you already have an account, you will be logged in and
+                    redirected to the homepage.
                   </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 11
-              </h3>
-              <img
-                src="/assets/step11.svg"
-                alt="Step 11"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>
-                  In the order history screen{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span> the order and in the order details screen <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>  add to wallet
-                  </p>   
-                <p style={{ paddingTop: "10px" }}>
-                  To check the loan related details you can login to lend ease
-                  application as a agent using following details:
-                </p>
-                <p style={{ paddingBottom: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    mobile number:
-                  </span>
-                 <p> 7674955426</p>
-                </p>
-                <p>
-                  Now you can check the loan application status for the
-                  purchased battery
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-               
-                  click on </span>  profile icon and then <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span> logout
+                  <p style={{ paddingTop: "20px" }}>
+                    If you are a new user, an account will be created
+                    automatically.
                   </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 12
-              </h3>
-              <img
-                src="/assets/step12.svg"
-                alt="Step 12"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>
-                  Now go to solaris application and sign in using the following
-                  details:
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    mobile number:
-                  </span>
-                 <p> 9999988888</p>
-                </p>
-                <p style={{ paddingBottom: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    otp:
-                  </span>
-                 <p> 123456</p>
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on   </span>
-                  sign in to continue
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 13
-              </h3>
-              <img
-                src="/assets/step13.svg"
-                alt="Step 13"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p style={{ paddingBottom: "10px" }}>
-                  On the landing screen   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on   </span>  provide rental services
-                    </p>
-                <p style={{ paddingTop: "10px" }}>
-                  Then on the pop-up  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on   </span>
-                  add from wallet
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select
-                  </span>{" "}
-                  the battery with source as spark and then click on next
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    date:
-                  </span>
-                 <p> select desired date</p>
-                </p>
-                <p >
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    time:
-                  </span>
-                 <p> 7:00 pm - 10:00 pm</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    price:
-                  </span>
-                 <p> 100 rs. per hour</p>
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on </span>
-                  submit and publish
-                </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 2
+                </h3>
+                <img src="/assets/step2.svg" alt="Step 2" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Add a New Connection
+                  </p>
+                  <p style={{ paddingBottom: "6px" }}>
+                    On the landing page, click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      {" "}
+                      Connections.
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "6px" }}>
+                    Click{" "}
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: "#000",
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      Add New.
+                    </span>
+                  </p>
+                  <p style={{ paddingBottom: "6px" }}>
+                    Enter the following details:
+                  </p>
+                  <p style={{ paddingBottom: "6px" }}>
+                    <ul>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Connection Number: 5487774000
+                      </li>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Utility Company: Bangalore Electricity Supply Ltd
+                      </li>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Verification Method: Registered Mobile Number
+                      </li>
+                    </ul>
+                  </p>
 
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 14
-              </h3>
-              <img
-                src="/assets/step14.svg"
-                alt="Step 14"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p style={{ paddingBottom: "20px" }}>
-                  Now go back to the spark app and sign in as new user using the
-                  following details:
-                </p>
-                <p style={{ paddingBottom: "20px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    mobile number:
-                  </span>
-                 <p> 9999977777</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    otp:
-                  </span>
-                 <p> 123456</p>
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span>{" "}
-                  sign in to continue
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 15
-              </h3>
-              <img
-                src="/assets/step15.svg"
-                alt="Step 15"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p style={{ paddingBottom: "10px" }}>Enter random 6 digit number as otp: 123456  to verify your mobile number</p>
-              
-                <p>
-                  On the landing page, <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span> connect my wallet' on top navigation and  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select </span> vault app.
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  Now sign in to wallet using your  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    vault id: </span>  /subj****7777
-                    </p>
-                <p style={{ paddingTop: "10px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on   </span>  link to proceed and then <span style={{ fontWeight: "bold", color: "#000" }}>
-                    enter 6 digit otp:  </span>
-                  123456 to verify your login.
-                </p>
-                <p style={{ paddingTop: "10px" }}>
-                  On the alert pop-up select all the options and{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on   </span>
-                  confirm
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 16
-              </h3>
-              <img
-                src="/assets/step16.svg"
-                alt="Step 16"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p style={{ paddingBottom: "8px" }}>
-                  On the landing screen  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select </span>
-                  battery rental
-                </p>
+                  <p>
+                    Click{" "}
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: "#000",
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      Add{" "}
+                    </span>{" "}
+                    and enter the{" "}
+                    <span
+                      style={{
+                        fontWeight: "bold",
+                        color: "#000",
+                        textTransform: "capitalize",
+                      }}
+                    >
+                      6-digit OTP{" "}
+                    </span>{" "}
+                    to confirm.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Back{" "}
+                    </span>{" "}
+                    to return to the home screen.{" "}
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 3
+                </h3>
+                <img src="/assets/step3.svg" alt="Step 3" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Add Energy Credentials
+                  </p>
+                  <p>
+                    Navigate to{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Energy Assets →
+                    </span>{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      {" "}
+                      My Credentials →
+                    </span>{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      {" "}
+                      Add New.{" "}
+                    </span>{" "}
+                  </p>
+                  <p>Fill in the following details:</p>
+                  <p>
+                    <ul>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Credential Type: Document
+                      </li>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Document Name: Solar Panel Ownership Certificate
+                      </li>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Upload File: Less than 1MB
+                      </li>
+                    </ul>
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Add ,
+                    </span>{" "}
+                    then click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Back
+                    </span>{" "}
+                    to return to the energy assets screen.
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 4
+                </h3>
+                <img src="/assets/step4.svg" alt="Step 4" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Add Physical Assets
+                  </p>
+                  <p>
+                    Navigate to{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Physical Assets → Add New
+                    </span>{" "}
+                  </p>
+                  <p>Enter the following details:</p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    <ul>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Type: Battery
+                      </li>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Upload File: Less than 1MB
+                      </li>
+                    </ul>
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Add ,
+                    </span>{" "}
+                    then click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Back
+                    </span>{" "}
+                    twice to return to the home screen.
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 5
+                </h3>
+                <img src="/assets/step5.svg" alt="Step 5" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    View Energy Transactions
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Energy Transactions.
+                    </span>{" "}
+                  </p>
+                  <p>
+                    Browse all energy transactions available in your wallet.
+                  </p>
+                </div>
+              </>
+            </ModalSlider>
+          )}
+          {activeButton === "for_tetail_store" && (
+            <ModalSlider
+              open={isModalOpenhimalayas}
+              onCancel={handleCancelhimalayas}
+              modalHeading={
+                "Follow these steps for the best possible experience as an energy Prosumer!"
+              }
+            >
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 1
+                </h3>
+                <img src="/assets/step6.svg" alt="Step 6" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Sign In to the Spark App
+                  </p>
 
-                <p style={{ paddingBottom: "8px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    search  </span> for battery rental
-                 </p>
-                <p>
-                  From search results <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select </span>
-                  ravi prakash's flour mill
-                </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Spark'
+                    </span>{" "}
+                    on the landing screen.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Sign in using your mobile number:{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      9999988888
+                    </span>{" "}
+                  </p>
 
-                <p style={{ paddingTop: "10px" }}>
-                  On the product details screen <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on </span>proceed
-                </p>               
-               <p style={{ paddingBottom: "10px" }}>select the following:</p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    date:
-                  </span>
-                  <p> select the date used in step 13</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    time:
-                  </span>
-                 <p> 8:00 pm - 9:00 pm</p>
-                </p>
-                <p>
-                  then <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on </span>  confirm & proceed
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 17
-              </h3>
-              <img
-                src="/assets/step17.svg"
-                alt="Step 17"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p>Click on add billing details form:</p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    name:
-                  </span>
-                 <p> faiz</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    mobile number:
-                  </span>
-                 <p>9999977777</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    email id:
-                  </span>
-                 <p> faiz@gmail.com</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    address:
-                  </span>
-                 <p> 1202 b2, bengaluru urban, bengaluru, karnataka</p>
-                </p>
-                <p>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    zip code:
-                  </span>
-                 <p> 560078</p>
-                </p>
-                <p>
-                then <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on  </span>  save billing details, then <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on  </span>  proceed
-                </p>
-              </div>
-            </>
-            <>
-              <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
-                Step 18
-              </h3>
-              <img
-                src="/assets/step18.svg"
-                alt="Step 18"
-                style={imageStyle}
-              />
-              <div className="text_wrapper_modal">
-                <p style={{ paddingBottom: "8px" }}>
-                  On the checkout screen,  <span style={{ fontWeight: "bold", color: "#000" }}>
-                  click on </span> proceed to payment.
-                </p>
-                 
-                <p style={{ paddingBottom: "8px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    select </span> phone pe option from upi and{" "}
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on </span>  proceed
-                </p>
-                
-                <p style={{ paddingBottom: "8px" }}>
-                  <span style={{ fontWeight: "bold", color: "#000" }}>
-                    enter 4 digit upi pin as:
-                  </span>
-                 <p> 1234</p>
-                </p>
-                <p style={{ paddingBottom: "8px" }}>
-                  and <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on </span>    submit
-                </p>
-                
-                <p style={{ paddingBottom: "8px" }}>
-                  Your order will be placed and you will receive a confirmation
-                </p>
-                <p>
-                  Now   <span style={{ fontWeight: "bold", color: "#000" }}>
-                    click on
-                  </span> view my rentals on order confirmation screen
-                </p>
-              </div>
-            </>
-          </ModalSlider>
+                  <p style={{ paddingTop: "10px" }}>
+                    Enter the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      6-digit OTP
+                    </span>{" "}
+                    (e.g.,{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      123456
+                    </span>
+                    ) to verify your number.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    You will be logged in to the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Spark App.
+                    </span>{" "}
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 2
+                </h3>
+                <img src="/assets/step7.svg" alt="Step 7" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Connect Vault Wallet (For New Users)
+                  </p>
+                  <p>
+                    Upon signing in for the first time, you will see the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Connect Wallet
+                    </span>{" "}
+                    option in the navigation bar.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Connect My Wallet'.
+                    </span>{" "}
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Select{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Vault App
+                    </span>{" "}
+                    and sign in using your{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Vault ID: /subj****8888.
+                    </span>{" "}
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Enter your{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      phone number
+                    </span>{" "}
+                    in the text box and verify using a{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      6-digit OTP
+                    </span>{" "}
+                    (e.g.,{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      123456
+                    </span>
+                    )
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    On the alert pop-up, select all options and click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Confirm'.
+                    </span>{" "}
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 3
+                </h3>
+                <img src="/assets/step8.svg" alt="Step 8" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Purchase a Battery
+                  </p>
+
+                  <p>
+                    On the landing screen, select{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Marketplace'.
+                    </span>
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Search for{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Battery'
+                    </span>{" "}
+                    and select{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Luminous Optimus 4500 4KVA'.
+                    </span>{" "}
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Set{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Quantity = 1,
+                    </span>{" "}
+                    click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Add to Cart',
+                    </span>{" "}
+                    then go to the cart.{" "}
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Proceed',
+                    </span>{" "}
+                    then{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Add Shipping Details'.
+                    </span>{" "}
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 4
+                </h3>
+                <img src="/assets/step9.svg" alt="Step 9" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Enter Shipping Details
+                  </p>
+
+                  <p>Fill in the following details:</p>
+                  <p style={{ paddingTop: "10px" }}>
+                    <ul>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Name:
+                        </span>{" "}
+                        Ravi Prakash
+                      </li>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Mobile Number:
+                        </span>{" "}
+                        9999988888
+                      </li>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Email:
+                        </span>{" "}
+                        ravi.prakash@gmail.com
+                      </li>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Address:
+                        </span>{" "}
+                        1202 B2, Bengaluru Urban, Karnataka
+                      </li>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Zip Code:
+                        </span>{" "}
+                        560078
+                      </li>
+                    </ul>
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Save Shipping Details'
+                    </span>{" "}
+                    and check{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Billing same as Shipping'.
+                    </span>{" "}
+                  </p>
+
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Proceed'.
+                    </span>{" "}
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 5
+                </h3>
+                <img
+                  src="/assets/step10.svg"
+                  alt="Step 10"
+                  style={imageStyle}
+                />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    EMI Payment ( Optional)
+                  </p>
+                  <p>
+                    On the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Checkout
+                    </span>{" "}
+                    screen, click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'EMI'
+                    </span>{" "}
+                    and select{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Bajaj Finserv'.
+                    </span>{" "}
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Sync Now'
+                    </span>{" "}
+                    to get better interest rates. This will share your energy
+                    transaction data with the provider.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Proceed'
+                    </span>{" "}
+                    to open the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      EMI Application
+                    </span>{" "}
+                    form.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Sync Wallet'
+                    </span>{" "}
+                    to sync your wallet information and pre-fill the form.
+                  </p>
+
+                  <p style={{ paddingTop: "5px" }}>
+                    Select{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      '12 Months'
+                    </span>{" "}
+                    under{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Loan Tenure
+                    </span>{" "}
+                    and click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Submit'.
+                    </span>{" "}
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 6
+                </h3>
+                <img
+                  src="/assets/step11.svg"
+                  alt="Step 11"
+                  style={imageStyle}
+                />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Complete the Remaining Payment
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    After{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      EMI approval,
+                    </span>{" "}
+                    click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Proceed to Payment'.
+                    </span>{" "}
+                  </p>
+
+                  <p style={{ paddingBottom: "10px" }}>
+                    Select{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'PhonePe UPI'
+                    </span>{" "}
+                    and enter your{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      UPI PIN (1234).
+                    </span>{" "}
+                  </p>
+
+                  <p style={{ paddingBottom: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Submit'.
+                    </span>{" "}
+                  </p>
+
+                  <p>
+                    View the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      order confirmation
+                    </span>{" "}
+                    and click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'View Order Details'.
+                    </span>{" "}
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 7
+                </h3>
+                <img src="/assets/step7.svg" alt="Step 12" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Add Battery to Wallet
+                  </p>
+
+                  <p>
+                    Go to{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Order History,
+                    </span>{" "}
+                    select the order, and click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Add to Wallet'.
+                    </span>{" "}
+                  </p>
+                  <p style={{ paddingBottom: "10px", paddingTop: "10px" }}>
+                    The battery will be added to your wallet under{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Physical Assets.
+                    </span>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step8
+                </h3>
+                <img
+                  src="/assets/step13.svg"
+                  alt="Step 13"
+                  style={imageStyle}
+                />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Rent a Battery
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    On the landing screen, select{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Battery Rental'.
+                    </span>{" "}
+                  </p>
+                  <p>
+                    Search for{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Battery Rental'{" "}
+                    </span>
+                    and select{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Ravi Prakash’s Flour Mill'.{" "}
+                    </span>
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Proceed'
+                    </span>{" "}
+                    and set:
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    <ul>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Date:
+                        </span>{" "}
+                        Select any available date.
+                      </li>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Time: 8:00 PM - 9:00 PM.
+                      </li>
+                    </ul>
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Confirm & Proceed'.
+                    </span>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 9
+                </h3>
+                <img
+                  src="/assets/step14.svg"
+                  alt="Step 14"
+                  style={imageStyle}
+                />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Enter Billing Details
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    Fill in the following details:
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    <ul>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Name:
+                        </span>{" "}
+                        Faiz
+                      </li>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Mobile Number:
+                        </span>{" "}
+                        9999977777
+                      </li>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Email:
+                        </span>{" "}
+                        faiz@gmail.com
+                      </li>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Address:
+                        </span>{" "}
+                        1202 B2, Bengaluru Urban, Karnataka
+                      </li>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Zip Code:
+                        </span>{" "}
+                        560078
+                      </li>
+                    </ul>
+                  </p>
+                  <p>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Save Billing Details'
+                    </span>
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    and then{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Proceed'.
+                    </span>{" "}
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 10
+                </h3>
+                <img
+                  src="/assets/step15.svg"
+                  alt="Step 15"
+                  style={imageStyle}
+                />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Complete Payment for Rental
+                  </p>
+
+                  <p>
+                    On the checkout screen, click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Proceed to Payment'.
+                    </span>{" "}
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Select{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'PhonePe UPI'{" "}
+                    </span>{" "}
+                    and enter your{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      UPI PIN (1234).{" "}
+                    </span>{" "}
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'Submit'.{" "}
+                    </span>{" "}
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Click{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      'View My Rentals'{" "}
+                    </span>
+                    on the order confirmation screen to navigate to the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      My Orders{" "}
+                    </span>
+                    page.
+                  </p>
+                </div>
+              </>
+            </ModalSlider>
+          )}
+          {activeButton === "for_cutm_name" && (
+            <ModalSlider
+              open={isModalOpenhimalayas}
+              onCancel={handleCancelhimalayas}
+              modalHeading={
+                "Follow these steps for the best possible experience as an energy Prosumer!"
+              }
+            >
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 1
+                </h3>
+                <img src="/assets/step1.svg" alt="Step 1" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Sign In to the Solaris App
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    Tap{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      "Solaris"
+                    </span>{" "}
+                    on the landing screen.
+                  </p>
+                  <p>
+                    Enter your mobile number{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      {" "}
+                      (e.g.,{" "}
+                      <span style={{ fontWeight: "bold", color: "#000" }}>
+                        9999988888
+                      </span>{" "}
+                      ){" "}
+                    </span>
+                    to sign in.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Enter the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      6-digit OTP
+                    </span>{" "}
+                    (e.g.,{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      123456
+                    </span>
+                    ) to verify your number.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    You will be logged into the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Solaris App.
+                    </span>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 2
+                </h3>
+                <img
+                  src="/assets/step16.svg"
+                  alt="Step 16"
+                  style={imageStyle}
+                />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Offer a Battery for Rental
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    Tap{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      "Provide Rental Services" → "Add from Wallet".
+                    </span>
+                  </p>
+
+                  <p style={{ paddingBottom: "10px" }}>
+                    Select a battery{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      (Source: Spark){" "}
+                    </span>{" "}
+                    and tap{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      "Next".{" "}
+                    </span>
+                  </p>
+                  <p>Set the rental details: </p>
+
+                  <p style={{ paddingTop: "10px" }}>
+                    <ul>
+                      <li>
+                        <span style={{ fontWeight: "bold", color: "#000" }}>
+                          {" "}
+                          Date:
+                        </span>{" "}
+                        Choose a desired date.
+                      </li>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Time: 7:00 PM - 10:00 PM.
+                      </li>
+                      <li style={{ fontWeight: "bold", color: "#000" }}>
+                        Price: ₹100/hour.
+                      </li>
+                    </ul>
+                  </p>
+
+                  <p style={{ paddingTop: "10px" }}>
+                    Tap{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      "Submit and Publish".{" "}
+                    </span>{" "}
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 3
+                </h3>
+                <img
+                  src="/assets/step17.svg"
+                  alt="Step 17"
+                  style={imageStyle}
+                />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    My Services
+                  </p>
+
+                  <p>
+                    Tap{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      "My Services"
+                    </span>{" "}
+                    on the homepage.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    You will be redirected to the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      My Services
+                    </span>{" "}
+                    page, where you can view all batteries available for rent.
+                  </p>
+                </div>
+              </>
+            </ModalSlider>
+          )}
+          {activeButton === "for_lend_name" && (
+            <ModalSlider
+              open={isModalOpenhimalayas}
+              onCancel={handleCancelhimalayas}
+              modalHeading={
+                "Follow these steps for the best possible experience as an energy Prosumer!"
+              }
+            >
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 1
+                </h3>
+                <img src="/assets/step1.svg" alt="Step 1" style={imageStyle} />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Sign In to the LendEase App
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    Tap{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      "LendEase"
+                    </span>{" "}
+                    on the landing screen.
+                  </p>
+                  <p>
+                    Sign in using your mobile number{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      {" "}
+                      (e.g.,{" "}
+                      <span style={{ fontWeight: "bold", color: "#000" }}>
+                        7674955426
+                      </span>{" "}
+                      ){" "}
+                    </span>
+                    to sign in.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Enter the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      6-digit OTP
+                    </span>{" "}
+                    (e.g.,{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      123456
+                    </span>
+                    ) to verify your number.
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    You will be logged into the{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      LendEase App.
+                    </span>
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 2
+                </h3>
+                <img
+                  src="/assets/step16.svg"
+                  alt="Step 16"
+                  style={imageStyle}
+                />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Loan Applications
+                  </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    After a successful login, you will see all recent loan
+                    applications.
+                  </p>
+
+                  <p style={{ paddingBottom: "10px" }}>
+                    Tap{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      "See All"{" "}
+                    </span>{" "}
+                    to view the complete list of loan applications.
+                  </p>
+                </div>
+              </>
+              <>
+                <h3 style={{ paddingBottom: "20px", textAlign: "center" }}>
+                  Step 3
+                </h3>
+                <img
+                  src="/assets/step17.svg"
+                  alt="Step 17"
+                  style={imageStyle}
+                />
+                <div className="text_wrapper_modal">
+                  <p
+                    style={{
+                      paddingBottom: "10px",
+                      fontWeight: "bolder",
+                      color: "#000",
+                    }}
+                  >
+                    Manage Loan Catalogue
+                  </p>
+
+                  <p>
+                    Tap{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      "Manage Loan Catalogue".
+                    </span>{" "}
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    Tap{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      "Energy Financing".
+                    </span>{" "}
+                  </p>
+                  <p style={{ paddingTop: "10px" }}>
+                    You will see your loan catalogue under{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      Energy Financing.
+                    </span>{" "}
+                  </p>
+                </div>
+              </>
+            </ModalSlider>
+          )}
         </div>
       </div>
     </>

@@ -15,6 +15,7 @@
   font-size: 24px;
   font-weight: 300;
   line-height: 36px;
+  text-transform: lowercase;
 }
 .heading-text {
   line-height: 0;
@@ -37,6 +38,9 @@
     #DCDCDC 50%,
     #DCDCDC 100%
   ); */
+}
+.text_wrapper_open_spark {
+  margin-top: -120px;
 }
 .cityOfAfrica.DSEP_Wrapper .ant-tabs-tab[data-node-key="3"] {
   width: 800px;
