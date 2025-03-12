@@ -8092,6 +8092,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     height={"100%"}
                     style={{ borderRadius: "36px" }}
                     onLoad={onIframeLoad}
+                    loading='eager'
                   />
                 </>
               ) : (
