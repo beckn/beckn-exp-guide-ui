@@ -19,39 +19,84 @@ const OpenSparkIframe = () => {
   const openSparkSolaris = process.env.REACT_APP_OPEN_SPARK_Solaris_URL;
   const [openSpark, setopenSpark] = useState(openSparkVaultUrl);
   const [activeButton, setActiveButton] = useState("for_Vault");
+  const [currentActiveApp, setCurrentActiveApp] = useState({
+    for_Vault: true,
+    for_tetail_store: false,
+    for_cutm_name: false,
+    for_lend_name: false,
+  });
   const [retailsModal, setRetailsModal] = useState(false);
   const [lendModal, setLendModal] = useState(false);
   const [vaultModal, setVaultModal] = useState(false);
   const [isModalOpenhimalayas, setIsModalOpenhimalayas] = useState(false);
 
-  const handleOsmLink = (e: any) => {
-    setopenSpark(openSparkSolaris);
-    setActiveButton("for_cutm_name");
-    setRetailsModal(false);
-    setLendModal(false);
-    setVaultModal(false);
-  };
-  const handleRetailStore = (e: any) => {
-    setopenSpark(openSparkRetailStoreUrl);
-    setActiveButton("for_tetail_store");
-    setRetailsModal(true);
-    setLendModal(false);
-    setVaultModal(false);
-  };
-  const handleLendApp = (e: any) => {
-    setopenSpark(openSparkLendUrl);
-    setActiveButton("for_lend_name");
-    setRetailsModal(false);
-    setLendModal(true);
-    setVaultModal(false);
-  };
+  // const handleOsmLink = (e: any) => {
+  //   setopenSpark(openSparkSolaris);
+  //   setActiveButton("for_cutm_name");
+  //   setRetailsModal(false);
+  //   setLendModal(false);
+  //   setVaultModal(false);
+  // };
+  // const handleRetailStore = (e: any) => {
+  //   setopenSpark(openSparkRetailStoreUrl);
+  //   setActiveButton("for_tetail_store");
+  //   setRetailsModal(true);
+  //   setLendModal(false);
+  //   setVaultModal(false);
+  // };
+  // const handleLendApp = (e: any) => {
+  //   setopenSpark(openSparkLendUrl);
+  //   setActiveButton("for_lend_name");
+  //   setRetailsModal(false);
+  //   setLendModal(true);
+  //   setVaultModal(false);
+  // };
 
-  const handVaultApp = (e: any) => {
-    setopenSpark(openSparkVaultUrl);
-    setActiveButton("for_Vault");
-    setRetailsModal(false);
-    setLendModal(false);
-    setVaultModal(true);
+  // const handVaultApp = (e: any) => {
+  //   setopenSpark(openSparkVaultUrl);
+  //   setActiveButton("for_Vault");
+  //   setRetailsModal(false);
+  //   setLendModal(false);
+  //   setVaultModal(true);
+  // };
+
+  const handleAppSelection = (appType: string) => {
+    switch (appType) {
+      case "for_cutm_name":
+        setopenSpark(openSparkSolaris);
+        setActiveButton("for_cutm_name");
+        setRetailsModal(false);
+        setLendModal(false);
+        setVaultModal(false);
+        break;
+
+      case "for_tetail_store":
+        setopenSpark(openSparkRetailStoreUrl);
+        setActiveButton("for_tetail_store");
+        setRetailsModal(true);
+        setLendModal(false);
+        setVaultModal(false);
+        break;
+
+      case "for_lend_name":
+        setopenSpark(openSparkLendUrl);
+        setActiveButton("for_lend_name");
+        setRetailsModal(false);
+        setLendModal(true);
+        setVaultModal(false);
+        break;
+
+      case "for_Vault":
+        setopenSpark(openSparkVaultUrl);
+        setActiveButton("for_Vault");
+        setRetailsModal(false);
+        setLendModal(false);
+        setVaultModal(true);
+        break;
+
+      default:
+        console.warn("Unknown app type selected");
+    }
   };
 
   const showModalhimalayas = () => {
@@ -60,6 +105,15 @@ const OpenSparkIframe = () => {
 
   const handleCancelhimalayas = () => {
     setIsModalOpenhimalayas(false);
+  };
+
+  const onIframeLoad = () => {
+    setCurrentActiveApp({
+      for_Vault: activeButton === "for_Vault",
+      for_tetail_store: activeButton === "for_tetail_store",
+      for_cutm_name: activeButton === "for_cutm_name",
+      for_lend_name: activeButton === "for_lend_name",
+    });
   };
 
   return (
@@ -81,66 +135,121 @@ const OpenSparkIframe = () => {
           languageEng={"english"}
           languageFra={"français"}
           retailsModal={retailsModal}
+          onIframeLoad={onIframeLoad}
         />
 
         <div className="osc_tab_change open-spark-tab-change">
           <div
             className={`for_cutm_name open-spark-btn ${
-              activeButton === "for_Vault" ? "active" : ""
+              currentActiveApp["for_Vault"] ? "active" : ""
+            } ${
+              activeButton === "for_Vault" && !currentActiveApp["for_Vault"]
+                ? "opacity"
+                : ""
             }`}
-            onClick={handVaultApp}
+            onClick={() => handleAppSelection("for_Vault")}
           >
-            {activeButton === "for_Vault" ? (
-              <img src="/assets/vault-active.svg" alt="vault-active" />
+            {activeButton === "for_Vault" && !currentActiveApp["for_Vault"] ? (
+             <>
+             <div className="spinner"></div> Loading...
+             </>
             ) : (
-              <img src="/assets/vault.svg" alt="vault" />
+              <>
+                {currentActiveApp["for_Vault"] ? (
+                  <img src="/assets/vault-active.svg" alt="vault-active" />
+                ) : (
+                  <img src="/assets/vault.svg" alt="vault" />
+                )}
+                Vault
+              </>
             )}
-            Vault
           </div>
           <div
             className={`for_tetail_store open-spark-btn ${
-              activeButton === "for_tetail_store" ? "active" : ""
+              currentActiveApp["for_tetail_store"] ? "active" : ""
+            } ${
+              activeButton === "for_tetail_store" &&
+              !currentActiveApp["for_tetail_store"]
+                ? "opacity"
+                : ""
             }`}
-            onClick={handleRetailStore}
+            onClick={() => handleAppSelection("for_tetail_store")}
           >
-            {activeButton === "for_tetail_store" ? (
-              <img
-                src="/assets/Kuza_Logo_White_Trans.svg"
-                alt="Kuza_Logo_White_Trans"
-              />
+            {activeButton === "for_tetail_store" &&
+            !currentActiveApp["for_tetail_store"] ? (
+              <>
+              <div className="spinner"></div> Loading...
+              </>
             ) : (
-              <img
-                src="/assets/Kuza_Logo_White_Trans-1.svg"
-                alt="Kuza_Logo_White_Trans-1"
-              />
+              <>
+                {currentActiveApp["for_tetail_store"] ? (
+                  <img
+                    src="/assets/Kuza_Logo_White_Trans.svg"
+                    alt="Kuza_Logo_White_Trans"
+                  />
+                ) : (
+                  <img
+                    src="/assets/Kuza_Logo_White_Trans-1.svg"
+                    alt="Kuza_Logo_White_Trans-1"
+                  />
+                )}
+                Spark
+              </>
             )}
-            Spark
           </div>
           <div
             className={`for_cutm_name open-spark-btn ${
-              activeButton === "for_cutm_name" ? "active" : ""
+              currentActiveApp["for_cutm_name"] ? "active" : ""
+            } ${
+              activeButton === "for_cutm_name" &&
+              !currentActiveApp["for_cutm_name"]
+                ? "opacity"
+                : ""
             }`}
-            onClick={handleOsmLink}
+            onClick={() => handleAppSelection("for_cutm_name")}
           >
-            {activeButton === "for_cutm_name" ? (
-              <img src="/assets/battery-1.svg" alt="battery-1" />
+            {activeButton === "for_cutm_name" &&
+            !currentActiveApp["for_cutm_name"] ? (
+              <>
+              <div className="spinner"></div> Loading...
+              </>
             ) : (
-              <img src="/assets/battery.svg" alt="battery" />
+              <>
+                {currentActiveApp["for_cutm_name"] ? (
+                  <img src="/assets/battery-1.svg" alt="battery-1" />
+                ) : (
+                  <img src="/assets/battery.svg" alt="battery" />
+                )}
+                Solaris
+              </>
             )}
-            Solaris
           </div>
           <div
             className={`for_cutm_name open-spark-btn ${
-              activeButton === "for_lend_name" ? "active" : ""
+              currentActiveApp["for_lend_name"] ? "active" : ""
+            } ${
+              activeButton === "for_lend_name" &&
+              !currentActiveApp["for_lend_name"]
+                ? "opacity"
+                : ""
             }`}
-            onClick={handleLendApp}
+            onClick={() => handleAppSelection("for_lend_name")}
           >
-            {activeButton === "for_lend_name" ? (
-              <img src="/assets/money_white.svg" alt="money_white" />
+            {activeButton === "for_lend_name" &&
+            !currentActiveApp["for_lend_name"] ? (
+              <>
+              <div className="spinner"></div> Loading...
+              </>
             ) : (
-              <img src="/assets/money_bag.svg" alt="money_bag" />
+              <>
+                {currentActiveApp["for_lend_name"] ? (
+                  <img src="/assets/money_white.svg" alt="money_white" />
+                ) : (
+                  <img src="/assets/money_bag.svg" alt="money_bag" />
+                )}
+                Lend Ease
+              </>
             )}
-            Lend Ease
           </div>
         </div>
         <img
