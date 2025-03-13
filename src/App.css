@@ -100,6 +100,9 @@ iframe .header-container .location-btn {
   background-color: #4398e8;
   color: #fff;
 }
+.osc_tab_change .opacity {
+  opacity: 0.5;
+}
 .UEI_tab_change {
   display: flex;
   position: absolute;
@@ -126,6 +129,7 @@ iframe .header-container .location-btn {
   background-color: #4498e8;
   color: #fff;
 }
+
 .pulse_energy {
   height: 686px;
 }
@@ -471,4 +475,32 @@ iframe .header-container .location-btn {
 .DSEP-intruction.spark-instruction .ant-btn-primary:hover {
   background: #4498e8;
   color: #ffffff;
+}
+.spinner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  animation: rotate 1s linear infinite
+}
+.spinner::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 3px solid #4398e8;
+  animation: prixClipFix 3s linear infinite ;
+}
+
+@keyframes rotate {
+  100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+    0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+    25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+    50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+    75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+    100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
 }
