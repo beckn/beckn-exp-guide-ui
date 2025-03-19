@@ -118,7 +118,7 @@ const OpenSparkIframe = () => {
 
   return (
     <>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: "relative" }} className={"open-spark-app"}>
         <ChooseExperience
           // headingText="enabling commerce on  "
           textURL={"/assets/spark-text1.svg"}
@@ -150,9 +150,9 @@ const OpenSparkIframe = () => {
             onClick={() => handleAppSelection("for_Vault")}
           >
             {activeButton === "for_Vault" && !currentActiveApp["for_Vault"] ? (
-             <>
-             <div className="spinner"></div> Loading...
-             </>
+              <>
+                <div className="spinner"></div> Loading...
+              </>
             ) : (
               <>
                 {currentActiveApp["for_Vault"] ? (
@@ -178,7 +178,7 @@ const OpenSparkIframe = () => {
             {activeButton === "for_tetail_store" &&
             !currentActiveApp["for_tetail_store"] ? (
               <>
-              <div className="spinner"></div> Loading...
+                <div className="spinner"></div> Loading...
               </>
             ) : (
               <>
@@ -211,7 +211,7 @@ const OpenSparkIframe = () => {
             {activeButton === "for_cutm_name" &&
             !currentActiveApp["for_cutm_name"] ? (
               <>
-              <div className="spinner"></div> Loading...
+                <div className="spinner"></div> Loading...
               </>
             ) : (
               <>
@@ -238,7 +238,7 @@ const OpenSparkIframe = () => {
             {activeButton === "for_lend_name" &&
             !currentActiveApp["for_lend_name"] ? (
               <>
-              <div className="spinner"></div> Loading...
+                <div className="spinner"></div> Loading...
               </>
             ) : (
               <>
@@ -285,6 +285,7 @@ const OpenSparkIframe = () => {
           </Button>
           {activeButton === "for_Vault" && (
             <ModalSlider
+              className1="open-spark-app"
               open={isModalOpenhimalayas}
               onCancel={handleCancelhimalayas}
               modalHeading={
@@ -551,6 +552,7 @@ const OpenSparkIframe = () => {
           )}
           {activeButton === "for_tetail_store" && (
             <ModalSlider
+              className1="open-spark-app"
               open={isModalOpenhimalayas}
               onCancel={handleCancelhimalayas}
               modalHeading={
@@ -1165,6 +1167,7 @@ const OpenSparkIframe = () => {
           )}
           {activeButton === "for_cutm_name" && (
             <ModalSlider
+              className1="open-spark-app"
               open={isModalOpenhimalayas}
               onCancel={handleCancelhimalayas}
               modalHeading={
@@ -1328,6 +1331,7 @@ const OpenSparkIframe = () => {
           )}
           {activeButton === "for_lend_name" && (
             <ModalSlider
+              className1="open-spark-app"
               open={isModalOpenhimalayas}
               onCancel={handleCancelhimalayas}
               modalHeading={
