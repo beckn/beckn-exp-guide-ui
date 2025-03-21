@@ -967,6 +967,13 @@ const OpenSparkIframe = () => {
                       Physical Assets.
                     </span>
                   </p>
+                  <p style={{ paddingBottom: "10px" }}>
+                    In order details, go to{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      ‘scan qr code’
+                    </span>{" "}
+                    section, to import the order in solaris application
+                  </p>
                 </div>
               </>
               <>
@@ -1250,7 +1257,12 @@ const OpenSparkIframe = () => {
                     Tap{" "}
                     <span style={{ fontWeight: "bold", color: "#000" }}>
                       "Provide Rental Services" → "Add from Wallet".
-                    </span>
+                    </span>{" "}
+                    or{" "}
+                    <span style={{ fontWeight: "bold", color: "#000" }}>
+                      ‘Scan qr code’
+                    </span>{" "}
+                    to import the battery from spark application
                   </p>
 
                   <p style={{ paddingBottom: "10px" }}>
