@@ -23,19 +23,7 @@ const CardList = [
 const RegenAg = () => {
   const navigate = useNavigate();
   const handleNevigate = (id: any) => {
-    localStorage.setItem("name", id);
-    const name = localStorage.getItem("name");
-    switch (name) {
-      case "ONDC":
-        navigate("/ONDC");
-        break;
-      case "regenerativeAgriculture":
-        navigate("/regenerativeAgriculture");
-        break;
-      case "regenUEI":
-        navigate("/regenUEI");
-        break;
-    }
+    navigate(`/${id}`);
   };
   return (
     <div style={{ overflow: "hidden" }}>

@@ -1,10 +1,11 @@
 import { QRCode, Button, Modal, Tabs } from "antd";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import ModalHTML from "../ModalHTML/modalHTML";
 import ModalSlider from "../ModalHTML/ModalSlider";
 import { selectExpModalProps } from "./chooseExperience";
 import TabsFa from "./tabsFa";
+import "./tabs.css";
 
 const ChooseExpFa: React.FC<selectExpModalProps> = ({
   descriptionText,
@@ -21,12 +22,15 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
   const pcmPcAppUrl = process.env.REACT_APP_PCM_PC_APP_URL;
   const cityOfLightFaUrl = process.env.REACT_APP_CITY_OF_LIGHT_FRENCH_URL;
 
-  const cityOfLight = localStorage.getItem("name") === "cityOfLight";
-
-  const cityOfAfrica = localStorage.getItem("name") === "cityOfAfrica";
-  const OSC = localStorage.getItem("name") === "OSC";
-  const PCM = localStorage.getItem("name") === "PCM";
+  const [activeTab, setActiveTab] = useState("1");
   const navigate = useNavigate();
+  const location = useLocation();
+  const currentExperience = location.pathname.split("/")[1];
+
+  const cityOfLight = currentExperience === "cityOfLight";
+  const cityOfAfrica = currentExperience === "cityOfAfrica";
+  const OSC = currentExperience === "OSC";
+  const PCM = currentExperience === "PCM";
 
   const [lang, setLang] = useState("français");
   const [isModalOpenOSC, setIsModalOpenOSC] = useState(false);
@@ -332,7 +336,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                       </p>
                       <p>
                         <p style={{ fontWeight: "bolder", color: "#000" }}>
-                          ‘Open Street Commerce’
+                          'Open Street Commerce'
                         </p>
                       </p>
                       <p>
@@ -379,7 +383,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                         Les activités que vous effectuez sur ClicPaye se
                         reflètent sur l'application <br />
                         <span style={{ fontWeight: "bolder" }}>
-                          ‘Open Street Commerce’{" "}
+                          'Open Street Commerce'{" "}
                         </span>
                       </p>
                     </div>
@@ -1201,11 +1205,11 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
                             <span style={{ fontWeight: "700", color: "#000" }}>
                               {" "}
                               <br />
-                              ‘'{" "}
+                              '"'{" "}
                               <span style={{ textTransform: "capitalize" }}>
                                 Afficher
                               </span>{" "}
-                              les options de voyage'’
+                              les options de voyage'"'
                             </span>{" "}
                             <br />
                             et sélectionnez 'taxi'

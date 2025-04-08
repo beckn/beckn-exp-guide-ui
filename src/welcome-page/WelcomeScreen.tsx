@@ -9,10 +9,6 @@ const WelcomeScreen = () => {
   const [size, setSize] = useState<SizeType>("large");
   const navigate = useNavigate();
 
-  useEffect(() => {
-    localStorage.clear();
-  }, []);
-
   return (
     <div className="welcome-Screen-container">
       <div className="child-container">
