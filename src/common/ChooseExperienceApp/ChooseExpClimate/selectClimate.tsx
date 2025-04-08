@@ -8,8 +8,7 @@ const SelectClimate = () => {
   const videoSectionRef = useRef<HTMLDivElement | null>(null);
 
   const handleNavigate = (id: string) => {
-    localStorage.setItem("name", id);
-    navigate("/progress");
+    navigate("/progress", { state: { experienceId: id } });
   };
 
   // Scroll to the video section after exiting full-screen

@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import { QRCode, Button, Modal, Tabs } from "antd";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import ModalHTML from "../ModalHTML/modalHTML";
 import ModalSlider from "../ModalHTML/ModalSlider";
 import {
@@ -14,7 +14,7 @@ export interface selectExpModalProps {
   headingText?: string;
   btmHeading?: string;
   textURL: string;
-  descriptionText?: string | JSX.Element;
+  descriptionText?: string | React.ReactNode;
   iframeURL?: string | undefined;
   languageEng?: string;
   languageFra?: string;
@@ -47,29 +47,31 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
   const pulseEnergyWhatsappUrl =
     process.env.REACT_APP_PULSE_ENERGY_WHATSAPP_URL;
   const [isLoading, setIsLoading] = useState(true);
-  const cityOfAfrica = localStorage.getItem("name") === "cityOfAfrica";
-  const cityOfLight = localStorage.getItem("name") === "cityOfLight";
-  const OSC = localStorage.getItem("name") === "OSC";
-  const himalayas = localStorage.getItem("name") === "himalayas";
-  const cities = localStorage.getItem("name") === "cities";
-  const PCM = localStorage.getItem("name") === "PCM";
-  const DSEP = localStorage.getItem("name") === "DSEP";
-  const UEI = localStorage.getItem("name") === "UEI";
-  const dsepUnified = localStorage.getItem("name") === "dsepUnified";
-  const retail = localStorage.getItem("name") === "retail";
-  const DSNP = localStorage.getItem("name") === "DSNP";
+  const location = useLocation();
+  const currentExperience = location.pathname.split("/")[1];
+
+  const cityOfAfrica = currentExperience === "cityOfAfrica";
+  const cityOfLight = currentExperience === "cityOfLight";
+  const OSC = currentExperience === "OSC";
+  const himalayas = currentExperience === "himalayas";
+  const cities = currentExperience === "cities";
+  const PCM = currentExperience === "PCM";
+  const DSEP = currentExperience === "DSEP";
+  const UEI = currentExperience === "UEI";
+  const dsepUnified = currentExperience === "dsep-unified";
+  const retail = currentExperience === "retail";
+  const DSNP = currentExperience === "DSNP";
   const isDsnpFeed = iframeURL === process.env.REACT_APP_DSNP_APP_URL_FEED;
-  const ODR = localStorage.getItem("name") === "ODR";
-  const DHP = localStorage.getItem("name") === "DHP";
-  const isIndustry = localStorage.getItem("name") === "industry4.0";
-  const isDragonFoods = localStorage.getItem("name") === "dragon-foods";
-  const isSkyAnalytics = localStorage.getItem("name") === "sky-analytics";
-  const isHarmoniaid = localStorage.getItem("name") === "harmoniaid";
-  const isStateForestDep = localStorage.getItem("name") === "state-forest-dep";
-  const isOpenSpark = localStorage.getItem("name") === "open-spark";
-  const isEarthSupport =
-    localStorage.getItem("name") === "earth-support-initiative";
-  const isEnvirogrowth = localStorage.getItem("name") === "envirogrowth";
+  const ODR = currentExperience === "ODR";
+  const DHP = currentExperience === "DHP";
+  const isIndustry = currentExperience === "industry4.0";
+  const isDragonFoods = currentExperience === "dragon-foods";
+  const isSkyAnalytics = currentExperience === "sky-analytics";
+  const isHarmoniaid = currentExperience === "harmoniaid";
+  const isStateForestDep = currentExperience === "state-forest-dep";
+  const isOpenSpark = currentExperience === "open-spark";
+  const isEarthSupport = currentExperience === "earth-support-initiative";
+  const isEnvirogrowth = currentExperience === "envirogrowth";
   const navigate = useNavigate();
 
   const [lang, setLang] = useState("english");
@@ -8092,7 +8094,7 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
                     height={"100%"}
                     style={{ borderRadius: "36px" }}
                     onLoad={onIframeLoad}
-                    loading='eager'
+                    loading="eager"
                   />
                 </>
               ) : (

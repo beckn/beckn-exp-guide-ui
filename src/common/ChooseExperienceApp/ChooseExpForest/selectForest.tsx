@@ -8,8 +8,7 @@ const SelectForest = () => {
   const videoSectionRef = useRef<HTMLDivElement | null>(null);
 
   const handleNevigate = (id: any) => {
-    localStorage.setItem("name", id);
-    navigate("/progress");
+    navigate("/progress", { state: { experienceId: id } });
   };
   // Scroll to the video section after exiting full-screen
   const handleFullscreenChange = () => {
