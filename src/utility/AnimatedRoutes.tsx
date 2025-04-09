@@ -56,17 +56,17 @@ const AnimatedRoutes = () => {
         <Route path="/cities" element={<Cities />} />
         <Route path="/cityOfLight" element={<CityOfLight />} />
         <Route path="/cityOfAfrica" element={<CityOfAfrica />} />
-        <Route path="/OSC" element={<Osc />} />
-        <Route path="/DSEP" element={<DSEP />} />
-        <Route path="/PCM" element={<Pcm />} />
-        <Route path="/PCM-Fa" element={<PcmFa />} />
-        <Route path="/OSC-Fa" element={<OscFa />} />
-        <Route path="/DHP" element={<DHP />} />
+        <Route path="/osc" element={<Osc />} />
+        <Route path="/dsep" element={<DSEP />} />
+        <Route path="/pcm" element={<Pcm />} />
+        <Route path="/pcm-fa" element={<PcmFa />} />
+        <Route path="/osc-fa" element={<OscFa />} />
+        <Route path="/dhp" element={<DHP />} />
         <Route path="/industry4.0" element={<IndustryComp />} />
-        <Route path="/UEI" element={<UEI />} />
-        <Route path="/ODR" element={<ODR />} />
-        <Route path="/DSNP" element={<Dsnp />} />
-        <Route path="/CityOfLightFa" element={<CityOfLightFa />} />
+        <Route path="/uei" element={<UEI />} />
+        <Route path="/odr" element={<ODR />} />
+        <Route path="/dsnp" element={<Dsnp />} />
+        <Route path="/cityOfLightFa" element={<CityOfLightFa />} />
         <Route path="/dsep-unified" element={<DsepUnified />} />
         <Route path="/select-experience" element={<SelectExperience />} />
         <Route path="/tabs" element={<TabsComponent />} />
@@ -74,10 +74,10 @@ const AnimatedRoutes = () => {
         <Route path="/ThankYou" element={<ThankYou />} />
         <Route path="/videoTemplate" element={<VideoTemplate />} />
         <Route path="/selectionPage" element={<SelectionPage />} />
-        <Route path="/ONDC" element={<ONDC />} />
+        <Route path="/ondc" element={<ONDC />} />
         <Route path="/regenUEI" element={<RegenUEI />} />
         <Route path="/retail" element={<Retail />} />
-        <Route path="/UEI-new" element={<RegenUEINewFlow />} />
+        <Route path="/uei-new" element={<RegenUEINewFlow />} />
         <Route path="/climate-resilience" element={<SelectClimate />} />
         <Route path="/forest-conservation" element={<SelectForest />} />
         <Route path="/dragon-foods" element={<DragonFoods />} />
