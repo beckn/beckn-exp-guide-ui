@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Tabs } from "antd";
 import "./tabs.css";
 import Modal from "../../welcome-page/modal";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import ChooseExperience from "./chooseExperience";
+
 interface TabsComponentPropsModal {
   firstProps?: any;
   secondProps?: any;
@@ -20,32 +22,34 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
 }: TabsComponentPropsModal) => {
   const [flag, setFlag] = useState(true);
   const navigate = useNavigate();
-  const cityOfLight = localStorage.getItem("name") === "cityOfLight";
-  const cityOfAfrica = localStorage.getItem("name") === "cityOfAfrica";
-  const PCM = localStorage.getItem("name") === "PCM";
-  const OSC = localStorage.getItem("name") === "OSC";
-  const DSEP = localStorage.getItem("name") === "DSEP";
-  const UEI = localStorage.getItem("name") === "UEI";
-  const isDsepUnified = localStorage.getItem("name") === "dsepUnified";
-  const isRetail = localStorage.getItem("name") === "retail";
-  const DSNP = localStorage.getItem("name") === "DSNP";
-  const DHP = localStorage.getItem("name") === "DHP";
-  const isIndustry = localStorage.getItem("name") === "industry4.0";
-  const ODR = localStorage.getItem("name") === "ODR";
-  const ONDC = localStorage.getItem("name") === "ONDC";
+  const location = useLocation();
+  const currentExperience = location.pathname.split("/")[1];
+
+  const cityOfLight = currentExperience === "cityOfLight";
+  const cityOfAfrica = currentExperience === "cityOfAfrica";
+  const PCM = currentExperience === "PCM";
+  const OSC = currentExperience === "OSC";
+  const DSEP = currentExperience === "DSEP";
+  const UEI = currentExperience === "UEI";
+  const isDsepUnified = currentExperience === "dsep-unified";
+  const isRetail = currentExperience === "retail";
+  const DSNP = currentExperience === "DSNP";
+  const DHP = currentExperience === "DHP";
+  const isIndustry = currentExperience === "industry4.0";
+  const ODR = currentExperience === "ODR";
+  const ONDC = currentExperience === "ONDC";
   const isRegenerativeAgriculture =
-    localStorage.getItem("name") === "regenerativeAgriculture";
-  const isRegenUEI = localStorage.getItem("name") === "regenUEI";
+    currentExperience === "regenerativeAgriculture";
+  const isRegenUEI = currentExperience === "regenUEI";
 
   // for right side climate btn
-  const isDragonFoods = localStorage.getItem("name") === "dragon-foods";
-  const isSkyAnalytics = localStorage.getItem("name") === "sky-analytics";
-  const isHarmoniaid = localStorage.getItem("name") === "harmoniaid";
-  const isStateForestDep = localStorage.getItem("name") === "state-forest-dep";
-  const isEarthSupport =
-    localStorage.getItem("name") === "earth-support-initiative";
-  const isEnvirogrowth = localStorage.getItem("name") === "envirogrowth";
-  const isOpenSpark = localStorage.getItem("name") === "open-spark";
+  const isDragonFoods = currentExperience === "dragon-foods";
+  const isSkyAnalytics = currentExperience === "sky-analytics";
+  const isHarmoniaid = currentExperience === "harmoniaid";
+  const isStateForestDep = currentExperience === "state-forest-dep";
+  const isEarthSupport = currentExperience === "earth-support-initiative";
+  const isEnvirogrowth = currentExperience === "envirogrowth";
+  const isOpenSpark = currentExperience === "open-spark";
 
   const openCity = (evt: any, cityName: string) => {
     let i: number;
@@ -555,8 +559,9 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
           <div className="climate-resilience-tabs-btn">
             <img
               onClick={() => {
-                localStorage.setItem("name", "state-forest-dep");
-                navigate("/progress");
+                navigate("/progress", {
+                  state: { experienceId: "state-forest-dep" },
+                });
               }}
               src="/assets/forest_health.svg"
               alt="curvedArrow"
@@ -564,8 +569,9 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
             />
             <img
               onClick={() => {
-                localStorage.setItem("name", "envirogrowth");
-                navigate("/progress");
+                navigate("/progress", {
+                  state: { experienceId: "envirogrowth" },
+                });
               }}
               src="/assets/forestrestoration.svg"
               alt="curvedArrow"
@@ -573,8 +579,9 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
             />
             <img
               onClick={() => {
-                localStorage.setItem("name", "earth-support-initiative");
-                navigate("/progress");
+                navigate("/progress", {
+                  state: { experienceId: "earth-support-initiative" },
+                });
               }}
               src="/assets/leadingfoodandbeveragecompany.svg"
               alt="curvedArrow"
@@ -582,8 +589,9 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
             />
             <img
               onClick={() => {
-                localStorage.setItem("name", "forest-conservation");
-                navigate("/progress");
+                navigate("/progress", {
+                  state: { experienceId: "forest-conservation" },
+                });
               }}
               src="/assets/backarrow.svg"
               alt="img-icon"
@@ -596,8 +604,9 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
           <div className="climate-resilience-tabs-btn">
             <img
               onClick={() => {
-                localStorage.setItem("name", "dragon-foods");
-                navigate("/progress");
+                navigate("/progress", {
+                  state: { experienceId: "dragon-foods" },
+                });
               }}
               src="/assets/FMCG.svg"
               alt="img-icon"
@@ -605,8 +614,9 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
             />
             <img
               onClick={() => {
-                localStorage.setItem("name", "sky-analytics");
-                navigate("/progress");
+                navigate("/progress", {
+                  state: { experienceId: "sky-analytics" },
+                });
               }}
               src="/assets/Climate_Resilience-sb.svg"
               alt="img-icon"
@@ -614,8 +624,9 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
             />
             <img
               onClick={() => {
-                localStorage.setItem("name", "harmoniaid");
-                navigate("/progress");
+                navigate("/progress", {
+                  state: { experienceId: "harmoniaid" },
+                });
               }}
               src="/assets/humanitarian_aid.svg"
               alt="img-icon"
@@ -623,8 +634,9 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
             />
             <img
               onClick={() => {
-                localStorage.setItem("name", "climate-resilience");
-                navigate("/progress");
+                navigate("/progress", {
+                  state: { experienceId: "climate-resilience" },
+                });
               }}
               src="/assets/backarrow.svg"
               alt="img-icon"
