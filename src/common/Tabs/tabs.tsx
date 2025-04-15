@@ -28,15 +28,15 @@ const TabsComponent: React.FC<TabsComponentPropsModal> = ({
   const cityOfLight = currentExperience === "cityOfLight";
   const cityOfAfrica = currentExperience === "cityOfAfrica";
   const PCM = currentExperience === "PCM";
-  const OSC = currentExperience === "OSC";
-  const DSEP = currentExperience === "DSEP";
+  const OSC = currentExperience === "osc";
+  const DSEP = currentExperience === "dsep";
   const UEI = currentExperience === "UEI";
   const isDsepUnified = currentExperience === "dsep-unified";
   const isRetail = currentExperience === "retail";
-  const DSNP = currentExperience === "DSNP";
+  const DSNP = currentExperience === "dsnp";
   const DHP = currentExperience === "DHP";
   const isIndustry = currentExperience === "industry4.0";
-  const ODR = currentExperience === "ODR";
+  const ODR = currentExperience === "odr";
   const ONDC = currentExperience === "ONDC";
   const isRegenerativeAgriculture =
     currentExperience === "regenerativeAgriculture";

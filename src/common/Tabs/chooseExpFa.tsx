@@ -29,7 +29,7 @@ const ChooseExpFa: React.FC<selectExpModalProps> = ({
 
   const cityOfLight = currentExperience === "cityOfLight";
   const cityOfAfrica = currentExperience === "cityOfAfrica";
-  const OSC = currentExperience === "OSC";
+  const OSC = currentExperience === "osc";
   const PCM = currentExperience === "PCM";
 
   const [lang, setLang] = useState("français");
