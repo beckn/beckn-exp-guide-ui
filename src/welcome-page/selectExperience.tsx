@@ -95,7 +95,7 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              <li onClick={() => handleNevigate("ODR")}>
+              <li onClick={() => handleNevigate("odr")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
@@ -109,7 +109,7 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              <li onClick={() => handleNevigate("UEI")}>
+              <li onClick={() => handleNevigate("uei")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
@@ -123,7 +123,7 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              <li onClick={() => handleNevigate("dsepUnified")}>
+              <li onClick={() => handleNevigate("dsep-unified")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
@@ -137,7 +137,7 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              <li onClick={() => handleNevigate("DSNP")}>
+              <li onClick={() => handleNevigate("dsnp")}>
                 <div className="card-with-image">
                   <img
                     className="first-image-card"
@@ -219,7 +219,7 @@ const SelectExperience = () => {
                   </p>
                 </div>
               </li>
-              <li onClick={() => handleNevigate("OSC")}>
+              <li onClick={() => handleNevigate("osc")}>
                 <div className="card-with-image">
                   <img
                     style={{ borderRadius: "35px" }}

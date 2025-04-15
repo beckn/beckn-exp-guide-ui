@@ -52,17 +52,17 @@ const ChooseExperience: React.FC<selectExpModalProps> = ({
 
   const cityOfAfrica = currentExperience === "cityOfAfrica";
   const cityOfLight = currentExperience === "cityOfLight";
-  const OSC = currentExperience === "OSC";
+  const OSC = currentExperience === "osc";
   const himalayas = currentExperience === "himalayas";
   const cities = currentExperience === "cities";
   const PCM = currentExperience === "PCM";
-  const DSEP = currentExperience === "DSEP";
+  const DSEP = currentExperience === "dsep";
   const UEI = currentExperience === "UEI";
   const dsepUnified = currentExperience === "dsep-unified";
   const retail = currentExperience === "retail";
-  const DSNP = currentExperience === "DSNP";
+  const DSNP = currentExperience === "dsnp";
   const isDsnpFeed = iframeURL === process.env.REACT_APP_DSNP_APP_URL_FEED;
-  const ODR = currentExperience === "ODR";
+  const ODR = currentExperience === "odr";
   const DHP = currentExperience === "DHP";
   const isIndustry = currentExperience === "industry4.0";
   const isDragonFoods = currentExperience === "dragon-foods";
